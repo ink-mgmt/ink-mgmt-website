@@ -1,0 +1,15 @@
+.home__intro-text {
+  align-items: center;
+  background-color: $white;
+  color: $black;
+  display: flex;
+  font-family: $font-bold;
+  font-size: 1.5625rem;
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+
+  p {
+    line-height: 1;
+  }
+}

@@ -1,0 +1,64 @@
+.home__what-we-do {
+  align-items: center;
+  background-color: $black;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: $space-700;
+  padding-top: $space-700;
+
+  .what-we-do {
+    &__heading {
+      font-family: $font-black;
+      font-size: 2.5rem;
+      margin-bottom: $space-600;
+      text-transform: uppercase;
+    }
+
+    &__list {
+      width: 100%;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: $space-600;
+
+      &:not(:first-child) {
+        padding-top: $space-600;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $white;
+        padding-bottom: $space-600;
+      }
+
+      &-container {
+        display: flex;
+        flex-basis: 67%;
+        flex-direction: column;
+      }
+
+      &-number {
+        flex-basis: 10%;
+        font-family: $font-mono;
+        font-size: 0.875rem;
+        letter-spacing: 0.2em;
+        text-align: center;
+      }
+
+      &-name {
+        font-family: $font-bold;
+        font-size: 1.25rem;
+      }
+
+      &-detail {
+        font-family: $font-mono;
+        font-size: 0.6875rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

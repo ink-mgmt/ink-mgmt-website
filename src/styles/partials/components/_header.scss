@@ -2,9 +2,24 @@
 // ==== HEADER
 // ===========================================================================
 .header {
+  padding-bottom: $space-300;
+  padding-top: $space-300;
+  position: relative;
+
   > .container {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: auto;
+    width: 4.875rem;
+  }
+
+  &__menu-button {
+    color: $black;
+    font-family: $font-bold;
+    font-size: 0.9375rem;
   }
 }

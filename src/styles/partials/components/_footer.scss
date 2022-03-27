@@ -1,3 +1,53 @@
 // ===========================================================================
 // ==== FOOTER
 // ===========================================================================
+.footer {
+  font-family: $font-med;
+  font-size: 0.6875rem;
+  line-height: 1;
+  padding-bottom: $space-400;
+  padding-top: $space-400;
+  position: relative;
+
+  a {
+    border: 0;
+  }
+
+  > .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__contacts {
+    margin-bottom: $space-700;
+    margin-top: $space-600;
+  }
+
+  &__contact-item {
+    margin-bottom: $space-500;
+  }
+
+  &__contact-heading {
+    display: block;
+  }
+
+  &__contact-link {
+    font-family: $font-reg;
+  }
+
+  &__copyright {
+    text-transform: uppercase;
+  }
+
+  &__blob {
+    position: absolute;
+    bottom: $space-500;
+    height: 28px;
+    right: $space-500;
+    width: auto;
+  }
+}

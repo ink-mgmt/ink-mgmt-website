@@ -1,61 +1,57 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
+import Logo from '../components/patterns/logo';
 import SEO from '../components/seo';
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="container">
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <Link to="/page-2/">Go to page 2</Link>
-
-      <h2>Fonts Test</h2>
-      <p className="font-black">
-        Font Black Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
+  <Layout
+    headerLogoColor="transparent"
+    footerBgColor="#b8b8b8"
+    footerTextColor="#000"
+  >
+    <SEO title="Home" />
+    <section className="home__video">
+      <div className="home__video-content container">
+        <h1 className="visuallyhidden">Ink Mgmt</h1>
+        <Logo />
+      </div>
+    </section>
+    <section className="home__intro-text container">
+      <p>
+        Meet the first Black owned creative talent agency founded by Black
+        (award winning) creatives.
       </p>
-
-      <p className="font-bold">
-        Font Bold Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
-
-      <p className="font-light">
-        Font Light Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
-
-      <p className="font-med">
-        Font Medium Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
-
-      <p className="font-reg">
-        Font Regular Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
-
-      <p className="font-mono">
-        Font Monospace Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis alias earum, doloribus accusantium error sed voluptatum
-        libero dolor, repellat officiis, exercitationem officia excepturi.
-        Minima deleniti facere doloremque veritatis error{' '}
-      </p>
-    </div>
+    </section>
+    <section className="home__what-we-do container">
+      <h2 className="what-we-do__heading">What We Do:</h2>
+      <div className="what-we-do__list">
+        <div className="what-we-do__item">
+          <span className="what-we-do__item-number">01</span>
+          <div className="what-we-do__item-container">
+            <p className="what-we-do__item-name">Source</p>
+            <p className="what-we-do__item-detail">Curated search</p>
+          </div>
+        </div>
+        <div className="what-we-do__item">
+          <span className="what-we-do__item-number">02</span>
+          <div className="what-we-do__item-container">
+            <p className="what-we-do__item-name">Create</p>
+            <p className="what-we-do__item-detail">Special projects</p>
+          </div>
+        </div>
+        <div className="what-we-do__item">
+          <span className="what-we-do__item-number">03</span>
+          <div className="what-we-do__item-container">
+            <p className="what-we-do__item-name">Consult</p>
+            <p className="what-we-do__item-detail">Culture consulting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="home__get-in-touch container">
+      <a href="/">&rarr; Get in touch</a>
+    </section>
   </Layout>
 );
 
