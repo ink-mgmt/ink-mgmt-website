@@ -49,7 +49,7 @@ html {
 
 hr {
   border: 0;
-  border-top: 1px solid $color-grey-6;
+  border-top: 1px solid $color-grey-7;
   display: block;
   height: 1px;
   margin: 1em 0;
@@ -279,16 +279,6 @@ label[for] {
   cursor: pointer;
 }
 
-/* Code formatting
------------------------------------------------------------------------------- */
-pre {
-  margin: 0;
-}
-
-code {
-  background-color: $color-grey-2;
-}
-
 /* Disable CSS animations if user preference
 -------------------------------------------------------------------*/
 @media (prefers-reduced-motion: reduce) {
@@ -402,7 +392,7 @@ code {
   *:after {
     background: transparent !important; // sass-lint:disable-line no-important
     box-shadow: none !important; // sass-lint:disable-line no-important
-    color: $color-grey-2 !important; // sass-lint:disable-line no-important
+    color: $black !important; // sass-lint:disable-line no-important
     text-shadow: none !important; // sass-lint:disable-line no-important
   }
 
@@ -435,7 +425,7 @@ code {
 
   pre,
   blockquote {
-    border: 1px solid $color-grey-2;
+    border: 1px solid $black;
     page-break-inside: avoid;
   }
 

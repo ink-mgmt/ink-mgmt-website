@@ -108,27 +108,6 @@ figure {
   }
 }
 
-table {
-  margin-bottom: $space-500;
-}
-
-tr {
-  &:nth-child(even) {
-    background: $color-grey-6;
-  }
-}
-
-th {
-  border-bottom: 1px solid $highlight-clr;
-  padding: $space-300;
-  padding-bottom: 0;
-  text-align: left;
-}
-
-td {
-  padding: $space-300;
-}
-
 .container {
   padding: 0 $space-300;
   margin-left: auto;

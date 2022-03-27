@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `ROOT SITE TITLE`,
+    title: `INK-MGMT`,
     description: `SITE META DESCRIPTION GOES HERE.`,
     siteUrl: `https://mikeriley.dev`,
     socialImage: `ABSOLUTE PATH TO IMAGE IN STATIC FOLDER`,
@@ -14,13 +14,17 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        google: {
-          families: ['Open Sans:400,700'],
+        custom: {
+          families: [
+            'MabryProBlack',
+            'MabryProBold',
+            'MabryProLight',
+            'MabryProMedium',
+            'MabryProRegular',
+            'SpaceMonoRegular',
+          ],
+          urls: ['/fonts/fonts.css'],
         },
-        // custom: {
-        //   families: ['CUSTOMFONT1, CUSTOMFONT2'],
-        //   urls: ['/fonts/fonts.css'],
-        // },
       },
     },
     {
@@ -35,8 +39,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ROOT SITE TITLE`,
-        short_name: `SHORT VERSION OF ROOT SITE TITLE`,
+        name: `INK-MGMT`,
+        short_name: `INK-MGMT`,
         start_url: `/`,
         background_color: `HEX VALUE`,
         theme_color: `HEX VALUE`,
@@ -51,15 +55,5 @@ module.exports = {
         errorClassName: false,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-tagmanager`,
-    //   options: {
-    //     id: 'GTM-ID-STRING',
-    //     includeInDevelopment: true
-    //   }
-    // }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 };

@@ -1,11 +1,16 @@
-- set up development environment
-  - update packages
-  - delete cache and git folders
-  - create git repo
+- √ set up development environment
+  - √ update packages
+  - √ delete cache and git folders
+  - √ create git repo
     - https://kbroman.org/github_tutorial/pages/init.html
-- complete gatsby-config file
-- add custom fonts
-- update variables.scss file
+  - √ yarn install
+  - √ yarn start
+    - √ ensure site runs as expected
+  - √ add custom fonts
+  - √ complete gatsby-config file
+  - √ restart environment
+- √ update variables.scss file
+- √ add logo as SVG asset
 - header component
 - footer component
 - homepage
@@ -45,7 +50,7 @@
 - overall audit
 - https://sonarwhal.com/scanner
 - google analytics scripts added
-- remove unused boilerplate files
+- remove unused boilerplate files and assets (images, icons, fonts, etc.)
 - update gatsby-config file for launch
   - favicon
   - create Open Graph/Twitter Card image (1200px x 1200px)

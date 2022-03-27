@@ -4,12 +4,50 @@
 
 /* Add the font files to this same directory */
 
-/* @font-face {
-  font-family: 'MyWebFont';
+@font-face {
+  font-family: 'MabryProBlack';
+  font-style: normal;
+  font-weight: 900;
+  src: url('MabryProBlack.woff2') format('woff2'),
+    url('MabryProBlack.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MabryProBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('MabryProBold.woff2') format('woff2'),
+    url('MabryProBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MabryProLight';
+  font-style: normal;
+  font-weight: 300;
+  src: url('MabryProLight.woff2') format('woff2'),
+    url('MabryProLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MabryProMedium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('MabryProMedium.woff2') format('woff2'),
+    url('MabryProMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MabryProRegular';
   font-style: normal;
   font-weight: 400;
-  src: url('webfont.woff2') format('woff2'),
-       url('webfont.woff') format('woff'),
-       url('webfont.ttf')  format('truetype');
-  }
-*/
+  src: url('MabryProRegular.woff2') format('woff2'),
+    url('MabryProRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SpaceMonoRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('SpaceMono-Regular.woff2') format('woff2'),
+    url('SpaceMono-Regular.woff') format('woff');
+}
