@@ -14,32 +14,56 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
       <div className="footer__content-wrapper">
         <ul className="footer__nav-list">
           <li className="footer__nav-item">
-            <a href="/" className="footer__nav-link">
+            <a
+              href="/"
+              className="footer__nav-link"
+              style={{ color: footerTextColor }}
+            >
               A New Way
             </a>
           </li>
           <li className="footer__nav-item">
-            <a href="/" className="footer__nav-link">
+            <a
+              href="/"
+              className="footer__nav-link"
+              style={{ color: footerTextColor }}
+            >
               How We Do It
             </a>
           </li>
           <li className="footer__nav-item">
-            <a href="/" className="footer__nav-link">
+            <a
+              href="/"
+              className="footer__nav-link"
+              style={{ color: footerTextColor }}
+            >
               Word of Mouth
             </a>
           </li>
           <li className="footer__nav-item">
-            <a href="/" className="footer__nav-link">
+            <a
+              href="/"
+              className="footer__nav-link"
+              style={{ color: footerTextColor }}
+            >
               Info
             </a>
           </li>
           <li className="footer__nav-item">
-            <a href="/" className="footer__nav-link">
+            <a
+              href="/"
+              className="footer__nav-link"
+              style={{ color: footerTextColor }}
+            >
               Privacy Policy
             </a>
           </li>
           <li className="footer__nav-item">
-            <a href="/" className="footer__nav-link">
+            <a
+              href="/"
+              className="footer__nav-link"
+              style={{ color: footerTextColor }}
+            >
               Terms &amp; Conditions
             </a>
           </li>
@@ -53,12 +77,25 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
             Denver, CO 80202
             <br />
             <br />
-            <a href="tel:+1-720-574-2667">+1 720 574 2667</a>
+            <a href="tel:+1-720-574-2667" style={{ color: footerTextColor }}>
+              +1 720 574 2667
+            </a>
             <br />
-            <a href="mailto:weare@inkmgmt.com">weare@inkmgmt.com</a>
+            <a
+              href="mailto:weare@inkmgmt.com"
+              style={{ color: footerTextColor }}
+            >
+              weare@inkmgmt.com
+            </a>
             <br />
             —<br />
-            <a href="/">Instagram</a>, <a href="/">LinkedIn</a>
+            <a href="/" style={{ color: footerTextColor }}>
+              Instagram
+            </a>
+            ,{' '}
+            <a href="/" style={{ color: footerTextColor }}>
+              LinkedIn
+            </a>
           </address>
 
           <ul className="footer__contacts">
@@ -66,7 +103,11 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               <span className="footer__contact-heading">
                 New Business Inquiries
               </span>
-              <a className="footer__contact-link" href="mailto:tbd@inkmgmt.com">
+              <a
+                className="footer__contact-link"
+                style={{ color: footerTextColor }}
+                href="mailto:tbd@inkmgmt.com"
+              >
                 tbd@inkmgmt.com
               </a>
             </li>
@@ -74,19 +115,31 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               <span className="footer__contact-heading">
                 Staffing & Representation Inquires
               </span>
-              <a className="footer__contact-link" href="mailto:tbd@inkmgmt.com">
+              <a
+                className="footer__contact-link"
+                style={{ color: footerTextColor }}
+                href="mailto:tbd@inkmgmt.com"
+              >
                 tbd@inkmgmt.com
               </a>
             </li>
             <li className="footer__contact-item">
               <span className="footer__contact-heading">Press Inquires</span>
-              <a className="footer__contact-link" href="mailto:tbd@inkmgmt.com">
+              <a
+                className="footer__contact-link"
+                style={{ color: footerTextColor }}
+                href="mailto:tbd@inkmgmt.com"
+              >
                 tbd@inkmgmt.com
               </a>
             </li>
             <li className="footer__contact-item">
               <span className="footer__contact-heading">Jobs Inquires</span>
-              <a className="footer__contact-link" href="mailto:tbd@inkmgmt.com">
+              <a
+                className="footer__contact-link"
+                style={{ color: footerTextColor }}
+                href="mailto:tbd@inkmgmt.com"
+              >
                 tbd@inkmgmt.com
               </a>
             </li>
