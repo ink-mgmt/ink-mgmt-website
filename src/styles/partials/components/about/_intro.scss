@@ -1,0 +1,45 @@
+.about__intro {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-heading {
+    font-family: $font-black;
+    font-size: 1.625rem;
+    font-size: clamp(1.625rem, 0.9246rem + 2.9885vw, 4.0625rem);
+    line-height: 0.85;
+    text-transform: uppercase;
+  }
+
+  &-sub-content-wrapper {
+    transform: translateY(100%);
+  }
+
+  &-copy {
+    font-family: $font-mono;
+    font-size: 0.625rem;
+    margin-bottom: $space-700;
+    padding-left: $space-500;
+    padding-right: $space-500;
+    text-transform: uppercase;
+  }
+
+  &-teaser {
+    font-family: $font-bold;
+    font-size: 0.9375rem;
+    margin-bottom: 0;
+  }
+
+  &-arrow {
+    font-family: $font-bold;
+    font-size: 1.5625rem;
+  }
+}

@@ -75,6 +75,8 @@ $space-200: math.div($space, 4); // 4px
 $space-300: math.div($space, 2); // 8px
 $space-400: $space * 0.75; // 12px
 $space-500: $space; // 16px
+$space-525: $space * 1.25; // 20px
+$space-550: $space * 1.5; // 24px
 $space-600: $space * 2; // 32px
 $space-700: $space * 3; // 48px
 $space-800: $space * 4; // 64px
