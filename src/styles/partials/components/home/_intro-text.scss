@@ -5,11 +5,15 @@
   display: flex;
   font-family: $font-bold;
   font-size: 1.5625rem;
+  font-size: clamp(1.5625rem, 1.2216rem + 1.5152vw, 2.8125rem);
   height: 50vh;
   justify-content: center;
   text-align: center;
 
   p {
     line-height: 1;
+    max-width: 47.5rem;
   }
 }
+
+// https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/

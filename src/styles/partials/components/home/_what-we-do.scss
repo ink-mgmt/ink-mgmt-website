@@ -8,22 +8,78 @@
   padding-bottom: $space-700;
   padding-top: $space-700;
 
+  @include mq($M) {
+    padding-bottom: $space-850;
+    padding-top: $space-850;
+  }
+
   .what-we-do {
+    &__container {
+      padding-left: $space-500;
+      padding-right: $space-500;
+      width: 100%;
+
+      @include mq($M) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
     &__heading {
       font-family: $font-black;
       font-size: 2.5rem;
       margin-bottom: $space-600;
+      text-align: center;
       text-transform: uppercase;
+
+      @include mq($M) {
+        display: flex;
+        flex-direction: column;
+        font-size: 4rem;
+        font-size: clamp(4rem, 3.2105rem + 1.6447vw, 4.9375rem);
+        line-height: 0.85;
+        margin-bottom: 0;
+        margin-left: 12%;
+        text-align: left;
+      }
+
+      @include mq($L) {
+        margin-left: 15%;
+      }
+
+      @include mq($XL) {
+        margin-left: 18%;
+      }
+
+      .we {
+        @include mq($M) {
+          transform: translateX(-4rem);
+        }
+
+        @include mq($L) {
+          transform: translateX(-4.75rem);
+        }
+      }
     }
 
     &__list {
       width: 100%;
+
+      @include mq($M) {
+        flex-basis: 67%;
+      }
+
+      @include mq($L) {
+        flex-basis: 50%;
+      }
     }
 
     &__item {
       display: flex;
       justify-content: space-between;
-      padding-bottom: $space-600;
 
       &:not(:first-child) {
         padding-top: $space-600;
@@ -38,6 +94,12 @@
         display: flex;
         flex-basis: 67%;
         flex-direction: column;
+
+        @include mq($M) {
+          align-items: center;
+          flex-basis: 70%;
+          flex-direction: row;
+        }
       }
 
       &-number {
@@ -46,11 +108,19 @@
         font-size: 0.875rem;
         letter-spacing: 0.2em;
         text-align: center;
+
+        @include mq($M) {
+          flex-basis: 25%;
+        }
       }
 
       &-name {
         font-family: $font-bold;
         font-size: 1.25rem;
+
+        @include mq($M) {
+          margin-bottom: 0;
+        }
       }
 
       &-detail {
@@ -58,6 +128,14 @@
         font-size: 0.6875rem;
         letter-spacing: 0.2em;
         text-transform: uppercase;
+
+        @include mq($M) {
+          margin-left: $space-800;
+        }
+
+        @include mq($L) {
+          margin-left: $space-900;
+        }
       }
     }
   }

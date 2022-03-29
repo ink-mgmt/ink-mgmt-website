@@ -3,11 +3,28 @@
   padding-bottom: $space-500;
   padding-top: $space-500;
 
+  @include mq($M) {
+    padding-bottom: $space-600;
+    padding-top: $space-600;
+  }
+
   a {
     border: 0;
     color: $black;
     font-family: $font-black;
     font-size: 5.0625rem;
     line-height: 0.875;
+
+    @include mq($M) {
+      font-size: 12.5vw;
+    }
+  }
+}
+
+.get-in-touch {
+  &__container {
+    padding-left: $space-500;
+    padding-right: $space-500;
+    width: 100%;
   }
 }

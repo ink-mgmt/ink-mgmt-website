@@ -9,13 +9,60 @@
   padding-top: $space-400;
   position: relative;
 
+  @include mq($M) {
+    font-size: 0.9375rem;
+  }
+
   a {
     border: 0;
   }
 
-  > .container {
+  &__container {
+    padding-left: $space-500;
+    padding-right: $space-500;
+    width: 100%;
+  }
+
+  &__content-wrapper {
     display: flex;
     flex-direction: column;
+
+    @include mq($M) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: $space-900;
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: none;
+      margin-right: $space-600;
+
+      @include mq($M) {
+        display: block;
+      }
+    }
+
+    &-item {
+      margin-bottom: $space-300;
+
+      &:nth-last-child(3) {
+        margin-bottom: $space-600;
+      }
+    }
+  }
+
+  &__contact-info {
+    @include mq($M) {
+      display: flex;
+    }
+
+    > * {
+      @include mq($M) {
+        margin-right: $space-1000;
+      }
+    }
   }
 
   &__address {
@@ -25,6 +72,10 @@
   &__contacts {
     margin-bottom: $space-700;
     margin-top: $space-600;
+
+    @include mq($M) {
+      margin-top: 0;
+    }
   }
 
   &__contact-item {

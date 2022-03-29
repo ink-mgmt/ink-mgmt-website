@@ -11,9 +11,9 @@
   - √ restart environment
 - √ update variables.scss file
 - √ add logo as SVG asset
-- header component
-- footer component
-- homepage
+- √ header component
+- √ footer component
+- √ homepage
 - interior pages(s)
 - add site content
   - static and/or via WordPress API

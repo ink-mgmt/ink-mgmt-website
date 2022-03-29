@@ -23,34 +23,41 @@ const IndexPage = () => (
         (award winning) creatives.
       </p>
     </section>
-    <section className="home__what-we-do container">
-      <h2 className="what-we-do__heading">What We Do:</h2>
-      <div className="what-we-do__list">
-        <div className="what-we-do__item">
-          <span className="what-we-do__item-number">01</span>
-          <div className="what-we-do__item-container">
-            <p className="what-we-do__item-name">Source</p>
-            <p className="what-we-do__item-detail">Curated search</p>
+    <section className="home__what-we-do">
+      <div className="what-we-do__container">
+        <h2 className="what-we-do__heading">
+          <span className="what">What</span> <span className="we">We</span>{' '}
+          <span className="do">Do:</span>
+        </h2>
+        <div className="what-we-do__list">
+          <div className="what-we-do__item">
+            <span className="what-we-do__item-number">01</span>
+            <div className="what-we-do__item-container">
+              <p className="what-we-do__item-name">Source</p>
+              <p className="what-we-do__item-detail">Curated search</p>
+            </div>
           </div>
-        </div>
-        <div className="what-we-do__item">
-          <span className="what-we-do__item-number">02</span>
-          <div className="what-we-do__item-container">
-            <p className="what-we-do__item-name">Create</p>
-            <p className="what-we-do__item-detail">Special projects</p>
+          <div className="what-we-do__item">
+            <span className="what-we-do__item-number">02</span>
+            <div className="what-we-do__item-container">
+              <p className="what-we-do__item-name">Create</p>
+              <p className="what-we-do__item-detail">Special projects</p>
+            </div>
           </div>
-        </div>
-        <div className="what-we-do__item">
-          <span className="what-we-do__item-number">03</span>
-          <div className="what-we-do__item-container">
-            <p className="what-we-do__item-name">Consult</p>
-            <p className="what-we-do__item-detail">Culture consulting</p>
+          <div className="what-we-do__item">
+            <span className="what-we-do__item-number">03</span>
+            <div className="what-we-do__item-container">
+              <p className="what-we-do__item-name">Consult</p>
+              <p className="what-we-do__item-detail">Culture consulting</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section className="home__get-in-touch container">
-      <a href="/">&rarr; Get in touch</a>
+    <section className="home__get-in-touch">
+      <div className="get-in-touch__container">
+        <a href="mailto:tbd@inkmgmt.com">&rarr; Get in touch</a>
+      </div>
     </section>
   </Layout>
 );
