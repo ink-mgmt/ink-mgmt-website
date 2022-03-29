@@ -8,6 +8,14 @@
     padding-top: $space-600;
   }
 
+  @include mq($L) {
+    padding-bottom: $space-800;
+  }
+
+  @include mq($XL) {
+    padding-bottom: $space-1000;
+  }
+
   a {
     border: 0;
     color: $black;
