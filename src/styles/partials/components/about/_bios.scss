@@ -1,0 +1,83 @@
+.about__bios {
+  background-color: $bg-black;
+  color: $white;
+  padding-bottom: $space-600;
+  padding-left: $space-500;
+  padding-right: $space-500;
+  padding-top: $space-600;
+  width: 100%;
+
+  &-image-grid {
+    margin-bottom: $space-600;
+  }
+
+  &-copy-wrapper {
+    @include mq($S) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $space-500;
+      justify-content: space-between;
+
+      > * {
+        flex-basis: calc(50% - #{$space-500});
+      }
+    }
+
+    @include mq($M) {
+      gap: $space-600;
+
+      > * {
+        flex-basis: calc(50% - #{$space-600});
+      }
+    }
+
+    @include mq($L) {
+      gap: $space-600;
+
+      > * {
+        flex-basis: calc(25% - #{$space-600});
+      }
+    }
+  }
+}
+
+.bio {
+  &:not(:last-of-type) {
+    margin-bottom: $space-600;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-family: $font-black;
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 0.9806rem + 1.1494vw, 2.1875rem);
+    line-height: 0.85;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__titles {
+    font-family: $font-mono;
+    font-size: 0.5rem;
+    text-align: right;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__copy {
+    font-family: $font-light;
+    font-size: 0.625rem;
+    line-height: 1.2;
+    text-align: justify;
+  }
+}

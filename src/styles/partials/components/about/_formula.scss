@@ -1,0 +1,54 @@
+.about__formula {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding-bottom: $space-600;
+  padding-left: $space-500;
+  padding-right: $space-500;
+  padding-top: $space-600;
+  position: relative;
+}
+
+.formula {
+  &__heading-wrapper {
+    @include mq($M) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__heading {
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    margin-bottom: $space-600;
+    text-transform: uppercase;
+  }
+
+  &__sub-heading {
+    font-family: $font-black;
+    font-size: clamp(3.25rem, 12.5vw, 9rem);
+    line-height: 0.85;
+    text-transform: uppercase;
+  }
+
+  &__copy {
+    align-self: flex-end;
+    font-family: $font-light;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    margin-bottom: $space-800 !important;
+    max-width: 44ch;
+    text-align: right;
+    width: 90%;
+
+    @include mq($M) {
+      max-width: 52ch;
+      position: absolute;
+      right: $space-500;
+      top: 60%;
+    }
+  }
+}

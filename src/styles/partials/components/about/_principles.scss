@@ -1,0 +1,100 @@
+.about__principles {
+  background-color: $bg-black;
+  color: $white;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  padding-bottom: $space-300;
+  padding-left: $space-500;
+  padding-right: $space-500;
+  padding-top: $space-600;
+
+  @include mq($M) {
+    height: 100vh;
+  }
+}
+
+.principles {
+  &__heading {
+    font-family: $font-black;
+    font-size: 3rem;
+    font-size: clamp(3rem, 12.5vw, 12rem);
+    line-height: 0.85;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    @include mq($M) {
+      flex-direction: row;
+      gap: $space-600;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    margin-bottom: $space-800;
+    width: 67%;
+
+    @include mq($M) {
+      outline: none;
+
+      &:focus,
+      &:hover {
+        .principles__item-copy::after {
+          top: 100%;
+        }
+      }
+    }
+
+    &:nth-child(2n) {
+      align-self: flex-end;
+
+      @include mq($M) {
+        align-self: flex-start;
+      }
+    }
+
+    &-number {
+      display: block;
+      font-family: $font-mono;
+      font-size: 0.5rem;
+      margin-bottom: $space-600;
+    }
+
+    &-heading {
+      font-family: $font-black;
+      font-size: 1.25rem;
+      line-height: 0.85;
+      margin-bottom: $space-600;
+      text-transform: uppercase;
+    }
+
+    &-copy {
+      font-family: $font-light;
+      font-size: 0.625rem;
+      line-height: 1.2;
+      position: relative;
+
+      &::after {
+        background-color: $bg-black;
+        content: '';
+        display: none;
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transition: top 0.2s ease-out;
+        width: 100%;
+        z-index: 1;
+
+        @include mq($M) {
+          display: block;
+        }
+      }
+    }
+  }
+}
