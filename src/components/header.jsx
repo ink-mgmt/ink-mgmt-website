@@ -6,7 +6,7 @@ import Logo from './patterns/logo';
 
 const Header = ({ headerLogoColor, headerTextColor, siteTitle }) => (
   <header className="header" role="banner">
-    <div className="container">
+    <div className="header__container">
       <Link to="/">
         <p className="visuallyhidden">{siteTitle}</p>
         <Logo fillColor={headerLogoColor} />

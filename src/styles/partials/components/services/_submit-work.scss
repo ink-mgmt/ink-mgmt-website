@@ -9,11 +9,11 @@
   }
 
   @include mq($L) {
-    padding-bottom: $space-800;
+    padding-top: $space-700;
   }
 
   @include mq($XL) {
-    padding-bottom: $space-1000;
+    padding-top: $space-900;
   }
 
   &-container {

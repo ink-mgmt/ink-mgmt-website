@@ -35,6 +35,22 @@
       font-family: $font-mono;
       font-size: 0.875rem;
       margin-right: $space-800;
+
+      @include mq($S) {
+        margin-right: $space-850;
+      }
+
+      @include mq($M) {
+        margin-right: $space-1000;
+      }
+
+      @include mq($L) {
+        margin-right: $space-1500;
+      }
+
+      @include mq($XL) {
+        margin-right: 25rem;
+      }
     }
 
     &__title {
@@ -47,7 +63,25 @@
       font-size: 0.625rem;
       margin-left: 5rem;
       margin-right: $space-600;
+      max-width: 60ch;
       padding-top: $space-600;
+
+      @include mq($S) {
+        margin-left: 7.25rem;
+        margin-right: $space-800;
+      }
+
+      @include mq($M) {
+        margin-left: 11.25rem;
+      }
+
+      @include mq($L) {
+        margin-left: 16.25rem;
+      }
+
+      @include mq($XL) {
+        margin-left: 26.25rem;
+      }
     }
   }
 }
