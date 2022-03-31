@@ -1,0 +1,28 @@
+.services__intro {
+  background-color: $bg-blue;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  padding-bottom: $space-600;
+  padding-left: $space-500;
+  padding-right: $space-500;
+  padding-top: $space-800;
+
+  &-heading {
+    font-family: $font-black;
+    font-size: clamp(3.25rem, 0.6458rem + 11.1111vw, 12.3125rem);
+    hyphens: auto;
+    line-height: 0.85;
+    margin-bottom: $space-850;
+    text-transform: uppercase;
+  }
+
+  &-copy {
+    align-self: flex-end;
+    font-family: $font-reg;
+    font-size: 0.625rem;
+    line-height: 1;
+    max-width: 36ch;
+  }
+}

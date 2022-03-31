@@ -10,6 +10,7 @@ import Footer from './footer';
 const Layout = ({
   children,
   headerLogoColor,
+  headerTextColor,
   footerBgColor,
   footerTextColor,
 }) => (
@@ -30,6 +31,7 @@ const Layout = ({
         </a>
         <Header
           headerLogoColor={headerLogoColor}
+          headerTextColor={headerTextColor}
           siteTitle={data.site.siteMetadata.title}
         />
         <main className="main" id="main" role="main">
@@ -47,12 +49,14 @@ const Layout = ({
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   headerLogoColor: PropTypes.string,
+  headerTextColor: PropTypes.string,
   footerBgColor: PropTypes.string,
   footerTextColor: PropTypes.string,
 };
 
 Layout.defaultProps = {
   headerLogoColor: '#000',
+  headerTextColor: '#000',
   footerBgColor: 'transparent',
   footerTextColor: '#000',
 };

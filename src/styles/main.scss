@@ -9,6 +9,8 @@
 @import 'partials/helpers';
 @import 'partials/components/header';
 @import 'partials/components/footer';
+@import 'partials/components/accordion';
+@import 'partials/components/giant-link';
 @import 'partials/components/home/video';
 @import 'partials/components/home/intro-text';
 @import 'partials/components/home/what-we-do';
@@ -17,5 +19,8 @@
 @import 'partials/components/about/bios';
 @import 'partials/components/about/formula';
 @import 'partials/components/about/principles';
+@import 'partials/components/services/intro';
+@import 'partials/components/services/what-we-do';
+@import 'partials/components/services/submit-work';
 //@import 'partials/html-linter'; // for development only
 @import 'partials/mq-helper'; // for development only

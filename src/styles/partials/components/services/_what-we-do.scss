@@ -1,0 +1,53 @@
+.services__what-we-do {
+  background-color: $bg-blue;
+  color: $white;
+  padding-left: $space-500;
+  padding-right: $space-500;
+
+  &-heading {
+    border-bottom: 1px solid $white;
+    display: flex;
+    font-family: $font-bold;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    padding-bottom: $space-400;
+    text-transform: uppercase;
+  }
+
+  .accordion {
+    &__item {
+      border-bottom: 1px solid $white;
+      color: $white;
+      padding-bottom: $space-700;
+      padding-top: $space-700;
+    }
+
+    &__button {
+      color: $white;
+
+      > div {
+        align-items: center;
+        display: flex;
+      }
+    }
+
+    &__number {
+      font-family: $font-mono;
+      font-size: 0.875rem;
+      margin-right: $space-800;
+    }
+
+    &__title {
+      font-family: $font-bold;
+      font-size: 1.875rem;
+      text-transform: uppercase;
+    }
+
+    &__content {
+      font-size: 0.625rem;
+      margin-left: 5rem;
+      margin-right: $space-600;
+      padding-top: $space-600;
+    }
+  }
+}

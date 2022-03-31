@@ -1,5 +1,6 @@
 import React from 'react';
 
+import GiantLink from '../components/giantLink';
 import Layout from '../components/layout';
 import Logo from '../components/patterns/logo';
 import SEO from '../components/seo';
@@ -55,8 +56,8 @@ const IndexPage = () => (
       </div>
     </section>
     <section className="home__get-in-touch">
-      <div className="get-in-touch__container">
-        <a href="mailto:tbd@inkmgmt.com">&rarr; Get in touch</a>
+      <div className="home__get-in-touch-container">
+        <GiantLink linkText="Get in touch" linkURL="mailto:tbd@inkmgmt.com" />
       </div>
     </section>
   </Layout>

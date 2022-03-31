@@ -1,0 +1,14 @@
+.accordion {
+  &__item {
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

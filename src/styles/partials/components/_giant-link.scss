@@ -1,0 +1,11 @@
+.giant-link {
+  border: 0;
+  color: $black;
+  font-family: $font-black;
+  font-size: 5.0625rem;
+  line-height: 0.875;
+
+  @include mq($M) {
+    font-size: 12.5vw;
+  }
+}

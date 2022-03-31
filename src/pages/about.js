@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 
 import { useWindowSize } from '../hooks/useWindowSize';
 
-const SecondPage = () => {
+const About = () => {
   const size = useWindowSize();
   const isMedBreakpoint = size.width >= 767;
 
@@ -248,4 +248,4 @@ const SecondPage = () => {
   );
 };
 
-export default SecondPage;
+export default About;

@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 import Logo from './patterns/logo';
 
-const Header = ({ headerLogoColor, siteTitle }) => (
+const Header = ({ headerLogoColor, headerTextColor, siteTitle }) => (
   <header className="header" role="banner">
     <div className="container">
       <Link to="/">
@@ -16,6 +16,7 @@ const Header = ({ headerLogoColor, siteTitle }) => (
         className="header__menu-button"
         type="button"
         onClick={() => alert('open menu')}
+        style={{ color: headerTextColor }}
       >
         menu
       </button>
@@ -25,11 +26,13 @@ const Header = ({ headerLogoColor, siteTitle }) => (
 
 Header.propTypes = {
   headerLogoColor: PropTypes.string,
+  headerTextColor: PropTypes.string,
   siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
   headerLogoColor: '#000',
+  headerTextColor: '#000',
   siteTitle: ``,
 };
 
