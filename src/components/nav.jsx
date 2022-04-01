@@ -58,7 +58,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
     >
       <div className="nav__header">
         <div className="nav__header-container">
-          <Link to="/" tabIndex={navIsOpen ? 0 : -1}>
+          <Link className="link" to="/" tabIndex={navIsOpen ? 0 : -1}>
             <p className="visuallyhidden">{siteTitle}</p>
             <Logo fillColor="#000" />
           </Link>
@@ -129,20 +129,28 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
             Denver, CO 80202
             <br />
             <br />
-            <a href="tel:+1-720-574-2667" tabIndex={navIsOpen ? 0 : -1}>
+            <a
+              className="link"
+              href="tel:+1-720-574-2667"
+              tabIndex={navIsOpen ? 0 : -1}
+            >
               +1 720 574 2667
             </a>
             <br />
-            <a href="mailto:weare@inkmgmt.com" tabIndex={navIsOpen ? 0 : -1}>
+            <a
+              className="link"
+              href="mailto:weare@inkmgmt.com"
+              tabIndex={navIsOpen ? 0 : -1}
+            >
               weare@inkmgmt.com
             </a>
             <br />
             —<br />
-            <a href="/" tabIndex={navIsOpen ? 0 : -1}>
+            <a className="link" href="/" tabIndex={navIsOpen ? 0 : -1}>
               Instagram
             </a>
             ,{' '}
-            <a href="/" tabIndex={navIsOpen ? 0 : -1}>
+            <a className="link" href="/" tabIndex={navIsOpen ? 0 : -1}>
               LinkedIn
             </a>
           </address>

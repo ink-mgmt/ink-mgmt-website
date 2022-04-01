@@ -9,6 +9,7 @@
   &__list {
     @include mq($L) {
       display: flex;
+      gap: $space-600;
       justify-content: space-between;
       width: 95vw;
     }
@@ -23,6 +24,9 @@
   }
 
   &__item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
     font-family: $font-reg;
     font-size: 1.125rem;
     line-height: 1.125;
@@ -43,16 +47,26 @@
 
     &-link {
       color: $white;
-      display: block;
       font-size: 1.125rem;
     }
   }
 
   &__big-link {
     color: $white;
-    display: block;
     font-family: $font-black;
     font-size: 3.125rem;
     margin-top: $space-700;
+
+    @include mq($L) {
+      font-size: 2.5rem;
+    }
+
+    @include mq($XL) {
+      font-size: 2.875rem;
+    }
+
+    @include mq($XXL) {
+      font-size: 3.125rem;
+    }
   }
 }
