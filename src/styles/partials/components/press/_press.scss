@@ -7,10 +7,21 @@
   &__heading {
     font-family: $font-black;
     font-size: 0.9375rem;
+    font-size: clamp(0.9375rem, 0.5963rem + 1.4559vw, 2.125rem);
     margin-bottom: 0;
     padding-left: $space-500;
     padding-right: $space-500;
     text-transform: uppercase;
+
+    @include mq($M) {
+      padding-left: $space-800;
+      padding-right: $space-800;
+    }
+
+    @include mq($XL) {
+      padding-left: $space-900;
+      padding-right: $space-900;
+    }
   }
 
   &__article {
@@ -22,14 +33,41 @@
     &:nth-of-type(2n) {
       background-color: $bg-grey;
     }
+
+    @include mq($M) {
+      padding-left: $space-800;
+      padding-right: $space-800;
+    }
+
+    @include mq($XL) {
+      padding-left: $space-900;
+      padding-right: $space-900;
+    }
   }
 
   &__publication {
     font-family: $font-black;
     font-size: 3.4375rem;
+    font-size: clamp(3.4375rem, 0.8872rem + 10.8812vw, 12.3125rem);
     line-height: 0.85;
     margin-bottom: $space-400;
     text-transform: uppercase;
+  }
+
+  &__content-wrapper {
+    @include mq($M) {
+      display: flex;
+      gap: $space-600;
+      justify-content: space-between;
+
+      > * {
+        flex-basis: 33.33333%;
+      }
+    }
+
+    @include mq($XL) {
+      gap: $space-800;
+    }
   }
 
   &__date {
@@ -50,8 +88,18 @@
     margin-bottom: $space-500;
   }
 
+  &__link-wrapper {
+    @include mq($M) {
+      align-items: flex-start;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   &__link {
+    border: 0;
     font-family: $font-bold;
     font-size: 1.1875rem;
+    text-decoration: underline;
   }
 }

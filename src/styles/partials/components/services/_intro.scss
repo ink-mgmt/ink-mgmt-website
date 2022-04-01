@@ -30,6 +30,7 @@
 
   &-heading {
     font-family: $font-black;
+    font-size: 3.25rem;
     font-size: clamp(3.25rem, 0.6458rem + 11.1111vw, 12.3125rem);
     hyphens: auto;
     line-height: 0.85;
