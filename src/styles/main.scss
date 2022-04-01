@@ -9,6 +9,7 @@
 @import 'partials/helpers';
 @import 'partials/components/header';
 @import 'partials/components/footer';
+@import 'partials/components/nav';
 @import 'partials/components/accordion';
 @import 'partials/components/giant-link';
 @import 'partials/components/home/video';
@@ -26,4 +27,4 @@
 @import 'partials/components/info/intro';
 @import 'partials/components/info/contacts';
 //@import 'partials/html-linter'; // for development only
-//@import 'partials/mq-helper'; // for development only
+@import 'partials/mq-helper'; // for development only

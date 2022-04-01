@@ -78,6 +78,7 @@ video {
 button {
   -webkit-appearance: none;
   background-color: transparent;
+  cursor: pointer;
   border: 0;
   padding: 0;
 }
@@ -151,8 +152,7 @@ h6 {
  * Keep line-length to around 45-55 characters.
  */
 p,
-blockquote,
-li {
+blockquote {
   max-width: 40rem;
 }
 

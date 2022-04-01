@@ -15,7 +15,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
         <ul className="footer__nav-list">
           <li className="footer__nav-item">
             <a
-              href="/"
+              href="/about"
               className="footer__nav-link"
               style={{ color: footerTextColor }}
             >
@@ -24,7 +24,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
           </li>
           <li className="footer__nav-item">
             <a
-              href="/"
+              href="/services"
               className="footer__nav-link"
               style={{ color: footerTextColor }}
             >
@@ -33,7 +33,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
           </li>
           <li className="footer__nav-item">
             <a
-              href="/"
+              href="/press"
               className="footer__nav-link"
               style={{ color: footerTextColor }}
             >
@@ -42,7 +42,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
           </li>
           <li className="footer__nav-item">
             <a
-              href="/"
+              href="/info"
               className="footer__nav-link"
               style={{ color: footerTextColor }}
             >
