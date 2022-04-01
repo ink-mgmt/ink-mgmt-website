@@ -12,13 +12,13 @@ const Header = ({ headerLogoColor, headerTextColor, siteTitle }) => {
     <Fragment>
       <header className="header" role="banner">
         <div className="header__container">
-          <Link to="/">
+          <Link className="link" to="/">
             <p className="visuallyhidden">{siteTitle}</p>
             <Logo fillColor={headerLogoColor} />
           </Link>
 
           <button
-            className="header__menu-button"
+            className="header__menu-button link"
             type="button"
             onClick={() => setNavIsOpen(true)}
             style={{ color: headerTextColor }}
