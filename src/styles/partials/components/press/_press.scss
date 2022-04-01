@@ -1,0 +1,57 @@
+.press {
+  &__wrapper {
+    padding-bottom: $space-600;
+    padding-top: $space-800;
+  }
+
+  &__heading {
+    font-family: $font-black;
+    font-size: 0.9375rem;
+    margin-bottom: 0;
+    padding-left: $space-500;
+    padding-right: $space-500;
+    text-transform: uppercase;
+  }
+
+  &__article {
+    padding-bottom: $space-800;
+    padding-left: $space-500;
+    padding-right: $space-500;
+    padding-top: $space-800;
+
+    &:nth-of-type(2n) {
+      background-color: $bg-grey;
+    }
+  }
+
+  &__publication {
+    font-family: $font-black;
+    font-size: 3.4375rem;
+    line-height: 0.85;
+    margin-bottom: $space-400;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    font-family: $font-mono;
+    font-size: 0.625rem;
+  }
+
+  &__title {
+    font-family: $font-bold;
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
+  &__copy {
+    font-family: $font-light;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    margin-bottom: $space-500;
+  }
+
+  &__link {
+    font-family: $font-bold;
+    font-size: 1.1875rem;
+  }
+}
