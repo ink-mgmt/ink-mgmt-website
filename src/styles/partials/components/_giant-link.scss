@@ -4,8 +4,19 @@
   font-family: $font-black;
   font-size: 5.0625rem;
   line-height: 0.875;
+  outline: none;
+  transition: letter-spacing 0.2s ease-out;
 
   @include mq($M) {
     font-size: 12.5vw;
+  }
+
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:focus,
+  &:hover {
+    letter-spacing: 0.01em;
   }
 }

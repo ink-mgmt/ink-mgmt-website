@@ -70,9 +70,12 @@
 
 .nav__link {
   color: $black;
+  display: inline-block;
   font-family: $font-mono;
   font-size: 11.25vw;
   line-height: 1.125;
+  outline: none;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -81,9 +84,25 @@
     line-height: 1;
   }
 
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+    background-color: $black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+  }
+
   &:focus,
   &:hover {
-    text-decoration: underline;
+    &:after {
+      transform-origin: bottom left;
+      transform: scaleX(1);
+    }
   }
 }
 

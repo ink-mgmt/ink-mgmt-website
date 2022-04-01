@@ -58,7 +58,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
     >
       <div className="nav__header">
         <div className="nav__header-container">
-          <Link to="/">
+          <Link to="/" tabIndex={navIsOpen ? 0 : -1}>
             <p className="visuallyhidden">{siteTitle}</p>
             <Logo fillColor="#000" />
           </Link>
@@ -79,27 +79,43 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
       <div className="nav__content-wrapper">
         <ul className="nav__list">
           <li className="nav__item">
-            <Link className="nav__link" to="/">
+            <Link className="nav__link" to="/" tabIndex={navIsOpen ? 0 : -1}>
               Home
             </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="/about">
+            <Link
+              className="nav__link"
+              to="/about"
+              tabIndex={navIsOpen ? 0 : -1}
+            >
               A New Way
             </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="/services">
+            <Link
+              className="nav__link"
+              to="/services"
+              tabIndex={navIsOpen ? 0 : -1}
+            >
               How We Do It
             </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="/press">
+            <Link
+              className="nav__link"
+              to="/press"
+              tabIndex={navIsOpen ? 0 : -1}
+            >
               Word of Mouth
             </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="/info">
+            <Link
+              className="nav__link"
+              to="/info"
+              tabIndex={navIsOpen ? 0 : -1}
+            >
               Info
             </Link>
           </li>
@@ -113,12 +129,22 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
             Denver, CO 80202
             <br />
             <br />
-            <a href="tel:+1-720-574-2667">+1 720 574 2667</a>
+            <a href="tel:+1-720-574-2667" tabIndex={navIsOpen ? 0 : -1}>
+              +1 720 574 2667
+            </a>
             <br />
-            <a href="mailto:weare@inkmgmt.com">weare@inkmgmt.com</a>
+            <a href="mailto:weare@inkmgmt.com" tabIndex={navIsOpen ? 0 : -1}>
+              weare@inkmgmt.com
+            </a>
             <br />
             —<br />
-            <a href="/">Instagram</a>, <a href="/">LinkedIn</a>
+            <a href="/" tabIndex={navIsOpen ? 0 : -1}>
+              Instagram
+            </a>
+            ,{' '}
+            <a href="/" tabIndex={navIsOpen ? 0 : -1}>
+              LinkedIn
+            </a>
           </address>
           <p className="footer__copyright">&copy;2022 Ink-Mgmt LLC</p>
         </div>
