@@ -1,0 +1,24 @@
+.info__intro {
+  background-color: $bg-black;
+  color: $white;
+  height: 80vh;
+  padding-bottom: $space-600;
+  padding-left: $space-500;
+  padding-right: $space-500;
+  padding-top: $space-900;
+
+  &-heading {
+    font-family: $font-black;
+    font-size: 2.125rem;
+    line-height: 0.85;
+    margin-bottom: $space-900;
+    text-transform: uppercase;
+  }
+
+  &-copy {
+    font-family: $font-reg;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    max-width: 42ch;
+  }
+}

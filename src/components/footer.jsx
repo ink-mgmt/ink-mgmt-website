@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import blobBlack from '../images/ink-mgmt-blob-black.png';
-// import blobWhite from '../images/ink-mgmt-blob-white.png';
+import blobWhite from '../images/ink-mgmt-blob-white.png';
 
 const Footer = ({ footerBgColor, footerTextColor }) => (
   <footer
@@ -150,7 +150,11 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
       <p className="footer__copyright">&copy;2022 Ink-Mgmt LLC</p>
     </div>
 
-    <img className="footer__blob" src={blobBlack} alt="" />
+    <img
+      className="footer__blob"
+      src={footerTextColor === '#fff' ? blobWhite : blobBlack}
+      alt=""
+    />
   </footer>
 );
 
