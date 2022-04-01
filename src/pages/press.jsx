@@ -56,7 +56,7 @@ const Press = () => (
 
           <div className="press__link-wrapper">
             <a
-              className="press__link"
+              className="press__link link"
               href="/"
               aria-label="Read more from TITLE"
             >
@@ -109,7 +109,7 @@ const Press = () => (
 
           <div className="press__link-wrapper">
             <a
-              className="press__link"
+              className="press__link link"
               href="/"
               aria-label="Read more from TITLE"
             >
@@ -162,7 +162,7 @@ const Press = () => (
 
           <div className="press__link-wrapper">
             <a
-              className="press__link"
+              className="press__link link"
               href="/"
               aria-label="Read more from TITLE"
             >
