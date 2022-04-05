@@ -6,6 +6,20 @@ import SEO from '../components/seo';
 
 import { useWindowSize } from '../hooks/useWindowSize';
 
+import image01 from '../images/about-image-grid-01.jpg';
+import image02 from '../images/about-image-grid-02.jpg';
+import image03 from '../images/about-image-grid-03.jpg';
+import image04 from '../images/about-image-grid-04.jpg';
+import image05 from '../images/about-image-grid-05.jpg';
+import image06 from '../images/about-image-grid-06.jpg';
+import image07 from '../images/about-image-grid-07.jpg';
+import image08 from '../images/about-image-grid-08.jpg';
+import image09 from '../images/about-image-grid-09.jpg';
+import image10 from '../images/about-image-grid-10.jpg';
+import image11 from '../images/about-image-grid-11.jpg';
+import image12 from '../images/about-image-grid-12.jpg';
+import image13 from '../images/about-image-grid-13.jpg';
+
 const About = () => {
   const size = useWindowSize();
   const isMedBreakpoint = size.width >= 767;
@@ -34,7 +48,21 @@ const About = () => {
       </section>
       <section className="about__bios">
         <div className="about__bios-image-grid">
-          <p>IMAGE GRID</p>
+          <div className="image-grid">
+            <img className="image-grid__image" src={image01} alt="" />
+            <img className="image-grid__image" src={image02} alt="" />
+            <img className="image-grid__image" src={image03} alt="" />
+            <img className="image-grid__image" src={image04} alt="" />
+            <img className="image-grid__image" src={image05} alt="" />
+            <img className="image-grid__image" src={image06} alt="" />
+            <img className="image-grid__image" src={image07} alt="" />
+            <img className="image-grid__image" src={image08} alt="" />
+            <img className="image-grid__image" src={image09} alt="" />
+            <img className="image-grid__image" src={image10} alt="" />
+            <img className="image-grid__image" src={image11} alt="" />
+            <img className="image-grid__image" src={image12} alt="" />
+            <img className="image-grid__image" src={image13} alt="" />
+          </div>
         </div>
         <div className="about__bios-copy-wrapper">
           <div className="bio">
