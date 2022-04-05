@@ -5,14 +5,17 @@ import { Link } from 'gatsby';
 import Logo from './patterns/logo';
 import Nav from './nav';
 
-const Header = ({ headerLogoColor, headerTextColor, siteTitle }) => {
+const Header = ({ headerLogoColor, headerTextColor, location, siteTitle }) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
   return (
     <Fragment>
       <header className="header" role="banner">
         <div className="header__container">
-          <Link className="link" to="/">
+          <Link
+            className={`link ${location.pathname === '/' ? 'invisible' : ''}`}
+            to="/"
+          >
             <p className="visuallyhidden">{siteTitle}</p>
             <Logo fillColor={headerLogoColor} />
           </Link>
@@ -39,12 +42,16 @@ const Header = ({ headerLogoColor, headerTextColor, siteTitle }) => {
 Header.propTypes = {
   headerLogoColor: PropTypes.string,
   headerTextColor: PropTypes.string,
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
   siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
   headerLogoColor: '#000',
   headerTextColor: '#000',
+  location: {},
   siteTitle: ``,
 };
 

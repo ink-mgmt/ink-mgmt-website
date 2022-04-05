@@ -13,6 +13,7 @@ const Layout = ({
   headerTextColor,
   footerBgColor,
   footerTextColor,
+  location,
 }) => (
   <StaticQuery
     query={graphql`
@@ -32,6 +33,7 @@ const Layout = ({
         <Header
           headerLogoColor={headerLogoColor}
           headerTextColor={headerTextColor}
+          location={location}
           siteTitle={data.site.siteMetadata.title}
         />
         <main className="main" id="main" role="main">
@@ -52,6 +54,7 @@ Layout.propTypes = {
   headerTextColor: PropTypes.string,
   footerBgColor: PropTypes.string,
   footerTextColor: PropTypes.string,
+  location: PropTypes.shape({}),
 };
 
 Layout.defaultProps = {
@@ -59,6 +62,7 @@ Layout.defaultProps = {
   headerTextColor: '#000',
   footerBgColor: 'transparent',
   footerTextColor: '#000',
+  location: {},
 };
 
 export default Layout;
