@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import IconPlusCircle from './icons/plusCircle';
 import IconMinusCircle from './icons/minusCircle';
 
 const Accordion = ({ titleHeadingLevel: Heading, items }) => {
+  const accordionRef = useRef(null);
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const handleAccordionClick = (index) => {
@@ -17,7 +18,7 @@ const Accordion = ({ titleHeadingLevel: Heading, items }) => {
   return (
     <section className="accordion">
       {items.map((item, index) => (
-        <article className="accordion__item">
+        <article className="accordion__item" key={item.title}>
           <Heading>
             <button
               type="button"
@@ -39,9 +40,12 @@ const Accordion = ({ titleHeadingLevel: Heading, items }) => {
             </button>
           </Heading>
           <div
-            className="accordion__content"
+            className={`accordion__content ${
+              openAccordion === index ? 'is-open' : 'is-closed'
+            }`}
             hidden={openAccordion !== index}
             dangerouslySetInnerHTML={{ __html: item.content }}
+            ref={accordionRef}
           />
         </article>
       ))}

@@ -1,3 +1,41 @@
 // ===========================================================================
 // ==== ANIMATIONS
 // ===========================================================================
+@keyframes fadeInAndGrow {
+  0% {
+    display: none;
+    max-height: 0;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+  }
+  33% {
+    opacity: 0;
+  }
+  75% {
+    max-height: 15rem;
+    opacity: 1;
+  }
+  100% {
+    display: block;
+    max-height: 15rem;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutAndShrink {
+  0% {
+    display: block;
+    max-height: 15rem;
+    opacity: 1;
+  }
+  99% {
+    display: block;
+  }
+  100% {
+    display: none;
+    max-height: 0;
+    opacity: 0;
+  }
+}
