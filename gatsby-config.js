@@ -42,8 +42,8 @@ module.exports = {
         name: `INK-MGMT`,
         short_name: `INK-MGMT`,
         start_url: `/`,
-        background_color: `HEX VALUE`,
-        theme_color: `HEX VALUE`,
+        background_color: `#0000f5`,
+        theme_color: `#0000f5`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const GiantLink = ({ color, linkURL, linkText }) => (
   <a className="giant-link" href={linkURL} style={{ color }}>
-    &rarr; {linkText}
+    <span className="giant-link__arrow">&rarr;</span> {linkText}
   </a>
 );
 

@@ -39,3 +39,15 @@
     opacity: 0;
   }
 }
+
+@keyframes sideToSide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

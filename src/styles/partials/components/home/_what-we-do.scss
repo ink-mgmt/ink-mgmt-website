@@ -55,6 +55,8 @@
       }
 
       .we {
+        display: inline-block;
+
         @include mq($M) {
           transform: translateX(-4rem);
         }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
 import '../styles/main.scss';
+import 'animate.css/animate.min.css';
 
 import Header from './header';
 import Footer from './footer';

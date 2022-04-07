@@ -6,7 +6,10 @@
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+  position: fixed;
   text-align: center;
+  width: 100%;
+  z-index: -1;
 
   &-content {
     display: flex;
@@ -20,4 +23,8 @@
     height: auto;
     width: 100%;
   }
+}
+
+.home__top-content {
+  padding-top: 100vh;
 }
