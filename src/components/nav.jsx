@@ -58,7 +58,12 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
     >
       <div className="nav__header">
         <div className="nav__header-container">
-          <Link className="link" to="/" tabIndex={navIsOpen ? 0 : -1}>
+          <Link
+            className="link"
+            to="/"
+            tabIndex={navIsOpen ? 0 : -1}
+            onClick={toggleNav}
+          >
             <p className="visuallyhidden">{siteTitle}</p>
             <Logo fillColor="#000" />
           </Link>
@@ -79,7 +84,12 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
       <div className="nav__content-wrapper">
         <ul className="nav__list">
           <li className="nav__item">
-            <Link className="nav__link" to="/" tabIndex={navIsOpen ? 0 : -1}>
+            <Link
+              className="nav__link"
+              to="/"
+              tabIndex={navIsOpen ? 0 : -1}
+              onClick={toggleNav}
+            >
               Home
             </Link>
           </li>
@@ -88,6 +98,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
               className="nav__link"
               to="/about"
               tabIndex={navIsOpen ? 0 : -1}
+              onClick={toggleNav}
             >
               A New Way
             </Link>
@@ -97,6 +108,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
               className="nav__link"
               to="/services"
               tabIndex={navIsOpen ? 0 : -1}
+              onClick={toggleNav}
             >
               How We Do It
             </Link>
@@ -106,6 +118,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
               className="nav__link"
               to="/press"
               tabIndex={navIsOpen ? 0 : -1}
+              onClick={toggleNav}
             >
               Word of Mouth
             </Link>
@@ -115,6 +128,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
               className="nav__link"
               to="/info"
               tabIndex={navIsOpen ? 0 : -1}
+              onClick={toggleNav}
             >
               Info
             </Link>

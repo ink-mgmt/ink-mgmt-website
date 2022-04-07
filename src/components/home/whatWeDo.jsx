@@ -11,14 +11,14 @@ const WhatWeDo = () => (
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
           animateOnce
-          delay="300"
+          delay={300}
         >
           <span className="we">We</span>
         </AnimationOnScroll>{' '}
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
           animateOnce
-          delay="600"
+          delay={600}
         >
           <span className="do">Do:</span>
         </AnimationOnScroll>
@@ -38,7 +38,7 @@ const WhatWeDo = () => (
         <AnimationOnScroll
           className="what-we-do__item"
           animateIn="animate__fadeInDown"
-          delay="300"
+          delay={300}
           animateOnce
         >
           <span className="what-we-do__item-number">02</span>
@@ -50,7 +50,7 @@ const WhatWeDo = () => (
         <AnimationOnScroll
           className="what-we-do__item"
           animateIn="animate__fadeInDown"
-          delay="600"
+          delay={600}
           animateOnce
         >
           <span className="what-we-do__item-number">03</span>
