@@ -1,4 +1,4 @@
-.home__video {
+.home__video-hero {
   align-items: center;
   background-color: $blue;
   color: $white;
@@ -12,16 +12,45 @@
   z-index: -1;
 
   &-content {
+    align-items: center;
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: flex-end;
+    padding-left: $space-500;
+    padding-right: $space-500;
     padding-bottom: $space-500;
+    position: relative;
+    width: 100%;
+
+    @include mq($L) {
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
   }
 
-  svg {
+  &-video {
+    max-width: 40rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 2rem);
+
+    @include mq($L) {
+      position: relative;
+      top: auto;
+      transform: none;
+    }
+  }
+
+  .logo {
     height: auto;
     width: 100%;
+    z-index: 1;
+
+    @include mq($L) {
+      width: 33.33333%;
+    }
   }
 }
 

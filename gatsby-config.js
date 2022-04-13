@@ -4,7 +4,6 @@ module.exports = {
     description: `SITE META DESCRIPTION GOES HERE.`,
     siteUrl: `https://mikeriley.dev`,
     socialImage: `ABSOLUTE PATH TO IMAGE IN STATIC FOLDER`,
-    author: `TWITTER HANDLE`,
   },
   plugins: [
     `gatsby-plugin-remove-trailing-slashes`,
