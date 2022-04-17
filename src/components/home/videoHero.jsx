@@ -8,9 +8,11 @@ const VideoHero = () => (
   <section className="home__video-hero">
     <div className="home__video-hero-content">
       <h1 className="visuallyhidden">Ink Mgmt</h1>
-      <video className="home__video-hero-video zoom" autoPlay muted loop>
-        <source src={blobVideo} type="video/webm" />
-      </video>
+      <div className="home__video-hero-video zoom">
+        <video autoPlay muted loop>
+          <source src={blobVideo} type="video/webm" />
+        </video>
+      </div>
       <Logo />
     </div>
   </section>
