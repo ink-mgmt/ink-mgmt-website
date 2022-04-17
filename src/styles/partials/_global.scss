@@ -7,7 +7,7 @@ html {
 body {
   background: $bg-clr;
   font-family: $font-med;
-  height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
   width: 100%;
 }
 
