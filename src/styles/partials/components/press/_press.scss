@@ -39,6 +39,11 @@
       padding-right: $space-800;
     }
 
+    @include mq($L) {
+      height: calc(100vh + 40px);
+      height: calc(var(--app-height) + 40px);
+    }
+
     @include mq($XL) {
       padding-left: $space-900;
       padding-right: $space-900;

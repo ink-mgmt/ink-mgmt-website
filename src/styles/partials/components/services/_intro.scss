@@ -11,6 +11,7 @@
 
   @include mq($L) {
     height: calc(100vh + 40px);
+    height: calc(var(--app-height) + 40px);
   }
 
   &-content {
