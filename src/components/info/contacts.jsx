@@ -12,7 +12,7 @@ const InfoContacts = () => (
         <a className="contacts__item-link link" href="tel:+1-222-333-4444">
           +1 222 333 4444
         </a>
-        <a className="contacts__big-link link" href="mailto:jason@inkmgmt.com">
+        <a className="contacts__big-link" href="mailto:jason@inkmgmt.com">
           &rarr; General
         </a>
       </li>
@@ -25,7 +25,7 @@ const InfoContacts = () => (
         <a className="contacts__item-link link" href="tel:+1-222-333-4444">
           +1 222 333 4444
         </a>
-        <a className="contacts__big-link link" href="mailto:jane@inkmgmt.com">
+        <a className="contacts__big-link" href="mailto:jane@inkmgmt.com">
           &rarr; Staffing
         </a>
       </li>
@@ -38,7 +38,7 @@ const InfoContacts = () => (
         <a className="contacts__item-link link" href="tel:+1-222-333-4444">
           +1 222 333 4444
         </a>
-        <a className="contacts__big-link link" href="mailto:jason@inkmgmt.com">
+        <a className="contacts__big-link" href="mailto:jason@inkmgmt.com">
           &rarr; Talent
         </a>
       </li>
@@ -51,7 +51,7 @@ const InfoContacts = () => (
         <a className="contacts__item-link link" href="tel:+1-222-333-4444">
           +1 222 333 4444
         </a>
-        <a className="contacts__big-link link" href="mailto:jason@inkmgmt.com">
+        <a className="contacts__big-link" href="mailto:jason@inkmgmt.com">
           &rarr; Career
         </a>
       </li>

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import { useWindowSize } from '../../hooks/useWindowSize';
 
@@ -9,7 +10,14 @@ const AboutPrinciples = () => {
 
   return (
     <section className="about__principles">
-      <h2 className="principles__heading">We have principles</h2>
+      <h2 className="principles__heading">
+        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
+          <span>We have</span>
+        </AnimationOnScroll>{' '}
+        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
+          <span>principles</span>
+        </AnimationOnScroll>
+      </h2>
       <div className="principles__list">
         <div className="principles__item" tabIndex={isMedBreakpoint ? 0 : null}>
           <span className="principles__item-number">01</span>

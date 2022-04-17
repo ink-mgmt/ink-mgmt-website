@@ -1,3 +1,8 @@
+.info__content {
+  background-color: $bg-black;
+  padding-bottom: $space-600;
+}
+
 .info__intro {
   background-color: $bg-black;
   color: $white;
@@ -10,7 +15,7 @@
   @include mq($M) {
     display: flex;
     flex-direction: row-reverse;
-    height: 60vh;
+    height: calc(60vh + 40px);
     justify-content: flex-end;
   }
 

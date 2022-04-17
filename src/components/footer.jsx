@@ -152,7 +152,10 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
         </div>
       </div>
 
-      <p className="footer__copyright">&copy;2022 Ink-Mgmt LLC</p>
+      <p className="footer__copyright">
+        <span className="footer__copyright-symbol">&copy;</span> 2022 Ink-Mgmt
+        LLC
+      </p>
     </div>
 
     <img

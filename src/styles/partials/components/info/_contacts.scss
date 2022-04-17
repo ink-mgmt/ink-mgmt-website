@@ -3,6 +3,12 @@
   color: $white;
   padding-left: $space-500;
   padding-right: $space-500;
+
+  @include mq($M) {
+    align-items: flex-end;
+    display: flex;
+    height: 40vh;
+  }
 }
 
 .contacts {
@@ -32,6 +38,10 @@
     line-height: 1.125;
     padding-bottom: $space-800;
 
+    @include mq($M) {
+      padding-bottom: 0;
+    }
+
     &-heading {
       font-family: $font-reg;
       font-size: 1.125rem;
@@ -56,6 +66,8 @@
     font-family: $font-black;
     font-size: 3.125rem;
     margin-top: $space-700;
+    outline: none;
+    transition: letter-spacing 0.33s ease-out;
 
     @include mq($L) {
       font-size: 2.5rem;
@@ -67,6 +79,15 @@
 
     @include mq($XXL) {
       font-size: 3.125rem;
+    }
+
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:focus,
+    &:hover {
+      letter-spacing: 0.025em;
     }
   }
 }

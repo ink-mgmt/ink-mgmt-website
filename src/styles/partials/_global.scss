@@ -1,9 +1,13 @@
 // ===========================================================================
 // ==== GLOBAL ELEMENTS
 // ===========================================================================
+html {
+  height: -webkit-fill-available;
+}
 body {
   background: $bg-clr;
   font-family: $font-med;
+  height: -webkit-fill-available;
   width: 100%;
 }
 
@@ -40,6 +44,10 @@ footer {
     padding-bottom: 2px;
     text-decoration: none;
   }
+}
+
+a {
+  color: $link-clr;
 }
 
 h1,
@@ -102,10 +110,10 @@ figure {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: $color-grey-4;
+    background-color: currentColor;
     transform: scaleX(0);
     transform-origin: bottom right;
-    transition: transform 0.3s;
+    transition: transform 1.2s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   &:focus,

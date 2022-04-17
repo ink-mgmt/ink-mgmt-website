@@ -12,7 +12,7 @@ const Press = () => (
   >
     <SEO title="Press" />
     <div className="press__wrapper">
-      <h1 className="press__heading">Word of Mouth</h1>
+      <h1 className="press__heading visuallyhidden">Word of Mouth</h1>
       <article className="press__article">
         <h2 className="press__publication">The New Yorker</h2>
         <p className="press__date">11-14-21</p>

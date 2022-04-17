@@ -8,23 +8,31 @@
   padding-right: $space-500;
   padding-top: $space-600;
   position: relative;
+
+  @include mq($M) {
+    justify-content: center;
+  }
 }
 
 .formula {
-  &__heading-wrapper {
-    @include mq($M) {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-    }
-  }
-
   &__heading {
     font-family: $font-mono;
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.5739rem + 0.7512vw, 1.25rem);
     letter-spacing: 0.2em;
     margin-bottom: $space-600;
     text-transform: uppercase;
+
+    @include mq($M) {
+      margin-left: 10%;
+    }
+
+    @include mq($L) {
+      margin-left: 15%;
+    }
+
+    @include mq($XL) {
+      margin-left: 20%;
+    }
   }
 
   &__sub-heading {
@@ -32,7 +40,29 @@
     font-size: 3.25rem;
     font-size: clamp(3.25rem, 12.5vw, 9rem);
     line-height: 0.85;
+    max-width: none;
     text-transform: uppercase;
+
+    &--top {
+      @include mq($M) {
+        font-size: 16.5vw;
+        position: absolute;
+        top: $space-500;
+
+        span {
+          display: inline-block;
+          transform: translateY(-0.055em);
+        }
+      }
+    }
+
+    &--bottom {
+      @include mq($M) {
+        bottom: 0;
+        font-size: 15vw;
+        position: absolute;
+      }
+    }
   }
 
   &__copy {
@@ -48,8 +78,13 @@
     @include mq($M) {
       max-width: 52ch;
       position: absolute;
-      right: $space-500;
-      top: 60%;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @include mq($L) {
+      right: 15%;
     }
   }
 }

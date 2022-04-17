@@ -11,7 +11,7 @@ import GetInTouch from '../components/home/getInTouch';
 
 const IndexPage = ({ location }) => (
   <Layout
-    headerLogoColor="transparent"
+    headerLogoColor="#000"
     footerBgColor="#b8b8b8"
     footerTextColor="#000"
     location={location}

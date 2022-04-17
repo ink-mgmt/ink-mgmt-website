@@ -20,6 +20,7 @@
       color: $white;
       padding-bottom: $space-700;
       padding-top: $space-700;
+      position: relative;
     }
 
     &__button {
@@ -47,20 +48,18 @@
       @include mq($L) {
         margin-right: $space-1500;
       }
-
-      @include mq($XL) {
-        margin-right: 25rem;
-      }
     }
 
     &__title {
       font-family: $font-bold;
       font-size: 1.875rem;
+      font-size: clamp(1.875rem, 1.3248rem + 2.3474vw, 3.4375rem);
       text-transform: uppercase;
     }
 
     &__content {
-      font-size: 0.625rem;
+      font-size: clamp(0.625rem, 0.4375rem + 0.8333vw, 0.875rem);
+      line-height: 1.2;
       margin-left: 5rem;
       margin-right: $space-600;
       max-width: 60ch;
@@ -77,10 +76,19 @@
 
       @include mq($L) {
         margin-left: 16.25rem;
+        max-width: none;
+        padding-top: 0;
+        padding-left: 25%;
+        transform: translateY(-2rem);
+
+        p {
+          max-width: 30ch;
+        }
       }
 
       @include mq($XL) {
         margin-left: 26.25rem;
+        padding-left: 31%;
       }
     }
   }

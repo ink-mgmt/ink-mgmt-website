@@ -92,6 +92,12 @@
 
   &__copyright {
     text-transform: uppercase;
+
+    &-symbol {
+      display: inline-block;
+      font-size: 1.7em;
+      transform: translateY(7px);
+    }
   }
 
   &__blob {

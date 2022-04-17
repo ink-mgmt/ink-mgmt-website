@@ -70,3 +70,23 @@
   animation-fill-mode: forwards;
   opacity: 0;
 }
+
+@keyframes zoom {
+  0% {
+    opacity: 1;
+    transform: scale(6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoom {
+  animation-delay: 1s;
+  animation-name: zoom;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  transform: scale(6);
+}

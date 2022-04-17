@@ -13,9 +13,11 @@ const Info = () => (
     footerBgColor="#000"
     footerTextColor="#fff"
   >
-    <SEO title="Press" />
-    <InfoIntro />
-    <InfoContacts />
+    <SEO title="Info" />
+    <div className="info__content">
+      <InfoIntro />
+      <InfoContacts />
+    </div>
   </Layout>
 );
 

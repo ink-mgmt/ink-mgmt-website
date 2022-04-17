@@ -12,12 +12,9 @@ const Header = ({ headerLogoColor, headerTextColor, location, siteTitle }) => {
     <Fragment>
       <header className="header" role="banner">
         <div className="header__container">
-          <Link
-            className={`link ${location.pathname === '/' ? 'invisible' : ''}`}
-            to="/"
-          >
+          <Link className="link" to="/">
             <p className="visuallyhidden">{siteTitle}</p>
-            <Logo fillColor={headerLogoColor} />
+            <Logo fillColor={headerLogoColor} location={location} />
           </Link>
 
           <button

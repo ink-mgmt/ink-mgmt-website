@@ -10,11 +10,7 @@
   position: relative;
 
   @include mq($L) {
-    height: 90vh;
-  }
-
-  @include mq($XXL) {
-    height: 95vh;
+    height: calc(100vh + 40px);
   }
 
   &-content {
@@ -23,7 +19,6 @@
 
     @include mq($L) {
       align-items: center;
-      align-self: flex-start;
       flex-direction: row;
     }
   }
@@ -36,6 +31,10 @@
     line-height: 0.85;
     margin-bottom: $space-850;
     text-transform: uppercase;
+
+    @include mq($L) {
+      margin-bottom: 0;
+    }
   }
 
   &-copy {
@@ -50,15 +49,19 @@
       max-width: 44ch;
       position: absolute;
       left: 55%;
+      transform: translateY(57%);
     }
 
     @include mq($XL) {
+      font-size: 0.75rem;
       max-width: 48ch;
-      padding-top: $space-600;
+      transform: translateY(70%);
     }
 
     @include mq($XXL) {
-      left: 57%;
+      font-size: 0.875rem;
+      left: 52%;
+      transform: translateY(74%);
     }
   }
 }
