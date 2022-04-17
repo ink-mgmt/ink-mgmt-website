@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
@@ -15,39 +15,51 @@ const Layout = ({
   footerBgColor,
   footerTextColor,
   location,
-}) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+}) => {
+  useLayoutEffect(() => {
+    const appHeight = () => {
+      const doc = document.documentElement;
+      doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+    };
+
+    window.addEventListener('resize', appHeight);
+    appHeight();
+  }, []);
+
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+            }
           }
         }
-      }
-    `}
-    render={(data) => (
-      <Fragment>
-        <a className="skip-link" href="#main">
-          skip to main content
-        </a>
-        <Header
-          headerLogoColor={headerLogoColor}
-          headerTextColor={headerTextColor}
-          location={location}
-          siteTitle={data.site.siteMetadata.title}
-        />
-        <main className="main" id="main" role="main">
-          {children}
-        </main>
-        <Footer
-          footerBgColor={footerBgColor}
-          footerTextColor={footerTextColor}
-        />
-      </Fragment>
-    )}
-  />
-);
+      `}
+      render={(data) => (
+        <Fragment>
+          <a className="skip-link" href="#main">
+            skip to main content
+          </a>
+          <Header
+            headerLogoColor={headerLogoColor}
+            headerTextColor={headerTextColor}
+            location={location}
+            siteTitle={data.site.siteMetadata.title}
+          />
+          <main className="main" id="main" role="main">
+            {children}
+          </main>
+          <Footer
+            footerBgColor={footerBgColor}
+            footerTextColor={footerTextColor}
+          />
+        </Fragment>
+      )}
+    />
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

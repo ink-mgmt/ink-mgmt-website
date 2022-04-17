@@ -1,13 +1,18 @@
 // ===========================================================================
 // ==== GLOBAL ELEMENTS
 // ===========================================================================
-html {
-  height: -webkit-fill-available;
+:root {
+  --app-height: 100%;
 }
+
+html {
+  height: var(--app-height);
+}
+
 body {
   background: $bg-clr;
   font-family: $font-med;
-  min-height: -webkit-fill-available;
+  height: var(--app-height);
   width: 100%;
 }
 
