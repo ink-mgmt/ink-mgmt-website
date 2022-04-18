@@ -5,10 +5,15 @@ const WhatWeDo = () => (
   <section className="home__what-we-do">
     <div className="what-we-do__container">
       <h2 className="what-we-do__heading">
-        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
+        <AnimationOnScroll
+          className="what-we-do__heading-word"
+          animateIn="animate__fadeInUp"
+          animateOnce
+        >
           <span className="what">What</span>
         </AnimationOnScroll>{' '}
         <AnimationOnScroll
+          className="what-we-do__heading-word"
           animateIn="animate__fadeInUp"
           animateOnce
           delay={300}
@@ -16,6 +21,7 @@ const WhatWeDo = () => (
           <span className="we">We</span>
         </AnimationOnScroll>{' '}
         <AnimationOnScroll
+          className="what-we-do__heading-word"
           animateIn="animate__fadeInUp"
           animateOnce
           delay={600}

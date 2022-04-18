@@ -54,7 +54,7 @@ const AboutBios = () => (
             as multiple awards at Cannes. Jason is an unconventional thinker and
             throughout his journey has developed a knack for building
             relationships between brands and the consumer. He enjoys the
-            occasional mountain view, but remains a city boy at heart.
+            occasional mountain view, but remains a city boy at&nbsp;heart.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const AboutBios = () => (
             major campaigns for iconic brands like Acura, Infiniti, American
             Airlines, Hersey&rsquo;s, Fruit of the Loom, and Domino&rsquo;s. His
             passions are photography, design, fashion and anything that involves
-            sand, waves, and fruity drinks.
+            sand, waves, and fruity&nbsp;drinks.
           </p>
         </div>
 
@@ -101,7 +101,7 @@ const AboutBios = () => (
             and unapologetic humor that had benefited brands such as REFORM
             Alliance, Kit Kat, Hotels.com, 1800 Tequila, Hennessy,
             Domino&rsquo;s, and Wendy&rsquo;s. He&rsquo;s also an avid
-            connoisseur of apple-juice.
+            connoisseur of&nbsp;apple-juice.
           </p>
         </div>
 

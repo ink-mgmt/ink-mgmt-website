@@ -16,7 +16,7 @@ const accordionItems = [
   {
     title: 'Consult',
     content:
-      '<p>FINDING PLACES WHERE AUTHENTICITY CAN FLOURISH<br /><br /><b>We provide a curated approach to sourcing the best talent of all levels for organizations looking for fulltime and freelance staffing.</b><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit quam enim, fringilla risus, a. Id convallis eget mattis ac elit bibendum commodo. Eu in hac nisi, libero aliquet ullamcorper vitae.',
+      '<p>FINDING PLACES WHERE AUTHENTICITY CAN&nbsp;FLOURISH<br /><br /><b>We provide a curated approach to sourcing the best talent of all levels for organizations looking for fulltime and freelance staffing.</b><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit quam enim, fringilla risus, a. Id convallis eget mattis ac elit bibendum commodo. Eu in hac nisi, libero aliquet ullamcorper vitae.',
   },
 ];
 

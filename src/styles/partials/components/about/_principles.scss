@@ -2,7 +2,7 @@
   background-color: $bg-black;
   color: $white;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-between;
   padding-bottom: $space-300;
   padding-left: $space-500;
@@ -20,6 +20,7 @@
     font-size: 3rem;
     font-size: clamp(3rem, 12.5vw, 12rem);
     line-height: 0.85;
+    margin-bottom: $space-800;
     text-transform: uppercase;
   }
 
