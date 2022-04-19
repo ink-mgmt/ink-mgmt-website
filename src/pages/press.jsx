@@ -10,7 +10,7 @@ const Press = () => (
     footerBgColor="#fff"
     footerTextColor="#000"
   >
-    <SEO title="Press" />
+    <SEO title="Press" meta={[{ name: 'theme-color', content: '#ffffff' }]} />
     <div className="press__wrapper">
       <h1 className="press__heading visuallyhidden">Word of Mouth</h1>
       <article className="press__article">

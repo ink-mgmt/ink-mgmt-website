@@ -11,7 +11,7 @@ import AboutPrinciples from '../components/about/principles';
 
 const About = () => (
   <Layout headerLogoColor="#000" footerBgColor="#000" footerTextColor="#fff">
-    <SEO title="About" />
+    <SEO title="About" meta={[{ name: 'theme-color', content: '#ffffff' }]} />
     <AboutIntro />
     <AboutBios />
     <AboutFormula />

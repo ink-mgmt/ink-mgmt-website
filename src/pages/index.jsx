@@ -16,7 +16,7 @@ const IndexPage = ({ location }) => (
     footerTextColor="#000"
     location={location}
   >
-    <SEO title="Home" />
+    <SEO title="Home" meta={[{ name: 'theme-color', content: '#1601f8' }]} />
     <VideoHero />
     <div className="home__top-content">
       <IntroText />

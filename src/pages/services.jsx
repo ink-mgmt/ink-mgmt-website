@@ -14,7 +14,10 @@ const Services = () => (
     footerBgColor="#0000f5"
     footerTextColor="#fff"
   >
-    <SEO title="Services" />
+    <SEO
+      title="Services"
+      meta={[{ name: 'theme-color', content: '#1601f8' }]}
+    />
     <ServicesIntro />
     <ServicesWhatWeDo />
     <ServicesSubmitWork />
