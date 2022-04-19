@@ -5,11 +5,12 @@ const ServicesIntro = () => (
   <section className="services__intro">
     <div className="services__intro-content">
       <h1 className="services__intro-heading">
-        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
+        <AnimationOnScroll animateIn="animate__fadeInUp" offset={0} animateOnce>
           <span>A better</span>
         </AnimationOnScroll>
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
+          offset={0}
           delay={300}
           animateOnce
         >
@@ -17,6 +18,7 @@ const ServicesIntro = () => (
         </AnimationOnScroll>
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
+          offset={0}
           delay={600}
           animateOnce
         >
@@ -24,6 +26,7 @@ const ServicesIntro = () => (
         </AnimationOnScroll>
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
+          offset={0}
           delay={900}
           animateOnce
         >

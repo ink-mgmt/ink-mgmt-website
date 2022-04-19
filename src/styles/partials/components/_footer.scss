@@ -37,7 +37,7 @@
   &__nav {
     &-list {
       display: none;
-      margin-right: $space-600;
+      margin-right: $space-800;
 
       @include mq($M) {
         display: block;
@@ -54,12 +54,16 @@
   }
 
   &__contact-info {
-    @include mq($M) {
-      display: flex;
-    }
+    display: flex;
 
     > * {
+      flex-basis: 50%;
+
       @include mq($M) {
+        margin-right: $space-800;
+      }
+
+      @include mq($L) {
         margin-right: $space-1000;
       }
     }
@@ -70,9 +74,6 @@
   }
 
   &__contacts {
-    margin-bottom: $space-700;
-    margin-top: $space-600;
-
     @include mq($M) {
       margin-top: 0;
     }
