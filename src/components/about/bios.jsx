@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import image01 from '../../images/about-image-grid-01.jpg';
 import image02 from '../../images/about-image-grid-02.jpg';
@@ -19,19 +20,123 @@ const AboutBios = () => (
     <div className="about__bios-content">
       <div className="about__bios-image-grid">
         <div className="image-grid">
-          <img className="image-grid__image" src={image01} alt="" />
-          <img className="image-grid__image" src={image02} alt="" />
-          <img className="image-grid__image" src={image03} alt="" />
-          <img className="image-grid__image" src={image04} alt="" />
-          <img className="image-grid__image" src={image05} alt="" />
-          <img className="image-grid__image" src={image06} alt="" />
-          <img className="image-grid__image" src={image07} alt="" />
-          <img className="image-grid__image" src={image08} alt="" />
-          <img className="image-grid__image" src={image09} alt="" />
-          <img className="image-grid__image" src={image10} alt="" />
-          <img className="image-grid__image" src={image11} alt="" />
-          <img className="image-grid__image" src={image12} alt="" />
-          <img className="image-grid__image" src={image13} alt="" />
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={300}
+            animateOnce
+          >
+            <img src={image01} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={100}
+            animateOnce
+          >
+            <img src={image02} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={700}
+            animateOnce
+          >
+            <img src={image03} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={1200}
+            animateOnce
+          >
+            <img src={image04} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={600}
+            animateOnce
+          >
+            <img src={image05} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={500}
+            animateOnce
+          >
+            <img src={image06} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={200}
+            animateOnce
+          >
+            <img src={image07} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={800}
+            animateOnce
+          >
+            <img src={image08} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={1000}
+            animateOnce
+          >
+            <img src={image09} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={400}
+            animateOnce
+          >
+            <img src={image10} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={1000}
+            animateOnce
+          >
+            <img src={image11} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={900}
+            animateOnce
+          >
+            <img src={image12} alt="" />
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            className="image-grid__image"
+            animateIn="animate__fadeInUp"
+            duration={2}
+            delay={1300}
+            animateOnce
+          >
+            <img src={image13} alt="" />
+          </AnimationOnScroll>
         </div>
       </div>
       <div className="about__bios-copy-wrapper">
