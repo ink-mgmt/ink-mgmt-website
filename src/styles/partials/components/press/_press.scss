@@ -1,7 +1,7 @@
 .press {
   &__wrapper {
-    padding-bottom: $space-600;
-    padding-top: $space-800;
+    // padding-bottom: $space-600;
+    margin-top: 40px;
   }
 
   &__heading {
@@ -40,8 +40,11 @@
     }
 
     @include mq($L) {
-      height: calc(100vh + 40px);
-      height: calc(var(--app-height) + 40px);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      height: var(--app-height);
+      justify-content: center;
     }
 
     @include mq($XL) {
@@ -91,6 +94,10 @@
     font-size: 0.75rem;
     line-height: 1.2;
     margin-bottom: $space-500;
+
+    @include mq($M) {
+      margin-bottom: 0;
+    }
   }
 
   &__link-wrapper {
