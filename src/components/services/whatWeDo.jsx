@@ -5,18 +5,21 @@ import Accordion from '../accordion';
 const accordionItems = [
   {
     title: 'Source',
+    subtitle: 'Talent finds talent',
     content:
-      '<p><b>TALENT FINDS TALENT</b><br /><br /><b>We provide a curated approach to sourcing the best talent of all levels for organizations looking for fulltime and freelance staffing.</b><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit quam enim, fringilla risus, a. Id convallis eget mattis ac elit bibendum commodo. Eu in hac nisi, libero aliquet ullamcorper vitae.<br /><br />[insert contact info]</p>',
+      '<p><b>We provide a curated approach to sourcing the best talent of all levels for organizations looking for fulltime and freelance staffing.</b><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit quam enim, fringilla risus, a. Id convallis eget mattis ac elit bibendum commodo. Eu in hac nisi, libero aliquet ullamcorper vitae.<br /><br />[insert contact info]</p>',
   },
   {
     title: 'Create',
+    subtitle: 'Providing new perspectives',
     content:
-      '<p>PROVIDING NEW PERSPECTIVES<br /><br /><b>We provide a curated approach to sourcing the best talent of all levels for organizations looking for fulltime and freelance staffing.</b><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit quam enim, fringilla risus, a. Id convallis eget mattis ac elit bibendum commodo. Eu in hac nisi, libero aliquet ullamcorper vitae.',
+      '<p><b>We provide a curated approach to sourcing the best talent of all levels for organizations looking for fulltime and freelance staffing.</b><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit quam enim, fringilla risus, a. Id convallis eget mattis ac elit bibendum commodo. Eu in hac nisi, libero aliquet ullamcorper vitae.',
   },
   {
     title: 'Consult',
+    subtitle: 'Finding places where authenticity can&nbsp;flourish',
     content:
-      '<p>FINDING PLACES WHERE AUTHENTICITY CAN&nbsp;FLOURISH<br /><br /><b>We provide a curated approach to sourcing the best talent of all levels for organizations looking for fulltime and freelance staffing.</b><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit quam enim, fringilla risus, a. Id convallis eget mattis ac elit bibendum commodo. Eu in hac nisi, libero aliquet ullamcorper vitae.',
+      '<p><b>We provide a curated approach to sourcing the best talent of all levels for organizations looking for fulltime and freelance staffing.</b><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit quam enim, fringilla risus, a. Id convallis eget mattis ac elit bibendum commodo. Eu in hac nisi, libero aliquet ullamcorper vitae.',
   },
 ];
 

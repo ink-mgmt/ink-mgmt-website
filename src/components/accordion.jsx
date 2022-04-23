@@ -7,14 +7,25 @@ import IconMinusCircle from './icons/minusCircle';
 const Accordion = ({ titleHeadingLevel: Heading, items }) => {
   const accordionRef = useRef(null);
   const [openAccordion, setOpenAccordion] = useState(null);
+  const [accordionStateClass, setAccordionStateClass] = useState('is-closed');
+
+  // change openAccordion from index to true/false
+  // this should help with the even transitions
 
   const handleAccordionClick = (index) => {
     if (openAccordion !== index) {
       setOpenAccordion(index);
+      setAccordionStateClass('is-open');
     } else {
-      setOpenAccordion(null);
+      setAccordionStateClass('is-closed');
+      setTimeout(() => {
+        setOpenAccordion(null);
+      }, 1800);
     }
   };
+
+  console.log('openAccordion:', openAccordion);
+  console.log('accordionStateClass:', accordionStateClass);
   return (
     <section className="accordion">
       {items.map((item, index) => (
@@ -39,14 +50,20 @@ const Accordion = ({ titleHeadingLevel: Heading, items }) => {
               </span>
             </button>
           </Heading>
-          <div
-            className={`accordion__content ${
-              openAccordion === index ? 'is-open' : 'is-closed'
-            }`}
-            hidden={openAccordion !== index}
-            dangerouslySetInnerHTML={{ __html: item.content }}
-            ref={accordionRef}
-          />
+          <div className="accordion__content-wrapper">
+            <p
+              className="accordion__subtitle"
+              dangerouslySetInnerHTML={{ __html: item.subtitle }}
+            />
+            <div
+              className={`accordion__content ${
+                openAccordion === index ? accordionStateClass : ''
+              }`}
+              hidden={openAccordion !== index}
+              dangerouslySetInnerHTML={{ __html: item.content }}
+              ref={accordionRef}
+            />
+          </div>
         </article>
       ))}
     </section>

@@ -30,8 +30,11 @@
     max-height: 15rem;
     opacity: 1;
   }
-  99% {
-    display: block;
+  33% {
+    max-height: 15rem;
+  }
+  50% {
+    opacity: 0;
   }
   100% {
     display: none;
