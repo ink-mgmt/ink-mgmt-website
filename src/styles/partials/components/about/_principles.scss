@@ -10,6 +10,7 @@
   padding-top: $space-600;
 
   @include mq($M) {
+    flex-direction: column-reverse;
     height: 100vh;
   }
 }
