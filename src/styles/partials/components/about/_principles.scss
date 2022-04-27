@@ -7,7 +7,7 @@
   padding-bottom: $space-300;
   padding-left: $space-500;
   padding-right: $space-500;
-  padding-top: $space-600;
+  padding-top: $space-800;
 
   @include mq($M) {
     flex-direction: column-reverse;
