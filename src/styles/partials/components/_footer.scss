@@ -26,6 +26,7 @@
   &__content-wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: $space-800;
 
     @include mq($M) {
       flex-direction: row;

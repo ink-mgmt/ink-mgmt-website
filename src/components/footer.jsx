@@ -15,6 +15,15 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
         <ul className="footer__nav-list">
           <li className="footer__nav-item">
             <a
+              href="/"
+              className="footer__nav-link link"
+              style={{ color: footerTextColor }}
+            >
+              Home
+            </a>
+          </li>
+          <li className="footer__nav-item">
+            <a
               href="/about"
               className="footer__nav-link link"
               style={{ color: footerTextColor }}
