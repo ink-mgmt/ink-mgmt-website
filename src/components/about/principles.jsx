@@ -32,8 +32,8 @@ const AboutPrinciples = () => {
             style. We don&rsquo;t treat our candidates like some recruiters
             have. Our members will be joining a family and will be treated as
             such. With a care and concern that should stretch throughout their
-            careers in whatever field they choose. And whatever plans they have
-            beyond.
+            careers in whatever field they choose. And whatever plans they
+            have&nbsp;beyond.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ const AboutPrinciples = () => {
             negotiable. We know that in creative fields many people take
             liberties with your ideas, your voice, and anything else to get
             ahead. We push to foster environments that provide creative growth
-            without trampling on those around it.
+            without trampling on those around&nbsp;it.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ const AboutPrinciples = () => {
             source to the chances we take in creating opportunities for them.
             What&rsquo;s the point of being founded by creatives if you
             don&rsquo;t take creative liberties with the traditional structure
-            of staffing?
+            of&nbsp;staffing?
           </p>
         </div>
 
@@ -80,7 +80,7 @@ const AboutPrinciples = () => {
             ways to source talent and to get talent the best opportunities
             possible. And we&rsquo;ll be open to whatever will give them the
             best shot at success. You can either provoke change or succumb to
-            it. We prefer the former.
+            it. We prefer the&nbsp;former.
           </p>
         </div>
 
@@ -95,8 +95,8 @@ const AboutPrinciples = () => {
             most creative people. Not just from ad school. Not just poaching
             from another agency. Because there will always be better ways to
             source talent and to get talent the best opportunities possible. And
-            we&rsquo;ll be open to whatever will give them the best shot at
-            success.
+            we&rsquo;ll be open to whatever will give them the best shot
+            at&nbsp;success.
           </p>
         </div>
       </div>
