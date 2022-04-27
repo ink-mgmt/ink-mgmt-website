@@ -86,10 +86,10 @@
 }
 
 .zoom {
-  animation-delay: 1s;
+  animation-delay: 0.25s;
   animation-name: zoom;
-  animation-duration: 3.5s;
-  animation-timing-function: ease-out;
+  animation-duration: 2.75s;
+  animation-timing-function: cubic-bezier(1, 0.18, 0.98, 0.79);
   animation-fill-mode: forwards;
   transform: scale(6);
 }
