@@ -21,7 +21,7 @@
       animation: fadeInAndGrow 1.5s ease-out forwards;
     }
 
-    &.is-closed {
+    &.is-closing {
       animation: fadeOutAndShrink 1.5s ease-out forwards;
     }
   }

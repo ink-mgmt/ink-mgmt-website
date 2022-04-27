@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import IconPlusCircle from './icons/plusCircle';
@@ -6,26 +6,33 @@ import IconMinusCircle from './icons/minusCircle';
 
 const Accordion = ({ titleHeadingLevel: Heading, items }) => {
   const accordionRef = useRef(null);
-  const [openAccordion, setOpenAccordion] = useState(null);
-  const [accordionStateClass, setAccordionStateClass] = useState('is-closed');
-
-  // change openAccordion from index to true/false
-  // this should help with the even transitions
+  const [openAccordions, setOpenAccordions] = useState([]);
+  const [isClosingClass, setIsClosingClass] = useState('');
 
   const handleAccordionClick = (index) => {
-    if (openAccordion !== index) {
-      setOpenAccordion(index);
-      setAccordionStateClass('is-open');
-    } else {
-      setAccordionStateClass('is-closed');
+    if (openAccordions[0] !== index) {
+      setIsClosingClass('');
+      setOpenAccordions([index, ...openAccordions]);
+    }
+
+    if (openAccordions[0] === index) {
+      setIsClosingClass('is-closing');
+
       setTimeout(() => {
-        setOpenAccordion(null);
+        setOpenAccordions([]);
+        setIsClosingClass('');
       }, 1800);
     }
   };
 
-  console.log('openAccordion:', openAccordion);
-  console.log('accordionStateClass:', accordionStateClass);
+  useEffect(() => {
+    if (openAccordions.length > 1 && openAccordions[0] !== openAccordions[1]) {
+      setTimeout(() => {
+        setOpenAccordions(openAccordions.slice(0, -1));
+      }, 1800);
+    }
+  }, [openAccordions]);
+
   return (
     <section className="accordion">
       {items.map((item, index) => (
@@ -35,14 +42,14 @@ const Accordion = ({ titleHeadingLevel: Heading, items }) => {
               type="button"
               className="accordion__button"
               onClick={() => handleAccordionClick(index)}
-              aria-expanded={openAccordion === index ? 'true' : 'false'}
+              aria-expanded={openAccordions[0] === index ? 'true' : 'false'}
             >
               <div>
                 <span className="accordion__number">{`0${index + 1}`}</span>
                 <span className="accordion__title">{item.title}</span>
               </div>
               <span className="accordion__icon">
-                {openAccordion === index ? (
+                {openAccordions[0] === index ? (
                   <IconMinusCircle />
                 ) : (
                   <IconPlusCircle />
@@ -57,9 +64,16 @@ const Accordion = ({ titleHeadingLevel: Heading, items }) => {
             />
             <div
               className={`accordion__content ${
-                openAccordion === index ? accordionStateClass : ''
-              }`}
-              hidden={openAccordion !== index}
+                openAccordions[0] === index &&
+                openAccordions[0] !== openAccordions[1]
+                  ? 'is-open'
+                  : ''
+              } ${
+                openAccordions[1] === index ? 'is-closing' : ''
+              } ${isClosingClass}`}
+              hidden={
+                openAccordions[0] !== index && openAccordions[1] !== index
+              }
               dangerouslySetInnerHTML={{ __html: item.content }}
               ref={accordionRef}
             />
