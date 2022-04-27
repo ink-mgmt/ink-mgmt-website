@@ -12,6 +12,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateY(20%);
+
+    @include mq($M) {
+      transform: none;
+    }
   }
 
   &-heading {
@@ -31,7 +36,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    transform: translateY(100%);
+    transform: translateY(90%);
 
     @include mq($M) {
       transform: none;
