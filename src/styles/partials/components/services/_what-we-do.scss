@@ -10,6 +10,7 @@
     font-family: $font-bold;
     font-size: 1.25rem;
     justify-content: space-between;
+    margin-bottom: 0;
     padding-bottom: $space-400;
     text-transform: uppercase;
   }
@@ -18,22 +19,22 @@
     &__item {
       border-bottom: 1px solid $white;
       color: $white;
-      padding-bottom: $space-600;
-      padding-top: $space-700;
       position: relative;
 
-      @include mq($M) {
-        padding-bottom: $space-700;
-      }
-
       @include mq($L) {
-        padding-bottom: $space-500;
+        &:nth-of-type(3) {
+          .accordion__content-wrapper {
+            margin-top: -1.75rem;
+          }
+        }
       }
     }
 
     &__button {
       color: $white;
       outline: none;
+      padding-bottom: $space-700;
+      padding-top: $space-700;
 
       &:focus-visible {
         .accordion__title {
@@ -75,7 +76,12 @@
     &__subtitle {
       font-family: $font-bold;
       font-size: 0.875rem;
+      margin-bottom: 0;
       text-transform: uppercase;
+
+      + * {
+        margin-top: $space-500;
+      }
     }
 
     &__content-wrapper {
@@ -84,7 +90,7 @@
       margin-left: 5rem;
       margin-right: $space-600;
       max-width: 60ch;
-      padding-top: $space-600;
+      padding-bottom: $space-600;
       pointer-events: none;
 
       @include mq($S) {
@@ -98,10 +104,11 @@
 
       @include mq($L) {
         margin-left: 16.25rem;
+        margin-top: -$space-500;
         max-width: none;
-        padding-top: 0;
+        padding-bottom: 0;
         padding-left: 25%;
-        transform: translateY(-2.5rem);
+        transform: translateY(-$space-800);
 
         p {
           max-width: 30ch;
