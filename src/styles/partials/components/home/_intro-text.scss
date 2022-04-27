@@ -3,8 +3,8 @@
   background-color: $white;
   display: flex;
   font-family: $font-bold;
-  font-size: 1.5625rem;
-  font-size: clamp(1.5625rem, 1.2216rem + 1.5152vw, 2.8125rem);
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 0.0781rem + 5.2083vw, 2.8125rem);
   height: 50vh;
   justify-content: center;
   text-align: center;
