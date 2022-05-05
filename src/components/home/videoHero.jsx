@@ -15,7 +15,13 @@ const VideoHero = forwardRef(({ isInView, setVideoHeroIsScrolled }, ref) => {
       <div className="home__video-hero-content">
         <h1 className="visuallyhidden">Ink Mgmt</h1>
         <div className="home__video-hero-video zoom">
-          <video autoPlay muted loop playsInline>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ backgroundColor: 'transparent' }}
+          >
             <source src={blobVideo} type="video/webm" />
           </video>
         </div>
