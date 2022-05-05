@@ -4,7 +4,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 const IntroText = () => (
   <section className="home__intro-text">
     <div className="container">
-      <p>
+      <div className="home__intro-text-wrapper">
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
           <span className="home__intro-text-group">
             Meet the first Black owned
@@ -28,7 +28,7 @@ const IntroText = () => (
             Black (award winning) creatives.
           </span>
         </AnimationOnScroll>
-      </p>
+      </div>
     </div>
   </section>
 );

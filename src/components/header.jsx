@@ -5,7 +5,13 @@ import { Link } from 'gatsby';
 import Logo from './patterns/logo';
 import Nav from './nav';
 
-const Header = ({ headerLogoColor, headerTextColor, location, siteTitle }) => {
+const Header = ({
+  headerLogoColor,
+  headerTextColor,
+  location,
+  siteTitle,
+  videoHeroIsScrolled,
+}) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
   return (
@@ -14,7 +20,9 @@ const Header = ({ headerLogoColor, headerTextColor, location, siteTitle }) => {
         <div className="header__container">
           <Link className="link" to="/">
             <p className="visuallyhidden">{siteTitle}</p>
-            <Logo fillColor={headerLogoColor} location={location} />
+            {videoHeroIsScrolled && (
+              <Logo fillColor={headerLogoColor} location={location} />
+            )}
           </Link>
 
           <button
@@ -43,6 +51,7 @@ Header.propTypes = {
     pathname: PropTypes.string,
   }),
   siteTitle: PropTypes.string,
+  videoHeroIsScrolled: PropTypes.bool,
 };
 
 Header.defaultProps = {
@@ -50,6 +59,7 @@ Header.defaultProps = {
   headerTextColor: '#000',
   location: {},
   siteTitle: ``,
+  videoHeroIsScrolled: true,
 };
 
 export default Header;

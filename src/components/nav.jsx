@@ -10,7 +10,6 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
 
   useEffect(() => {
     if (navIsOpen) {
-      console.log('window.scrollY', window.scrollY);
       // fix body so it doesn't scroll when menu is open
       document.body.style.top = `${-window.scrollY}px`;
       document.body.style.position = 'fixed';

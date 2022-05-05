@@ -15,6 +15,7 @@ const Layout = ({
   footerBgColor,
   footerTextColor,
   location,
+  videoHeroIsScrolled,
 }) => {
   useLayoutEffect(() => {
     const appHeight = () => {
@@ -47,6 +48,7 @@ const Layout = ({
             headerTextColor={headerTextColor}
             location={location}
             siteTitle={data.site.siteMetadata.title}
+            videoHeroIsScrolled={videoHeroIsScrolled}
           />
           <main className="main" id="main" role="main">
             {children}
@@ -68,6 +70,7 @@ Layout.propTypes = {
   footerBgColor: PropTypes.string,
   footerTextColor: PropTypes.string,
   location: PropTypes.shape({}),
+  videoHeroIsScrolled: PropTypes.bool,
 };
 
 Layout.defaultProps = {
@@ -76,6 +79,7 @@ Layout.defaultProps = {
   footerBgColor: 'transparent',
   footerTextColor: '#000',
   location: {},
+  videoHeroIsScrolled: true,
 };
 
 export default Layout;
