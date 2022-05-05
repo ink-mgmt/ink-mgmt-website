@@ -20,7 +20,7 @@ const VideoHero = forwardRef(({ isInView, setVideoHeroIsScrolled }, ref) => {
             muted
             loop
             playsInline
-            style={{ backgroundColor: 'transparent' }}
+            style={{ backgroundColor: '#000' }}
           >
             <source src={blobVideo} type="video/webm" />
           </video>
