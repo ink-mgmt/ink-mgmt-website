@@ -11,6 +11,7 @@ import WhatWeDo from '../components/home/whatWeDo';
 import GetInTouch from '../components/home/getInTouch';
 
 const IndexPage = ({ location }) => {
+  const [menuTextIsLight, setMenuTextIsLight] = useState(false);
   const [videoHeroIsScrolled, setVideoHeroIsScrolled] = useState(false);
 
   return (
@@ -19,6 +20,7 @@ const IndexPage = ({ location }) => {
       footerBgColor="#b8b8b8"
       footerTextColor="#000"
       location={location}
+      menuTextIsLight={menuTextIsLight}
       videoHeroIsScrolled={videoHeroIsScrolled}
     >
       <SEO title="Home" meta={[{ name: 'theme-color', content: '#1601f8' }]} />
@@ -33,7 +35,15 @@ const IndexPage = ({ location }) => {
       </InView>
       <div className="home__top-content">
         <IntroText />
-        <WhatWeDo />
+        <InView rootMargin="0px 0px -97% 0px">
+          {({ inView, ref }) => (
+            <WhatWeDo
+              isInView={inView}
+              setMenuTextIsLight={setMenuTextIsLight}
+              ref={ref}
+            />
+          )}
+        </InView>
         <GetInTouch />
       </div>
     </Layout>

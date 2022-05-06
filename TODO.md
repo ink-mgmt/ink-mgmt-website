@@ -14,7 +14,7 @@
 - √ header component
 - √ footer component
 - √ homepage
-- interior pages(s)
+- √ interior pages(s)
 - √ add site content
   - static and/or via WordPress API
 - √ push to Pyrographic Netlify account for dev URL

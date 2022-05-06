@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 9;
 
   &__container {
     align-items: center;
@@ -20,6 +20,10 @@
   .logo {
     height: auto;
     width: 4.875rem;
+
+    path {
+      transition: fill 0.2s ease-out;
+    }
   }
 
   &__menu-button {

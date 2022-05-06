@@ -1,15 +1,20 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
-import React from 'react';
+import React, { forwardRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import { useWindowSize } from '../../hooks/useWindowSize';
 
-const AboutPrinciples = () => {
+const AboutPrinciples = forwardRef(({ isInView, setMenuTextIsLight }, ref) => {
   const size = useWindowSize();
   const isMedBreakpoint = size.width >= 767;
 
+  useEffect(() => {
+    setMenuTextIsLight(isInView);
+  }, [isInView, setMenuTextIsLight]);
+
   return (
-    <section className="about__principles">
+    <section className="about__principles" ref={ref}>
       <h2 className="principles__heading">
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
           <span>We have</span>
@@ -102,10 +107,17 @@ const AboutPrinciples = () => {
       </div>
     </section>
   );
+});
+
+AboutPrinciples.displayName = 'AboutPrinciples';
+
+AboutPrinciples.propTypes = {
+  isInView: PropTypes.bool,
+  setMenuTextIsLight: PropTypes.func.isRequired,
 };
 
-AboutPrinciples.propTypes = {};
-
-AboutPrinciples.defaultProps = {};
+AboutPrinciples.defaultProps = {
+  isInView: true,
+};
 
 export default AboutPrinciples;

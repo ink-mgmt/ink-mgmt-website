@@ -9,6 +9,7 @@ const Header = ({
   headerLogoColor,
   headerTextColor,
   location,
+  menuTextIsLight,
   siteTitle,
   videoHeroIsScrolled,
 }) => {
@@ -21,7 +22,10 @@ const Header = ({
           <Link className="link" to="/">
             <p className="visuallyhidden">{siteTitle}</p>
             {videoHeroIsScrolled && (
-              <Logo fillColor={headerLogoColor} location={location} />
+              <Logo
+                fillColor={menuTextIsLight ? '#fff' : headerLogoColor}
+                location={location}
+              />
             )}
           </Link>
 
@@ -29,7 +33,7 @@ const Header = ({
             className="header__menu-button link"
             type="button"
             onClick={() => setNavIsOpen(true)}
-            style={{ color: headerTextColor }}
+            style={{ color: menuTextIsLight ? '#fff' : headerTextColor }}
           >
             menu
           </button>
@@ -50,6 +54,7 @@ Header.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string,
   }),
+  menuTextIsLight: PropTypes.bool,
   siteTitle: PropTypes.string,
   videoHeroIsScrolled: PropTypes.bool,
 };
@@ -58,6 +63,7 @@ Header.defaultProps = {
   headerLogoColor: '#000',
   headerTextColor: '#000',
   location: {},
+  menuTextIsLight: false,
   siteTitle: ``,
   videoHeroIsScrolled: true,
 };

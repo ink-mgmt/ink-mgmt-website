@@ -15,6 +15,7 @@ const Layout = ({
   footerBgColor,
   footerTextColor,
   location,
+  menuTextIsLight,
   videoHeroIsScrolled,
 }) => {
   useLayoutEffect(() => {
@@ -47,6 +48,7 @@ const Layout = ({
             headerLogoColor={headerLogoColor}
             headerTextColor={headerTextColor}
             location={location}
+            menuTextIsLight={menuTextIsLight}
             siteTitle={data.site.siteMetadata.title}
             videoHeroIsScrolled={videoHeroIsScrolled}
           />
@@ -70,6 +72,7 @@ Layout.propTypes = {
   footerBgColor: PropTypes.string,
   footerTextColor: PropTypes.string,
   location: PropTypes.shape({}),
+  menuTextIsLight: PropTypes.bool,
   videoHeroIsScrolled: PropTypes.bool,
 };
 
@@ -79,6 +82,7 @@ Layout.defaultProps = {
   footerBgColor: 'transparent',
   footerTextColor: '#000',
   location: {},
+  menuTextIsLight: false,
   videoHeroIsScrolled: true,
 };
 

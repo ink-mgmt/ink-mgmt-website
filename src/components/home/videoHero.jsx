@@ -35,4 +35,5 @@ VideoHero.propTypes = {
 VideoHero.defaultProps = {
   isInView: true,
 };
+
 export default VideoHero;
