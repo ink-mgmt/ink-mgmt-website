@@ -19,7 +19,9 @@
 
   .logo {
     height: auto;
+    padding-bottom: $space-200;
     width: 4.875rem;
+    width: clamp(4.875rem, 3.0625rem + 8.0556vw, 10.3125rem);
 
     path {
       transition: fill 0.2s ease-out;
@@ -30,5 +32,6 @@
     color: $black;
     font-family: $font-bold;
     font-size: 0.9375rem;
+    font-size: clamp(0.9375rem, 0.8333rem + 0.463vw, 1.25rem);
   }
 }
