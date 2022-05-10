@@ -2,6 +2,8 @@ import React, { forwardRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
+import Button from '../patterns/button';
+
 const WhatWeDo = forwardRef(({ isInView, setMenuTextIsLight }, ref) => {
   useEffect(() => {
     setMenuTextIsLight(isInView);
@@ -73,6 +75,16 @@ const WhatWeDo = forwardRef(({ isInView, setMenuTextIsLight }, ref) => {
           </AnimationOnScroll>
         </div>
       </div>
+
+      <AnimationOnScroll animateIn="animate__fadeInUp" delay={900} animateOnce>
+        <Button
+          ariaLabel="Learn more about our services"
+          ctaText="Learn more"
+          ctaUrl="/services"
+          classes="home__what-we-do-cta"
+          isReversed
+        />
+      </AnimationOnScroll>
     </section>
   );
 });

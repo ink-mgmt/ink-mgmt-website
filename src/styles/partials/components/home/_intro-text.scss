@@ -18,6 +18,14 @@
     line-height: 1;
     max-width: 47.5rem;
   }
+
+  &-cta {
+    margin-top: $space-600;
+
+    @include mq($M) {
+      margin-top: $space-700;
+    }
+  }
 }
 
 // https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/

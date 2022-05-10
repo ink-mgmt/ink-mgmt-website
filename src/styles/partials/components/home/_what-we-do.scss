@@ -9,7 +9,7 @@
   padding-top: $space-700;
 
   @include mq($M) {
-    padding-bottom: $space-850;
+    padding-bottom: $space-700;
     padding-top: $space-850;
   }
 
@@ -147,6 +147,14 @@
           margin-left: $space-900;
         }
       }
+    }
+  }
+
+  &-cta {
+    margin-top: $space-800;
+
+    @include mq($M) {
+      margin-top: $space-850;
     }
   }
 }
