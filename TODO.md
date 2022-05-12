@@ -20,7 +20,7 @@
 - √ push to Pyrographic Netlify account for dev URL
 - [WordPress] create a WP instance on client's host
   - SSL required
-- [WordPress] add plugins
+- √ [WordPress] add plugins
   - Advanced Custom Fields PRO
   - All-in-One WP Migration
   - All-in-One WP Migration Unlimited Extension
@@ -32,8 +32,8 @@
   - WP Gatsby
   - WP GraphQL
   - WPGraphQL for Advanced Custom Fields
-- [WordPress] add custom fields
-- [WordPress] add content
+- √ [WordPress] add custom fields
+- √ [WordPress] add content
 - create interior page template(s) used in gatsby-node
 - get content from WP API
 - add schema.org metadata

@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const AboutFormula = () => (
+const AboutFormula = ({ formulaCopy }) => (
   <section className="about__formula">
     <div className="formula__heading-wrapper">
       <h2 className="formula__heading">The Formula</h2>
@@ -13,17 +14,12 @@ const AboutFormula = () => (
         </span>
       </p>
     </div>
-    <p className="formula__copy">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non blandit
-      scelerisque sed phasellus venenatis id eget commodo. Sed ullamcorper
-      pretium, purus imperdiet. Nibh eu, aenean bibendum tincidunt vestibulum
-      nec posuere nulla. Sollicitudin condimentum commodo, faucibus eu egestas
-      at. Tempus, nisi, dui elementum nam nunc diam amet. Diam enim mauris sed
-      sed feugiat. Viverra metus nisl lectus sem sit viverra scelerisque ac
-      scelerisque. Leo mauris vulputate sed nulla enim vitae ultrices id. Lorem
-      nec odio odio vel. Quis mi semper donec in consequat quisque ultricies.
-    </p>
+    <p className="formula__copy">{formulaCopy}</p>
   </section>
 );
+
+AboutFormula.propTypes = {
+  formulaCopy: PropTypes.string.isRequired,
+};
 
 export default AboutFormula;

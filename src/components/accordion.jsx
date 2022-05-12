@@ -60,7 +60,7 @@ const Accordion = ({ titleHeadingLevel: Heading, items }) => {
           <div className="accordion__content-wrapper">
             <p
               className="accordion__subtitle"
-              dangerouslySetInnerHTML={{ __html: item.subtitle }}
+              dangerouslySetInnerHTML={{ __html: item.copyHeading }}
             />
             <div
               className={`accordion__content ${
@@ -74,7 +74,7 @@ const Accordion = ({ titleHeadingLevel: Heading, items }) => {
               hidden={
                 openAccordions[0] !== index && openAccordions[1] !== index
               }
-              dangerouslySetInnerHTML={{ __html: item.content }}
+              dangerouslySetInnerHTML={{ __html: item.copy }}
               ref={accordionRef}
             />
           </div>
@@ -88,7 +88,8 @@ Accordion.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
-      content: PropTypes.string.isRequired,
+      copyHeading: PropTypes.string.isRequired,
+      copy: PropTypes.string.isRequired,
     })
   ).isRequired,
   titleHeadingLevel: PropTypes.string,
