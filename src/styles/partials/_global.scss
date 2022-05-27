@@ -11,6 +11,9 @@ html {
 
 body {
   background: $bg-clr;
+  background-attachment: fixed;
+  background-image: url('/blue-paper-bg.jpg');
+  background-size: cover;
   font-family: $font-med;
   height: var(--app-height);
   width: 100%;

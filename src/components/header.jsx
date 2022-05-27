@@ -11,7 +11,7 @@ const Header = ({
   location,
   menuTextIsLight,
   siteTitle,
-  videoHeroIsScrolled,
+  heroIsScrolled,
 }) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
@@ -21,7 +21,7 @@ const Header = ({
         <div className="header__container">
           <Link className="link" to="/">
             <p className="visuallyhidden">{siteTitle}</p>
-            {videoHeroIsScrolled && (
+            {heroIsScrolled && (
               <Logo
                 fillColor={menuTextIsLight ? '#fff' : headerLogoColor}
                 location={location}
@@ -56,7 +56,7 @@ Header.propTypes = {
   }),
   menuTextIsLight: PropTypes.bool,
   siteTitle: PropTypes.string,
-  videoHeroIsScrolled: PropTypes.bool,
+  heroIsScrolled: PropTypes.bool,
 };
 
 Header.defaultProps = {
@@ -65,7 +65,7 @@ Header.defaultProps = {
   location: {},
   menuTextIsLight: false,
   siteTitle: ``,
-  videoHeroIsScrolled: true,
+  heroIsScrolled: true,
 };
 
 export default Header;

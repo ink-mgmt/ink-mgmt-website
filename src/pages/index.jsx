@@ -5,30 +5,30 @@ import { InView } from 'react-intersection-observer';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import VideoHero from '../components/home/videoHero';
+import Hero from '../components/home/hero';
 import IntroText from '../components/home/introText';
 import WhatWeDo from '../components/home/whatWeDo';
 import GetInTouch from '../components/home/getInTouch';
 
 const IndexPage = ({ location }) => {
   const [menuTextIsLight, setMenuTextIsLight] = useState(false);
-  const [videoHeroIsScrolled, setVideoHeroIsScrolled] = useState(false);
+  const [heroIsScrolled, setHeroIsScrolled] = useState(false);
 
   return (
     <Layout
       headerLogoColor="#000"
-      footerBgColor="#b8b8b8"
+      footerBgColor="transparent"
       footerTextColor="#000"
       location={location}
       menuTextIsLight={menuTextIsLight}
-      videoHeroIsScrolled={videoHeroIsScrolled}
+      heroIsScrolled={heroIsScrolled}
     >
       <SEO title="Home" meta={[{ name: 'theme-color', content: '#1601f8' }]} />
       <InView rootMargin="0px 0px -100% 0px">
         {({ inView, ref }) => (
-          <VideoHero
+          <Hero
             isInView={inView}
-            setVideoHeroIsScrolled={setVideoHeroIsScrolled}
+            setHeroIsScrolled={setHeroIsScrolled}
             ref={ref}
           />
         )}

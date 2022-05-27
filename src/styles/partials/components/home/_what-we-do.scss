@@ -1,90 +1,39 @@
 .home__what-we-do {
   align-items: center;
-  background-color: $bg-black;
-  color: $white;
+  color: $black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: $space-700;
   padding-top: $space-700;
+  position: relative;
 
   @include mq($M) {
     padding-bottom: $space-700;
     padding-top: $space-850;
   }
 
+  &-heading {
+    display: none;
+    font-family: $font-mono;
+    font-size: 0.875rem;
+    left: -$space-300;
+    letter-spacing: 0.2em;
+    position: absolute;
+    text-transform: uppercase;
+    top: 38%;
+    transform: rotate(270deg) translateY(-50%);
+
+    @include mq($M) {
+      display: block;
+    }
+  }
+
   .what-we-do {
-    &__container {
-      padding-left: $space-500;
-      padding-right: $space-500;
-      width: 100%;
-
-      @include mq($M) {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
-
-    &__heading {
-      font-family: $font-black;
-      font-size: 2.5rem;
-      margin-bottom: $space-600;
-      text-align: center;
-      text-transform: uppercase;
-
-      @include mq($M) {
-        display: flex;
-        flex-direction: column;
-        font-size: 4rem;
-        font-size: clamp(4rem, 3.2105rem + 1.6447vw, 4.9375rem);
-        line-height: 0.85;
-        margin-bottom: 0;
-        margin-left: 12%;
-        text-align: left;
-      }
-
-      @include mq($L) {
-        margin-left: 15%;
-      }
-
-      @include mq($XL) {
-        margin-left: 18%;
-      }
-
-      &-word {
-        display: inline-block;
-
-        @include mq($M) {
-          display: block;
-        }
-      }
-
-      .we {
-        display: inline-block;
-
-        @include mq($M) {
-          transform: translateX(-4rem);
-        }
-
-        @include mq($L) {
-          transform: translateX(-4.75rem);
-        }
-      }
-    }
-
     &__list {
-      width: 100%;
-
-      @include mq($M) {
-        flex-basis: 67%;
-      }
-
-      @include mq($L) {
-        flex-basis: 50%;
-      }
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
     }
 
     &__item {
@@ -96,8 +45,24 @@
       }
 
       &:not(:last-child) {
-        border-bottom: 1px solid $white;
+        border-bottom: 1px solid $black;
         padding-bottom: $space-600;
+      }
+
+      &-small {
+        margin-bottom: 0;
+
+        @include mq($XL) {
+          display: none;
+        }
+      }
+
+      &-large {
+        display: none;
+
+        @include mq($XL) {
+          display: block;
+        }
       }
 
       &-container {
@@ -136,6 +101,7 @@
       &-detail {
         font-family: $font-mono;
         font-size: 0.6875rem;
+        font-size: clamp(0.6875rem, 0.5833rem + 0.463vw, 1rem);
         letter-spacing: 0.2em;
         text-transform: uppercase;
 

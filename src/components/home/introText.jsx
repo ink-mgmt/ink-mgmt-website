@@ -5,21 +5,18 @@ import Button from '../patterns/button';
 
 const IntroText = () => (
   <section className="home__intro-text">
+    <h2 className="home__intro-text-heading">About</h2>
     <div className="container">
       <div className="home__intro-text-wrapper">
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-          <span className="home__intro-text-group">
-            Meet the first Black owned
-          </span>
+          <span className="home__intro-text-group">Meet the first black</span>
         </AnimationOnScroll>{' '}
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
           delay={300}
           animateOnce
         >
-          <span className="home__intro-text-group">
-            creative talent agency founded by
-          </span>
+          <span className="home__intro-text-group">owned creative talent</span>
         </AnimationOnScroll>{' '}
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
@@ -27,12 +24,21 @@ const IntroText = () => (
           animateOnce
         >
           <span className="home__intro-text-group">
-            Black (award winning) creatives.
+            agency founded by Black
           </span>
         </AnimationOnScroll>
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
           delay={900}
+          animateOnce
+        >
+          <span className="home__intro-text-group">
+            (award winning) creatives.
+          </span>
+        </AnimationOnScroll>
+        <AnimationOnScroll
+          animateIn="animate__fadeInUp"
+          delay={1200}
           animateOnce
         >
           <Button

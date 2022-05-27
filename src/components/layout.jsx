@@ -16,7 +16,7 @@ const Layout = ({
   footerTextColor,
   location,
   menuTextIsLight,
-  videoHeroIsScrolled,
+  heroIsScrolled,
 }) => {
   useLayoutEffect(() => {
     const appHeight = () => {
@@ -50,7 +50,7 @@ const Layout = ({
             location={location}
             menuTextIsLight={menuTextIsLight}
             siteTitle={data.site.siteMetadata.title}
-            videoHeroIsScrolled={videoHeroIsScrolled}
+            heroIsScrolled={heroIsScrolled}
           />
           <main className="main" id="main" role="main">
             {children}
@@ -73,7 +73,7 @@ Layout.propTypes = {
   footerTextColor: PropTypes.string,
   location: PropTypes.shape({}),
   menuTextIsLight: PropTypes.bool,
-  videoHeroIsScrolled: PropTypes.bool,
+  heroIsScrolled: PropTypes.bool,
 };
 
 Layout.defaultProps = {
@@ -83,7 +83,7 @@ Layout.defaultProps = {
   footerTextColor: '#000',
   location: {},
   menuTextIsLight: false,
-  videoHeroIsScrolled: true,
+  heroIsScrolled: true,
 };
 
 export default Layout;

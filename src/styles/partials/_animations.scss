@@ -74,10 +74,10 @@
   opacity: 0;
 }
 
-@keyframes zoom {
+@keyframes fadeInAndGrow {
   0% {
-    opacity: 1;
-    transform: scale(6);
+    opacity: 0;
+    transform: scale(0);
   }
   100% {
     opacity: 1;
@@ -85,11 +85,12 @@
   }
 }
 
-.zoom {
+.fadeInAndGrow {
   animation-delay: 0.25s;
-  animation-name: zoom;
-  animation-duration: 2.75s;
-  animation-timing-function: cubic-bezier(1, 0.18, 0.98, 0.79);
+  animation-name: fadeInAndGrow;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(1, 0.06, 0.12, 1);
   animation-fill-mode: forwards;
-  transform: scale(6);
+  opacity: 0;
+  transform: scale(0);
 }

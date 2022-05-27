@@ -1,6 +1,5 @@
-.home__video-hero {
+.home__hero {
   align-items: center;
-  background-color: $blue;
   color: $white;
   display: flex;
   flex-direction: column;
@@ -22,7 +21,7 @@
     width: 100%;
   }
 
-  &-video {
+  &-blob {
     @include mq($M) {
       margin-top: -4rem;
     }

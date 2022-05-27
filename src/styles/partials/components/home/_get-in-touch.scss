@@ -1,15 +1,15 @@
 .home__get-in-touch {
-  background-color: $bg-grey;
   padding-bottom: $space-700;
   padding-top: $space-600;
 
   @include mq($M) {
     padding-bottom: $space-600;
-    padding-top: $space-600;
+    padding-top: $space-800;
   }
 
   @include mq($L) {
     padding-bottom: $space-800;
+    padding-top: $space-900;
   }
 
   @include mq($XL) {
