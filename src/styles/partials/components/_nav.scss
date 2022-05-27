@@ -32,7 +32,9 @@
 
   .logo {
     height: auto;
+    padding-bottom: $space-200;
     width: 4.875rem;
+    width: clamp(4.875rem, 3.7292rem + 5.0926vw, 8.3125rem);
   }
 }
 
@@ -91,6 +93,10 @@
   padding: 0;
   margin: 0;
   max-width: none !important;
+
+  @include mq($L) {
+    flex-basis: 70%;
+  }
 }
 
 .nav__link {

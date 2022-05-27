@@ -100,7 +100,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
               tabIndex={navIsOpen ? 0 : -1}
               onClick={toggleNav}
             >
-              A New Way
+              About
             </Link>
           </li>
           <li className="nav__item">
@@ -110,7 +110,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
               tabIndex={navIsOpen ? 0 : -1}
               onClick={toggleNav}
             >
-              How We Do It
+              Services
             </Link>
           </li>
           <li className="nav__item">
@@ -120,7 +120,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
               tabIndex={navIsOpen ? 0 : -1}
               onClick={toggleNav}
             >
-              Word of Mouth
+              Press
             </Link>
           </li>
           <li className="nav__item">
@@ -145,10 +145,10 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
             <br />
             <a
               className="link"
-              href="tel:+1-720-574-2667"
+              href="tel:+1-833-465-6468"
               tabIndex={navIsOpen ? 0 : -1}
             >
-              +1 720 574 2667
+              +1 833 INK MGMT
             </a>
             <br />
             <a
