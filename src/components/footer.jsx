@@ -28,7 +28,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               className="footer__nav-link link"
               style={{ color: footerTextColor }}
             >
-              A New Way
+              About
             </a>
           </li>
           <li className="footer__nav-item">
@@ -37,7 +37,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               className="footer__nav-link link"
               style={{ color: footerTextColor }}
             >
-              How We Do It
+              Services
             </a>
           </li>
           <li className="footer__nav-item">
@@ -46,7 +46,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               className="footer__nav-link link"
               style={{ color: footerTextColor }}
             >
-              Word of Mouth
+              Press
             </a>
           </li>
           <li className="footer__nav-item">
@@ -56,24 +56,6 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               style={{ color: footerTextColor }}
             >
               Info
-            </a>
-          </li>
-          <li className="footer__nav-item">
-            <a
-              href="/"
-              className="footer__nav-link link"
-              style={{ color: footerTextColor }}
-            >
-              Privacy Policy
-            </a>
-          </li>
-          <li className="footer__nav-item">
-            <a
-              href="/"
-              className="footer__nav-link link"
-              style={{ color: footerTextColor }}
-            >
-              Terms &amp; Conditions
             </a>
           </li>
         </ul>
@@ -88,10 +70,10 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
             <br />
             <a
               className="link"
-              href="tel:+1-720-574-2667"
+              href="tel:+1-833-465-6468"
               style={{ color: footerTextColor }}
             >
-              +1 720 574 2667
+              +1 833 INK MGMT
             </a>
             <br />
             <a
@@ -114,47 +96,43 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
 
           <ul className="footer__contacts">
             <li className="footer__contact-item">
-              <span className="footer__contact-heading">
-                New Business Inquiries
-              </span>
+              <span className="footer__contact-heading">General Inquiries</span>
               <a
                 className="footer__contact-link link"
                 style={{ color: footerTextColor }}
-                href="mailto:tbd@inkmgmt.com"
+                href="mailto:WeAre@inkmgmt.com"
               >
-                tbd@inkmgmt.com
+                WeAre@inkmgmt.com
               </a>
             </li>
             <li className="footer__contact-item">
-              <span className="footer__contact-heading">
-                Staffing & Representation Inquires
-              </span>
+              <span className="footer__contact-heading">Staffing Inquires</span>
               <a
                 className="footer__contact-link link"
                 style={{ color: footerTextColor }}
-                href="mailto:tbd@inkmgmt.com"
+                href="mailto:Source@inkmgmt.com"
               >
-                tbd@inkmgmt.com
+                Source@inkmgmt.com
               </a>
             </li>
             <li className="footer__contact-item">
-              <span className="footer__contact-heading">Press Inquires</span>
+              <span className="footer__contact-heading">Special Projects</span>
               <a
                 className="footer__contact-link link"
                 style={{ color: footerTextColor }}
-                href="mailto:tbd@inkmgmt.com"
+                href="mailto:Create@inkmgmt.com"
               >
-                tbd@inkmgmt.com
+                Create@inkmgmt.com
               </a>
             </li>
             <li className="footer__contact-item">
-              <span className="footer__contact-heading">Jobs Inquires</span>
+              <span className="footer__contact-heading">Submit Work</span>
               <a
                 className="footer__contact-link link"
                 style={{ color: footerTextColor }}
-                href="mailto:tbd@inkmgmt.com"
+                href="mailto:Talent@inkmgmt.com"
               >
-                tbd@inkmgmt.com
+                Talent@inkmgmt.com
               </a>
             </li>
           </ul>
