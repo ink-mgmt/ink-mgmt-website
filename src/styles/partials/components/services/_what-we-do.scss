@@ -1,11 +1,10 @@
 .services__what-we-do {
-  background-color: $bg-blue;
-  color: $white;
+  color: $color-grey-8;
   padding-left: $space-500;
   padding-right: $space-500;
 
   &-heading {
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $color-grey-8;
     display: flex;
     font-family: $font-bold;
     font-size: 1.25rem;
@@ -17,8 +16,8 @@
 
   .accordion {
     &__item {
-      border-bottom: 1px solid $white;
-      color: $white;
+      border-bottom: 1px solid $color-grey-8;
+      color: $color-grey-8;
       position: relative;
 
       @include mq($L) {
@@ -31,7 +30,7 @@
     }
 
     &__button {
-      color: $white;
+      color: $color-grey-8;
       outline: none;
       padding-bottom: $space-700;
       padding-top: $space-700;

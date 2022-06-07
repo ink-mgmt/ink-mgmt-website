@@ -21,6 +21,7 @@ const About = ({ data }) => {
 
   return (
     <Layout
+      backgroundColor="#fff"
       headerLogoColor="#000"
       footerBgColor="#000"
       footerTextColor="#fff"

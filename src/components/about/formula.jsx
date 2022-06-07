@@ -14,7 +14,9 @@ const AboutFormula = ({ formulaCopy }) => (
         </span>
       </p>
     </div>
-    <p className="formula__copy">{formulaCopy}</p>
+    <p className="formula__copy">
+      <span dangerouslySetInnerHTML={{ __html: formulaCopy }} />
+    </p>
   </section>
 );
 

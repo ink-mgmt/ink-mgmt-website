@@ -1,36 +1,24 @@
 .services__intro {
-  background-color: $bg-blue;
-  color: $white;
+  align-items: center;
+  color: $color-grey-8;
   display: flex;
-  height: 80vh;
+  height: calc(100vh + 40px);
+  height: calc(var(--app-height) + 40px);
   padding-bottom: $space-600;
   padding-left: $space-500;
   padding-right: $space-500;
   padding-top: $space-850;
   position: relative;
 
-  @include mq($L) {
-    height: calc(100vh + 40px);
-    height: calc(var(--app-height) + 40px);
-  }
-
-  &-content {
-    display: flex;
-    flex-direction: column;
-
-    @include mq($L) {
-      align-items: center;
-      flex-direction: row;
-    }
-  }
-
   &-heading {
     font-family: $font-black;
     font-size: 3.25rem;
-    font-size: clamp(3.25rem, 0.6458rem + 11.1111vw, 12.3125rem);
+    font-size: clamp(3.25rem, 0.6458rem + 11.1111vw, 6.5rem);
     hyphens: auto;
     line-height: 0.85;
-    margin-bottom: $space-850;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     text-transform: uppercase;
 
     @include mq($L) {

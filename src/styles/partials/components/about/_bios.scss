@@ -39,10 +39,18 @@
     }
 
     @include mq($L) {
-      gap: $space-600;
+      gap: $space-800;
 
       > * {
-        flex-basis: calc(25% - #{$space-600});
+        flex-basis: calc(33.33333% - #{$space-800});
+      }
+    }
+
+    @include mq($XXL) {
+      gap: $space-900;
+
+      > * {
+        flex-basis: calc(33.33333% - #{$space-900});
       }
     }
   }

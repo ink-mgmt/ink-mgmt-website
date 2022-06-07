@@ -7,26 +7,27 @@ import SEO from '../components/seo';
 
 import ServicesIntro from '../components/services/intro';
 import ServicesWhatWeDo from '../components/services/whatWeDo';
-import ServicesSubmitWork from '../components/services/submitWork';
+import ABetterPlace from '../components/services/aBetterPlace';
 
 const Services = ({ data }) => {
   const servicesData = data.allWpPage.edges[0].node.services_page;
-  const { introCopy, accordionItems } = servicesData;
+  const { accordionItems } = servicesData;
 
   return (
     <Layout
-      headerLogoColor="#fff"
-      headerTextColor="#fff"
-      footerBgColor="#0000f5"
-      footerTextColor="#fff"
+      backgroundColor="#222021"
+      headerLogoColor="#ceccc7"
+      headerTextColor="#ceccc7"
+      footerBgColor="#222021"
+      footerTextColor="#ceccc7"
     >
       <SEO
         title="Services"
         meta={[{ name: 'theme-color', content: '#1601f8' }]}
       />
-      <ServicesIntro introCopy={introCopy} />
+      <ServicesIntro />
       <ServicesWhatWeDo accordionItems={accordionItems} />
-      <ServicesSubmitWork />
+      <ABetterPlace />
     </Layout>
   );
 };
@@ -37,7 +38,6 @@ export const query = graphql`
       edges {
         node {
           services_page {
-            introCopy
             accordionItems {
               title
               copyHeading

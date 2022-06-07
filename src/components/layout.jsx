@@ -10,6 +10,7 @@ import Footer from './footer';
 
 const Layout = ({
   children,
+  backgroundColor,
   headerLogoColor,
   headerTextColor,
   footerBgColor,
@@ -52,7 +53,12 @@ const Layout = ({
             siteTitle={data.site.siteMetadata.title}
             heroIsScrolled={heroIsScrolled}
           />
-          <main className="main" id="main" role="main">
+          <main
+            className="main"
+            id="main"
+            role="main"
+            style={{ backgroundColor }}
+          >
             {children}
           </main>
           <Footer
@@ -67,6 +73,7 @@ const Layout = ({
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  backgroundColor: PropTypes.string,
   headerLogoColor: PropTypes.string,
   headerTextColor: PropTypes.string,
   footerBgColor: PropTypes.string,
@@ -77,6 +84,7 @@ Layout.propTypes = {
 };
 
 Layout.defaultProps = {
+  backgroundColor: 'transparent',
   headerLogoColor: '#000',
   headerTextColor: '#000',
   footerBgColor: 'transparent',

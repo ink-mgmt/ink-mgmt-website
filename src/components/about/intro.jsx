@@ -6,7 +6,9 @@ const AboutIntro = ({ introHeading, introCopy }) => (
     <div className="about__intro-content">
       <h1 className="about__intro-heading">{introHeading}</h1>
       <div className="about__intro-sub-content-wrapper">
-        <p className="about__intro-copy">{introCopy}</p>
+        <p className="about__intro-copy">
+          <span dangerouslySetInnerHTML={{ __html: introCopy }} />
+        </p>
         <div className="about__intro-teaser-wrapper">
           <p className="about__intro-teaser">get to know us</p>
           <span className="about__intro-arrow">&darr;</span>
