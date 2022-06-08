@@ -30,10 +30,6 @@
     padding-right: $space-500;
     padding-top: $space-800;
 
-    &:nth-of-type(2n) {
-      background-color: $bg-grey;
-    }
-
     @include mq($M) {
       padding-left: $space-800;
       padding-right: $space-800;
@@ -90,7 +86,7 @@
   }
 
   &__copy {
-    font-family: $font-light;
+    font-family: $font-reg;
     font-size: 0.75rem;
     line-height: 1.2;
     margin-bottom: $space-500;

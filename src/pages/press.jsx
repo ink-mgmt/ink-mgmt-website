@@ -5,9 +5,10 @@ import SEO from '../components/seo';
 
 const Press = () => (
   <Layout
+    backgroundColor="#b8b8b8"
     headerLogoColor="#000"
     headerTextColor="#000"
-    footerBgColor="#fff"
+    footerBgColor="#b8b8b8"
     footerTextColor="#000"
   >
     <SEO title="Press" meta={[{ name: 'theme-color', content: '#ffffff' }]} />
