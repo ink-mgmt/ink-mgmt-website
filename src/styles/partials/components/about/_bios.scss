@@ -1,24 +1,27 @@
 .about__bios {
   align-items: center;
-  background-color: $bg-black;
-  color: $white;
+  color: $black;
   display: flex;
   justify-content: center;
   min-height: 100vh;
   padding-bottom: $space-600;
-  padding-left: $space-500;
-  padding-right: $space-500;
-  padding-top: $space-600;
   width: 100%;
 
   &-content {
   }
 
   &-image-grid {
-    margin-bottom: $space-600;
+    margin-bottom: $space-700;
+
+    @include mq($L) {
+      margin-bottom: $space-600;
+    }
   }
 
   &-copy-wrapper {
+    padding-left: $space-500;
+    padding-right: $space-500;
+
     @include mq($S) {
       display: flex;
       flex-wrap: wrap;
@@ -58,69 +61,74 @@
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   margin: 0 auto;
-  max-width: 70rem;
+  padding-left: $space-500;
+  padding-right: $space-500;
   position: relative;
 
   @include mq($L) {
-    grid-template-rows: repeat(7, 1fr);
-  }
-
-  @include mq($XL) {
-    max-width: 80rem;
-  }
-
-  @include mq($XXL) {
-    max-width: 85rem;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0;
   }
 
   &__image {
     &:nth-of-type(1) {
-      display: none;
+      grid-column: 1/4;
+      grid-row: 3/5;
+      position: relative;
+      top: -50%;
+      z-index: 1;
 
       @include mq($L) {
-        display: block;
-        grid-column: 1/4;
-        grid-row: 2/5;
-        z-index: 4;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        top: auto;
       }
     }
 
     &:nth-of-type(2) {
-      grid-column: 2/7;
-      grid-row: 7/12;
-      z-index: 3;
+      grid-column: 1/5;
+      grid-row: 1/2;
+      left: $space-500;
+      position: relative;
+      top: $space-600;
+      z-index: 1;
 
       @include mq($L) {
-        grid-column: 1/4;
-        grid-row: 5/8;
+        grid-column: 4/8;
+        grid-row: 1/2;
       }
     }
 
     &:nth-of-type(3) {
-      grid-column: 3/7;
-      grid-row: 1/3;
+      grid-column: 3/11;
+      grid-row: 2/4;
+      left: -$space-500;
+      position: relative;
+      top: -2.5rem;
 
       @include mq($L) {
-        grid-column: 3/5;
-        grid-row: 3/5;
-        transform: scale(0.7) translateX(-20%) translateY(20%);
-        z-index: 4;
+        grid-column: 9/19;
+        grid-row: 1/4;
+        left: auto;
+        margin-top: $space-800;
+        top: auto;
       }
     }
 
     &:nth-of-type(4) {
-      grid-column: 1/4;
-      grid-row: 2/5;
-      z-index: 4;
+      grid-column: 9/12;
+      grid-row: 1/2;
+      left: $space-400;
+      position: relative;
 
       @include mq($L) {
-        grid-column: 4/5;
-        grid-row: 1/3;
-        transform: translateX(-20%);
-        z-index: 1;
+        grid-column: 19/22;
+        grid-row: 1/2;
+        left: $space-800;
       }
     }
 
@@ -129,21 +137,24 @@
 
       @include mq($L) {
         display: block;
-        grid-column: 4/7;
-        grid-row: 5/8;
-        transform: scale(0.8) translateX(-25%) translateY(25%);
-        z-index: 5;
+        grid-column: 22/26;
+        grid-row: 1/2;
+        margin-left: $space-600;
       }
     }
 
     &:nth-of-type(6) {
-      grid-column: 4/11;
-      grid-row: 4/8;
+      align-self: end;
+      grid-column: 2/5;
+      grid-row: 3/5;
+      left: $space-400;
+      position: relative;
 
       @include mq($L) {
-        grid-column: 5/11;
-        grid-row: 2/6;
-        transform: translateX(-10%);
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin-left: -50%;
+        margin-top: 50%;
       }
     }
 
@@ -152,23 +163,22 @@
 
       @include mq($L) {
         display: block;
-        grid-column: 7/10;
-        grid-row: 5/8;
-        transform: scale(0.8) translateX(-50%) translateY(25%);
-        z-index: 5;
+        grid-column: 3/5;
+        grid-row: 2/3;
+        margin-top: 33%;
       }
     }
 
     &:nth-of-type(8) {
-      grid-column: 9/12;
-      grid-row: 2/5;
+      display: none;
 
       @include mq($L) {
         display: block;
-        grid-column: 10/11;
-        grid-row: 1/3;
-        transform: translateX(40%);
-        z-index: 3;
+        grid-column: 5/8;
+        grid-row: 2/3;
+        margin-left: $space-500;
+        position: relative;
+        top: $space-300;
       }
     }
 
@@ -177,53 +187,110 @@
 
       @include mq($L) {
         display: block;
-        grid-column: 10/11;
-        grid-row: 2/4;
-        transform: translateX(40%) translateY(33%);
-        z-index: 3;
+        grid-column: 20/24;
+        grid-row: 2/3;
+        margin-left: $space-600;
+        position: relative;
+        top: -$space-600;
       }
     }
 
     &:nth-of-type(10) {
-      grid-column: 10/-1;
-      grid-row: 6/9;
-      z-index: 3;
+      display: none;
 
       @include mq($L) {
-        grid-column: 10/11;
-        grid-row: 5/7;
+        display: block;
+        grid-column: 24/26;
+        grid-row: 2/3;
+        justify-self: end;
+        position: relative;
+        top: -$space-600;
       }
     }
 
     &:nth-of-type(11) {
-      grid-column: 8/12;
-      grid-row: 8/11;
+      display: none;
 
       @include mq($L) {
-        grid-column: 11/-1;
-        grid-row: 1/3;
-        transform: translateY(33%);
+        align-self: end;
+        bottom: $space-500;
+        display: block;
+        grid-column: 2/5;
+        grid-row: 3/4;
+        margin-left: -$space-400;
+        position: relative;
       }
     }
 
     &:nth-of-type(12) {
-      display: none;
+      grid-column: 5/8;
+      grid-row: 1/2;
+      position: relative;
+      z-index: 1;
 
       @include mq($L) {
-        display: block;
-        grid-column: 11/-1;
-        grid-row: 3/5;
-        transform: scale(0.85) translateX(-3%) translateY(20%);
+        align-self: end;
+        bottom: $space-500;
+        grid-column: 6/8;
+        grid-row: 3/4;
       }
     }
 
     &:nth-of-type(13) {
+      grid-column: 9/12;
+      grid-row: 3/4;
+      justify-self: end;
+      position: relative;
+      top: -35%;
+
+      @include mq($L) {
+        grid-column: 20/22;
+        grid-row: 3/4;
+        justify-self: start;
+        left: auto;
+        top: -$space-600;
+      }
+    }
+
+    &:nth-of-type(14) {
+      align-self: end;
+      grid-column: 6/10;
+      grid-row: 3/5;
+      left: $space-300;
+      position: relative;
+      top: -$space-600;
+
+      @include mq($L) {
+        align-self: start;
+        grid-column: 23/25;
+        grid-row: 3/4;
+        left: auto;
+        top: -$space-800;
+      }
+    }
+
+    &:nth-of-type(15) {
       display: none;
 
       @include mq($L) {
         display: block;
-        grid-column: 11/12;
-        grid-row: 5/7;
+        grid-column: 23/25;
+        grid-row: 3/4;
+        position: relative;
+        top: $space-700;
+      }
+    }
+
+    &:nth-of-type(16) {
+      display: none;
+
+      @include mq($L) {
+        display: block;
+        grid-column: 24/26;
+        grid-row: 3/4;
+        position: relative;
+        right: -50%;
+        top: 5rem;
       }
     }
   }

@@ -15,6 +15,9 @@ import image10 from '../../images/about-image-grid-10.jpg';
 import image11 from '../../images/about-image-grid-11.jpg';
 import image12 from '../../images/about-image-grid-12.jpg';
 import image13 from '../../images/about-image-grid-13.jpg';
+import image14 from '../../images/about-image-grid-14.jpg';
+import image15 from '../../images/about-image-grid-15.jpg';
+import image16 from '../../images/about-image-grid-16.jpg';
 
 const AboutBios = forwardRef(({ bios, isInView, setMenuTextIsLight }, ref) => {
   useEffect(() => {
@@ -142,6 +145,33 @@ const AboutBios = forwardRef(({ bios, isInView, setMenuTextIsLight }, ref) => {
               animateOnce
             >
               <img src={image13} alt="" />
+            </AnimationOnScroll>
+            <AnimationOnScroll
+              className="image-grid__image"
+              animateIn="animate__fadeInUp"
+              duration={2}
+              delay={600}
+              animateOnce
+            >
+              <img src={image14} alt="" />
+            </AnimationOnScroll>
+            <AnimationOnScroll
+              className="image-grid__image"
+              animateIn="animate__fadeInUp"
+              duration={2}
+              delay={300}
+              animateOnce
+            >
+              <img src={image15} alt="" />
+            </AnimationOnScroll>
+            <AnimationOnScroll
+              className="image-grid__image"
+              animateIn="animate__fadeInUp"
+              duration={2}
+              delay={1100}
+              animateOnce
+            >
+              <img src={image16} alt="" />
             </AnimationOnScroll>
           </div>
         </div>
