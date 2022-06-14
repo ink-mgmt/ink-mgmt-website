@@ -37,11 +37,6 @@
     @include mq($XL) {
       margin-top: -10rem;
     }
-
-    video {
-      max-width: 40rem;
-      width: 100%;
-    }
   }
 
   .logo {

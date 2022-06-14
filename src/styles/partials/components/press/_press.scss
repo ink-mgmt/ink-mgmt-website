@@ -63,10 +63,6 @@
       display: flex;
       gap: $space-600;
       justify-content: space-between;
-
-      > * {
-        flex-basis: 33.33333%;
-      }
     }
 
     @include mq($XL) {
@@ -83,6 +79,10 @@
     font-family: $font-bold;
     font-size: 1.25rem;
     line-height: 1;
+
+    @include mq($M) {
+      flex-basis: 35%;
+    }
   }
 
   &__copy {
@@ -93,6 +93,7 @@
 
     @include mq($M) {
       margin-bottom: 0;
+      flex-basis: 35%;
     }
   }
 
@@ -101,6 +102,7 @@
       align-items: flex-start;
       display: flex;
       justify-content: center;
+      flex-basis: 25%;
     }
   }
 

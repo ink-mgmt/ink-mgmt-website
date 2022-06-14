@@ -118,9 +118,5 @@
 
   &-cta {
     margin-top: $space-800;
-
-    @include mq($M) {
-      margin-top: $space-850;
-    }
   }
 }

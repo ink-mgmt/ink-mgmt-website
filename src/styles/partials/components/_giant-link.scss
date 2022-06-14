@@ -6,7 +6,7 @@
   letter-spacing: -0.025em;
   line-height: 0.875;
   outline: none;
-  transition: letter-spacing 0.75s ease-out;
+  transition: letter-spacing 0.25s ease-out;
 
   @include mq($M) {
     font-size: 12.5vw;
@@ -18,7 +18,7 @@
 
   &:focus,
   &:hover {
-    letter-spacing: -0.0125em;
+    letter-spacing: -0.02em;
   }
 
   &__arrow {

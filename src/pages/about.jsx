@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { InView } from 'react-intersection-observer';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -13,8 +12,6 @@ import AboutFormula from '../components/about/formula';
 import AboutPrinciples from '../components/about/principles';
 
 const About = ({ data }) => {
-  const [menuTextIsLight, setMenuTextIsLight] = useState(false);
-
   const aboutData = data.allWpPage.edges[0].node.about_page;
   const { bios, introCopy, introHeading, principles, theFormulaCopy } =
     aboutData;
@@ -23,33 +20,17 @@ const About = ({ data }) => {
     <Layout
       backgroundColor="#fff"
       headerLogoColor="#000"
-      footerBgColor="#000"
-      footerTextColor="#fff"
-      menuTextIsLight={menuTextIsLight}
+      footerBgColor="#fff"
+      footerTextColor="#000"
     >
       <SEO title="About" meta={[{ name: 'theme-color', content: '#ffffff' }]} />
       <AboutIntro introHeading={introHeading} introCopy={introCopy} />
-      <InView rootMargin="0px 0px -97% 0px">
-        {({ inView, ref }) => (
-          <AboutBios
-            bios={bios}
-            isInView={inView}
-            setMenuTextIsLight={setMenuTextIsLight}
-            ref={ref}
-          />
-        )}
-      </InView>
+
+      <AboutBios bios={bios} />
+
       <AboutFormula formulaCopy={theFormulaCopy} />
-      <InView rootMargin="0px 0px -97% 0px">
-        {({ inView, ref }) => (
-          <AboutPrinciples
-            principles={principles}
-            isInView={inView}
-            setMenuTextIsLight={setMenuTextIsLight}
-            ref={ref}
-          />
-        )}
-      </InView>
+
+      <AboutPrinciples principles={principles} />
     </Layout>
   );
 };

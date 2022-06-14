@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 const InfoIntro = ({ introCopy }) => (
   <section className="info__intro">
     <h1 className="info__intro-heading">
-      Let&rsquo;s get
+      Be a part of
       <br />
-      to work.
+      changing
+      <br />
+      the future.
     </h1>
     <p className="info__intro-copy">{introCopy}</p>
   </section>

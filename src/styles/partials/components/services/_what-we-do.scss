@@ -36,7 +36,7 @@
     &__button {
       color: $color-grey-8;
       outline: none;
-      padding-bottom: $space-700;
+      padding-bottom: $space-500;
       padding-top: $space-700;
 
       &:focus-visible {
@@ -79,12 +79,9 @@
     &__subtitle {
       font-family: $font-bold;
       font-size: 0.875rem;
-      margin-bottom: 0;
+      margin-bottom: $space-500;
+      padding-top: $space-400;
       text-transform: uppercase;
-
-      + * {
-        margin-top: $space-500;
-      }
     }
 
     &__content-wrapper {
@@ -111,7 +108,7 @@
         max-width: none;
         padding-bottom: 0;
         padding-left: 25%;
-        transform: translateY(-$space-800);
+        transform: translateY(-$space-700);
 
         p {
           max-width: 30ch;
