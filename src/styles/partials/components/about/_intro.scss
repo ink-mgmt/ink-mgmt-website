@@ -45,11 +45,14 @@
 
   &-copy {
     font-family: $font-mono;
-    font-size: 0.625rem;
+    font-size: 0.5rem;
+    font-size: clamp(
+      0.5rem,
+      0.3674812030075188rem + 0.5639097744360901vw,
+      0.875rem
+    );
     letter-spacing: 0.2em;
     margin-bottom: $space-500;
-    padding-left: $space-500;
-    padding-right: $space-500;
     text-transform: uppercase;
   }
 

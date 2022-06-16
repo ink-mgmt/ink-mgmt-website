@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `INK-MGMT`,
-    description: `SITE META DESCRIPTION GOES HERE.`,
+    description: `Meet the first Black owned creative talent agency founded by Black (award winning) creatives.`,
     siteUrl: `https://mikeriley.dev`,
     socialImage: `ABSOLUTE PATH TO IMAGE IN STATIC FOLDER`,
   },

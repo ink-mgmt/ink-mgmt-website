@@ -22,8 +22,11 @@
   }
 
   &-blob {
+    max-width: 16.5rem;
+
     @include mq($M) {
       margin-top: -4rem;
+      max-width: none;
     }
 
     @include mq($L) {

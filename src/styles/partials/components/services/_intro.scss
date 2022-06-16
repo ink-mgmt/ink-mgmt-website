@@ -5,8 +5,8 @@
   height: calc(100vh + 40px);
   height: calc(var(--app-height) + 40px);
   padding-bottom: $space-600;
-  padding-left: $space-500;
-  padding-right: $space-500;
+  padding-left: $space-600;
+  padding-right: $space-600;
   padding-top: $space-850;
   position: relative;
 
@@ -14,12 +14,16 @@
     font-family: $font-black;
     font-size: 3.25rem;
     font-size: clamp(3.25rem, 0.6458rem + 11.1111vw, 6.5rem);
-    hyphens: auto;
     line-height: 0.85;
     margin-left: auto;
     margin-right: auto;
+    max-width: 28.125rem;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 32.5rem) {
+      max-width: none;
+    }
 
     @include mq($L) {
       margin-bottom: 0;
