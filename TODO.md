@@ -34,10 +34,9 @@
   - WPGraphQL for Advanced Custom Fields
 - √ [WordPress] add custom fields
 - √ [WordPress] add content
-- create interior page template(s) used in gatsby-node
-- get content from WP API
+- √ get content from WP API
 - add schema.org metadata
-- custom 404 page or redirect to homepage
+- √ custom 404 page or redirect to homepage
 - create sitemap
   - gatsby-plugin-sitemap
 - cross-browser testing
