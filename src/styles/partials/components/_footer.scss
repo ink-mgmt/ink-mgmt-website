@@ -46,22 +46,38 @@
     }
 
     &-item {
-      margin-bottom: $space-300;
+      margin-bottom: $space-200;
     }
   }
 
   &__contact-info {
     display: flex;
 
+    @include mq($M) {
+      margin-right: $space-800;
+    }
+
+    @include mq($XL) {
+      margin-right: $space-1000;
+    }
+
+    @include mq($XXL) {
+      margin-right: $space-1500;
+    }
+
     > * {
       flex-basis: 50%;
 
       @include mq($M) {
-        margin-right: $space-800;
+        margin-right: $space-900;
       }
 
       @include mq($L) {
         margin-right: $space-1000;
+      }
+
+      @include mq($XXL) {
+        margin-right: $space-1200;
       }
     }
   }
@@ -100,8 +116,8 @@
 
   &__blob {
     position: absolute;
-    bottom: $space-500;
-    height: 28px;
+    bottom: $space-300;
+    height: 46px;
     right: $space-500;
     width: auto;
   }

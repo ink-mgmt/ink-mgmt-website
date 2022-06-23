@@ -47,15 +47,25 @@
     &-name {
       font-size: 0.875rem;
       margin-bottom: $space-400;
+
+      &:empty {
+        height: $space-500;
+      }
     }
 
     &-link {
+      border-bottom: 0;
       color: $white;
       font-size: 1.125rem;
+
+      &:empty {
+        height: $space-550;
+      }
     }
   }
 
   &__big-link {
+    border-bottom: 0;
     color: $white;
     font-family: $font-black;
     font-size: 3.125rem;

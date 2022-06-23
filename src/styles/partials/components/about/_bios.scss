@@ -91,6 +91,10 @@
         grid-row: 1/2;
         top: -10%;
       }
+
+      @include mq($XXL) {
+        justify-self: end;
+      }
     }
 
     &:nth-of-type(2) {
@@ -107,6 +111,10 @@
         left: 1.5rem;
         top: $space-300;
       }
+
+      @include mq($XXL) {
+        justify-self: center;
+      }
     }
 
     &:nth-of-type(3) {
@@ -121,6 +129,11 @@
         grid-row: 1/4;
         left: -$space-600;
         margin-top: $space-800;
+
+        img {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
 
@@ -136,6 +149,10 @@
         left: 1.5rem;
         top: -$space-500;
       }
+
+      @include mq($XXL) {
+        left: auto;
+      }
     }
 
     &:nth-of-type(5) {
@@ -148,6 +165,10 @@
         left: $space-300;
         position: relative;
         top: -$space-500;
+      }
+
+      @include mq($XXL) {
+        left: -$space-500;
       }
     }
 
@@ -165,6 +186,10 @@
         margin-left: -55%;
         top: $space-700;
       }
+
+      @include mq($XXL) {
+        margin-left: -20%;
+      }
     }
 
     &:nth-of-type(7) {
@@ -177,6 +202,10 @@
         left: $space-200;
         position: relative;
         top: 1.5rem;
+      }
+
+      @include mq($XXL) {
+        justify-self: center;
       }
     }
 
@@ -191,6 +220,10 @@
         position: relative;
         top: -$space-500;
       }
+
+      @include mq($XXL) {
+        justify-self: center;
+      }
     }
 
     &:nth-of-type(9) {
@@ -204,6 +237,10 @@
         position: relative;
         top: -3.75rem;
       }
+
+      @include mq($XXL) {
+        left: -$space-500;
+      }
     }
 
     &:nth-of-type(10) {
@@ -216,6 +253,10 @@
         justify-self: end;
         position: relative;
         top: -3.75rem;
+      }
+
+      @include mq($XXL) {
+        grid-column: 23/25;
       }
     }
 
@@ -231,6 +272,10 @@
         position: relative;
         top: 1.75rem;
       }
+
+      @include mq($XXL) {
+        justify-self: end;
+      }
     }
 
     &:nth-of-type(12) {
@@ -244,6 +289,10 @@
         grid-row: 3/4;
         left: -$space-400;
         top: $space-800;
+      }
+
+      @include mq($XXL) {
+        justify-self: end;
       }
     }
 
@@ -260,6 +309,11 @@
         justify-self: start;
         left: -$space-700;
         top: -4.375rem;
+      }
+
+      @include mq($XXL) {
+        grid-column: 19/21;
+        left: -$space-300;
       }
     }
 
@@ -278,6 +332,11 @@
         left: 1.25rem;
         top: 5.5rem;
       }
+
+      @include mq($XXL) {
+        grid-column: 21/24;
+        justify-self: center;
+      }
     }
 
     &:nth-of-type(15) {
@@ -291,6 +350,11 @@
         position: relative;
         top: 2.5rem;
       }
+
+      @include mq($XXL) {
+        grid-column: 22/24;
+        left: -$space-500;
+      }
     }
 
     &:nth-of-type(16) {
@@ -303,6 +367,10 @@
         position: relative;
         right: -50%;
         top: $space-800;
+      }
+
+      @include mq($XXL) {
+        right: -15%;
       }
     }
   }
