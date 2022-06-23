@@ -21,7 +21,7 @@ const Accordion = ({ titleHeadingLevel: Heading, items }) => {
       setTimeout(() => {
         setOpenAccordions([]);
         setIsClosingClass('');
-      }, 1800);
+      }, 1000);
     }
   };
 
@@ -29,7 +29,7 @@ const Accordion = ({ titleHeadingLevel: Heading, items }) => {
     if (openAccordions.length > 1 && openAccordions[0] !== openAccordions[1]) {
       setTimeout(() => {
         setOpenAccordions(openAccordions.slice(0, -1));
-      }, 1800);
+      }, 1000);
     }
   }, [openAccordions]);
 
