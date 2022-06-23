@@ -4,7 +4,7 @@
   padding-left: $space-500;
   padding-right: $space-500;
 
-  @include mq($M) {
+  @include mq($L) {
     align-items: flex-end;
     display: flex;
     height: 40vh;

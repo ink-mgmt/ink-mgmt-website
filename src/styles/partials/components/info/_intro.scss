@@ -12,7 +12,7 @@
   padding-right: $space-500;
   padding-top: $space-900;
 
-  @include mq($M) {
+  @include mq($L) {
     display: flex;
     flex-direction: row-reverse;
     height: calc(60vh + 40px);
