@@ -5,9 +5,7 @@ import Accordion from '../accordion';
 
 const ServicesWhatWeDo = ({ accordionItems }) => (
   <section className="services__what-we-do">
-    <h1 className="services__what-we-do-heading">
-      <span>What</span> <span>we</span> <span>do</span>
-    </h1>
+    <h1 className="visuallyhidden">What We Do</h1>
     <div className="services__what-we-do-accordions">
       <Accordion items={accordionItems} />
     </div>

@@ -3,18 +3,9 @@
   padding-left: $space-500;
   padding-right: $space-500;
 
-  &-heading {
-    border-bottom: 1px solid $color-grey-8;
-    display: flex;
-    font-family: $font-bold;
-    font-size: 1.25rem;
-    justify-content: space-between;
-    margin-bottom: 0;
-    padding-bottom: $space-400;
-    text-transform: uppercase;
-  }
-
   .accordion {
+    border-top: 1px solid $color-grey-8;
+
     &__item {
       border-bottom: 1px solid $color-grey-8;
       color: $color-grey-8;
