@@ -17,7 +17,7 @@
     justify-content: space-between;
   }
 
-  .link {
+  .link:not(.header__menu-button) {
     &::after {
       display: none;
     }
