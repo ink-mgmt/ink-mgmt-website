@@ -10,7 +10,7 @@ import InfoContacts from '../components/info/contacts';
 
 const Info = ({ data }) => {
   const infoData = data.allWpPage.edges[0].node.info_page;
-  const { introCopy, contactItems } = infoData;
+  const { contactItems } = infoData;
 
   return (
     <Layout
@@ -21,7 +21,7 @@ const Info = ({ data }) => {
     >
       <SEO title="Info" />
       <div className="info__content">
-        <InfoIntro introCopy={introCopy} />
+        <InfoIntro />
         <InfoContacts contactItems={contactItems} />
       </div>
     </Layout>
@@ -34,7 +34,6 @@ export const query = graphql`
       edges {
         node {
           info_page {
-            introCopy
             contactItems {
               heading
               name
@@ -56,7 +55,6 @@ Info.propTypes = {
         PropTypes.shape({
           node: PropTypes.shape({
             info_page: PropTypes.shape({
-              introCopy: PropTypes.string,
               contactItems: PropTypes.arrayOf(PropTypes.shape({})),
             }),
           }),

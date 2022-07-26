@@ -15,36 +15,18 @@
   @include mq($L) {
     display: flex;
     flex-direction: row-reverse;
-    height: calc(60vh + 40px);
     justify-content: flex-end;
+    height: auto;
     padding-top: $space-1200;
   }
 
   &-heading {
     font-family: $font-black;
     font-size: 2.125rem;
+    font-size: clamp(2.125rem, 0.125rem + 10vw, 7.625rem);
     line-height: 0.85;
     margin-bottom: $space-900;
+    text-align-last: justify;
     text-transform: uppercase;
-  }
-
-  &-copy {
-    font-family: $font-reg;
-    font-size: 0.75rem;
-    line-height: 1.1;
-    max-width: 42ch;
-
-    @include mq($M) {
-      font-size: 0.875rem;
-      margin-right: $space-900;
-    }
-
-    @include mq($L) {
-      margin-right: $space-1200;
-    }
-
-    @include mq($XL) {
-      margin-right: 25rem;
-    }
   }
 }
