@@ -77,7 +77,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
             <br />
             <a
               className="link"
-              href="mailto:weare@inkmgmt.com"
+              href="mailto:WeAre@inkmgmt.com"
               style={{ color: footerTextColor }}
             >
               WeAre@inkmgmt.com

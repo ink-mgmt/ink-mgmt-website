@@ -126,7 +126,7 @@
     background-color: $black;
     transform: scaleX(0);
     transform-origin: bottom right;
-    transition: transform 0.3s;
+    transition: transform 0.9s;
 
     @include mq($M) {
       height: 6px;
@@ -145,7 +145,11 @@
 .nav__footer {
   font-family: $font-med;
   font-size: 0.6875rem;
-  line-height: 1;
+  line-height: 1.2;
+
+  @include mq($M) {
+    font-size: 0.9375rem;
+  }
 
   @include mq($L) {
     display: flex;
