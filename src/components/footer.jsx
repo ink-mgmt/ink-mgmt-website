@@ -77,10 +77,10 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
             <br />
             <a
               className="link"
-              href="mailto:WeAre@inkmgmt.com"
+              href="mailto:weare@inkmgmt.com"
               style={{ color: footerTextColor }}
             >
-              WeAre@inkmgmt.com
+              weare@inkmgmt.com
             </a>
             <br />
             —<br />
@@ -99,9 +99,9 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               <a
                 className="footer__contact-link link"
                 style={{ color: footerTextColor }}
-                href="mailto:WeAre@inkmgmt.com"
+                href="mailto:weare@inkmgmt.com"
               >
-                WeAre@inkmgmt.com
+                weare@inkmgmt.com
               </a>
             </li>
             <li className="footer__contact-item">
@@ -109,9 +109,9 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               <a
                 className="footer__contact-link link"
                 style={{ color: footerTextColor }}
-                href="mailto:Source@inkmgmt.com"
+                href="mailto:source@inkmgmt.com"
               >
-                Source@inkmgmt.com
+                source@inkmgmt.com
               </a>
             </li>
             <li className="footer__contact-item">
@@ -119,9 +119,9 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               <a
                 className="footer__contact-link link"
                 style={{ color: footerTextColor }}
-                href="mailto:Create@inkmgmt.com"
+                href="mailto:create@inkmgmt.com"
               >
-                Create@inkmgmt.com
+                create@inkmgmt.com
               </a>
             </li>
             <li className="footer__contact-item">
@@ -129,9 +129,9 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               <a
                 className="footer__contact-link link"
                 style={{ color: footerTextColor }}
-                href="mailto:Talent@inkmgmt.com"
+                href="mailto:talent@inkmgmt.com"
               >
-                Talent@inkmgmt.com
+                talent@inkmgmt.com
               </a>
             </li>
           </ul>

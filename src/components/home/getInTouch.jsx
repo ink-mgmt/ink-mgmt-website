@@ -5,7 +5,7 @@ import GiantLink from '../giantLink';
 const GetInTouch = () => (
   <section className="home__get-in-touch">
     <div className="home__get-in-touch-container">
-      <GiantLink linkText="Get in touch" linkURL="mailto:WeAre@inkmgmt.com" />
+      <GiantLink linkText="Get in touch" linkURL="mailto:weare@inkmgmt.com" />
     </div>
   </section>
 );
