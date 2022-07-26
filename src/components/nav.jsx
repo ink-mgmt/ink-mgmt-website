@@ -153,10 +153,10 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
             <br />
             <a
               className="link"
-              href="mailto:weare@inkmgmt.com"
+              href="mailto:WeAre@inkmgmt.com"
               tabIndex={navIsOpen ? 0 : -1}
             >
-              weare@inkmgmt.com
+              WeAre@inkmgmt.com
             </a>
             <br />
             —<br />

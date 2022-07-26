@@ -80,7 +80,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               href="mailto:weare@inkmgmt.com"
               style={{ color: footerTextColor }}
             >
-              weare@inkmgmt.com
+              WeAre@inkmgmt.com
             </a>
             <br />
             —<br />
