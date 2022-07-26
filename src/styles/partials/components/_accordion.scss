@@ -18,11 +18,11 @@
     opacity: 0;
 
     &.is-open {
-      animation: fadeInAndGrow 0.25s ease-out forwards;
+      animation: fadeInAndGrow 0.75s ease-out forwards;
     }
 
     &.is-closing {
-      animation: fadeOutAndShrink 0.25s ease-out forwards;
+      animation: fadeOutAndShrink 0.75s ease-out forwards;
     }
   }
 }
