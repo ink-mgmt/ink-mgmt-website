@@ -14,7 +14,7 @@ const Hero = forwardRef(({ isInView, setHeroIsScrolled }, ref) => {
     <section className="home__hero" ref={ref}>
       <div className="home__hero-content">
         <h1 className="visuallyhidden">Ink Mgmt</h1>
-        <div className="home__hero-blob fadeInAndScaleUp">
+        <div className="home__hero-blob">
           <img src={blobImage} alt="Ink Mgmt blob logo" />
         </div>
         <Logo />
