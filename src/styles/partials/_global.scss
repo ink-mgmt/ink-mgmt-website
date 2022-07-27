@@ -13,13 +13,14 @@ body {
   background: $bg-clr;
   background-attachment: fixed;
   background-image: url('/blue-paper-bg-vert.jpg');
-  background-size: cover;
+  background-size: contain;
   font-family: $font-med;
   height: var(--app-height);
   width: 100%;
 
   @include mq($S) {
     background-image: url('/blue-paper-bg.jpg');
+    background-size: cover;
   }
 }
 
