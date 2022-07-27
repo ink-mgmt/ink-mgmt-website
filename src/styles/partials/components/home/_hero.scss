@@ -32,8 +32,7 @@
     width: 100%;
   }
 
-  &-blob {
-    max-height: 50vh;
+  &-blob {=
     max-width: 16.5rem;
 
     @include mq($M) {
@@ -51,6 +50,10 @@
 
     @include mq($XL) {
       margin-top: -10rem;
+    }
+
+    img {
+      max-height: 50vh;
     }
   }
 
