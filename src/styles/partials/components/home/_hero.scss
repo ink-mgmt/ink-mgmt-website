@@ -1,3 +1,13 @@
+.home__mobile-bg {
+  max-width: none;
+  position: fixed;
+  width: 100%;
+
+  @include mq($S) {
+    display: none;
+  }
+}
+
 .home__hero {
   align-items: center;
   color: $white;
