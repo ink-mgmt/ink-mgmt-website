@@ -33,6 +33,7 @@
   }
 
   &-blob {
+    max-height: 50vh;
     max-width: 16.5rem;
 
     @include mq($M) {
