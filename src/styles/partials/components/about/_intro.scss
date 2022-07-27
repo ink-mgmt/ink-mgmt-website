@@ -1,5 +1,5 @@
 .about__intro {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   height: calc(100vh + 40px);
   height: calc(var(--app-height) + 40px);
@@ -11,12 +11,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    transform: translateY(20%);
-
-    @include mq($M) {
-      transform: none;
-    }
+    height: 62.5vh;
+    justify-content: space-between;
   }
 
   &-heading {
@@ -24,6 +20,7 @@
     font-size: 1.625rem;
     font-size: clamp(1.625rem, 0.9246rem + 2.9885vw, 4.0625rem);
     line-height: 0.85;
+    margin-bottom: $space-550;
     max-width: 20ch;
     text-transform: uppercase;
 
@@ -36,21 +33,12 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    transform: translateY(90%);
-
-    @include mq($M) {
-      transform: none;
-    }
   }
 
   &-copy {
     font-family: $font-mono;
-    font-size: 0.5rem;
-    font-size: clamp(
-      0.5rem,
-      0.3674812030075188rem + 0.5639097744360901vw,
-      0.875rem
-    );
+    font-size: 0.4375rem;
+    font-size: clamp(0.4375rem, 0.275rem + 0.8vw, 0.875rem);
     letter-spacing: 0.2em;
     margin-bottom: $space-500;
     text-transform: uppercase;
