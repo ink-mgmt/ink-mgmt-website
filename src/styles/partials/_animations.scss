@@ -56,41 +56,43 @@
   }
 }
 
-@keyframes fadeInDown {
+@keyframes slideUp {
   0% {
-    opacity: 0;
-    transform: translateY(-2rem);
+    transform: translateY(100%);
   }
   100% {
-    opacity: 1;
     transform: translateY(0);
   }
 }
 
-.fade-in-down {
-  animation-name: fadeInDown;
-  animation-duration: 500ms;
+.slideUp {
+  animation-name: slideUp;
+  animation-duration: 0.325s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  opacity: 0;
+  transform: translateY(100%);
 }
 
-@keyframes fadeInAndScaleUp {
+@keyframes growRight {
   0% {
-    opacity: 0.05;
-    transform: scale(0.05);
+    transform: scale(0);
   }
   100% {
-    opacity: 1;
     transform: scale(1);
   }
 }
 
-.fadeInAndScaleUp {
-  animation-name: fadeInAndScaleUp;
-  animation-duration: 4s;
-  animation-timing-function: cubic-bezier(1, 0.06, 0.12, 1);
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.growRight {
+  animation-name: draw;
+  animation-duration: 0.625s;
+  animation-timing-function: cubic-bezier(0.65, 0, 1, 0.5);
   animation-fill-mode: forwards;
-  opacity: 0.05;
-  transform: scale(0.05);
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
 }

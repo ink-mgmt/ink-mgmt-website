@@ -12,7 +12,7 @@ import GetInTouch from '../components/home/getInTouch';
 
 import mobileBgImg from '../images/blue-paper-bg-vert.jpg';
 
-const IndexPage = ({ location }) => {
+const IndexPage = () => {
   const [heroIsScrolled, setHeroIsScrolled] = useState(false);
 
   return (
@@ -20,7 +20,6 @@ const IndexPage = ({ location }) => {
       headerLogoColor="#000"
       footerBgColor="transparent"
       footerTextColor="#000"
-      location={location}
       heroIsScrolled={heroIsScrolled}
     >
       <SEO title="Home" meta={[{ name: 'theme-color', content: '#1601f8' }]} />

@@ -15,7 +15,6 @@ const Layout = ({
   headerTextColor,
   footerBgColor,
   footerTextColor,
-  location,
   menuTextIsLight,
   heroIsScrolled,
 }) => {
@@ -48,7 +47,6 @@ const Layout = ({
           <Header
             headerLogoColor={headerLogoColor}
             headerTextColor={headerTextColor}
-            location={location}
             menuTextIsLight={menuTextIsLight}
             siteTitle={data.site.siteMetadata.title}
             heroIsScrolled={heroIsScrolled}

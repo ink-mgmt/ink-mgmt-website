@@ -8,7 +8,6 @@ import Nav from './nav';
 const Header = ({
   headerLogoColor,
   headerTextColor,
-  location,
   menuTextIsLight,
   siteTitle,
   heroIsScrolled,
@@ -22,10 +21,7 @@ const Header = ({
           <Link className="link" to="/">
             <p className="visuallyhidden">{siteTitle}</p>
             {heroIsScrolled && (
-              <Logo
-                fillColor={menuTextIsLight ? '#fff' : headerLogoColor}
-                location={location}
-              />
+              <Logo fillColor={menuTextIsLight ? '#fff' : headerLogoColor} />
             )}
           </Link>
 
