@@ -27,16 +27,19 @@
       flex-wrap: wrap;
       gap: $space-500;
       justify-content: space-between;
+      padding-left: $space-600;
+      padding-right: $space-600;
 
       > * {
         flex-basis: calc(50% - #{$space-500});
       }
     }
 
-    @include mq($M) {
+    @include mq($L) {
+      flex-wrap: nowrap;
       gap: $space-600;
-      padding-left: $space-600;
-      padding-right: $space-600;
+      padding-left: $space-700;
+      padding-right: $space-700;
 
       > * {
         flex-basis: calc(50% - #{$space-600});
@@ -45,8 +48,6 @@
 
     @include mq($L) {
       gap: $space-700;
-      padding-left: $space-700;
-      padding-right: $space-700;
 
       > * {
         flex-basis: calc(33.33333% - #{$space-700});
