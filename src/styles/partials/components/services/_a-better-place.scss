@@ -1,73 +1,49 @@
 .services__a-better-place {
-  padding-bottom: $space-850;
-  margin-top: $space-850;
+  margin-top: $space-800;
+  padding-bottom: $space-1200;
+
+  @include mq($M) {
+    margin-top: $space-850;
+    padding-bottom: $space-850;
+  }
 }
 
 .a-better-place {
   &__content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
-
-    @include mq($L) {
-      align-items: center;
-      display: flex;
-      gap: $space-600;
-      padding-right: $space-600;
-
-      > * {
-        flex-basis: 50%;
-      }
-    }
-
-    @include mq($XXL) {
-      gap: $space-800;
-    }
-  }
-
-  &__figure {
-    margin-bottom: $space-700;
-    width: 105%;
-
-    @include mq($L) {
-      margin-bottom: 0;
-      width: 100%;
-    }
+    padding-left: $space-500;
+    padding-right: $space-500;
   }
 
   &__copy {
     color: $color-grey-8;
-    line-height: 1.2;
-    max-width: 800px;
-    padding-left: $space-600;
-    padding-right: $space-600;
+    font-family: $font-light;
+    line-height: 1;
+    max-width: 750px;
     text-align: center;
 
-    @include mq($L) {
-      padding-left: $space-800;
-      padding-right: $space-800;
-    }
-
-    @media (min-width: 1200px) {
-      padding-left: $space-850;
-      padding-right: $space-850;
-    }
-
-    @media (min-width: 1400px) {
-      padding-left: $space-900;
-      padding-right: $space-900;
+    @include mq($M) {
+      line-height: 1.2;
     }
 
     p {
+      font-size: 0.875rem;
       margin-left: auto;
       margin-right: auto;
 
-      @include mq($L) {
+      @include mq($M) {
+        font-size: 1.25rem;
         margin-left: 0;
         margin-right: 0;
-        max-width: none;
+        max-width: 42rem;
       }
     }
 
     strong {
+      font-family: $font-bold;
       text-transform: uppercase;
     }
   }
@@ -78,12 +54,11 @@
     font-size: 1.875rem;
     font-size: clamp(
       1.875rem,
-      1.3670112781954886rem + 2.161654135338346vw,
-      3.3125rem
+      0.6964285714285714rem + 5.892857142857142vw,
+      6rem
     );
-    line-height: 1;
-    margin-top: $space-600;
-    max-width: 800px;
+    line-height: 0.9;
+    margin-bottom: $space-600;
     text-align: center;
     text-transform: uppercase;
 
@@ -91,9 +66,7 @@
       margin-left: auto;
       margin-right: auto;
 
-      @include mq($L) {
-        margin-left: 0;
-        margin-right: 0;
+      @include mq($M) {
         max-width: none;
       }
     }

@@ -5,9 +5,9 @@ const InfoIntro = () => (
     <h1 className="info__intro-heading">
       Be a part of
       <br />
-      changing the
+      changing
       <br />
-      future.
+      the future.
     </h1>
   </section>
 );
