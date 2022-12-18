@@ -1,4 +1,4 @@
-import React, { Fragment, useLayoutEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
@@ -13,10 +13,11 @@ const Layout = ({
   backgroundColor,
   headerLogoColor,
   headerTextColor,
+  heroIsScrolled,
   footerBgColor,
   footerTextColor,
+  location,
   menuTextIsLight,
-  heroIsScrolled,
 }) => {
   useLayoutEffect(() => {
     const appHeight = () => {
@@ -40,7 +41,9 @@ const Layout = ({
         }
       `}
       render={(data) => (
-        <Fragment>
+        <div
+          className={`site-wrapper ${location.pathname === '/' ? 'home' : ''}`}
+        >
           <a className="skip-link" href="#main">
             skip to main content
           </a>
@@ -63,7 +66,7 @@ const Layout = ({
             footerBgColor={footerBgColor}
             footerTextColor={footerTextColor}
           />
-        </Fragment>
+        </div>
       )}
     />
   );
@@ -76,7 +79,9 @@ Layout.propTypes = {
   headerTextColor: PropTypes.string,
   footerBgColor: PropTypes.string,
   footerTextColor: PropTypes.string,
-  location: PropTypes.shape({}),
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
   menuTextIsLight: PropTypes.bool,
   heroIsScrolled: PropTypes.bool,
 };

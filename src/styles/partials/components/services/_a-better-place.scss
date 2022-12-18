@@ -1,11 +1,6 @@
 .services__a-better-place {
-  margin-top: $space-800;
+  margin-top: $space-1200;
   padding-bottom: $space-1200;
-
-  @include mq($M) {
-    margin-top: $space-850;
-    padding-bottom: $space-850;
-  }
 }
 
 .a-better-place {
@@ -51,16 +46,19 @@
   &__tag {
     color: $color-grey-8;
     font-family: $font-black;
-    font-size: 1.875rem;
-    font-size: clamp(
-      1.875rem,
-      0.6964285714285714rem + 5.892857142857142vw,
-      6rem
-    );
+    font-size: 1.5rem;
     line-height: 0.9;
     margin-bottom: $space-600;
     text-align: center;
     text-transform: uppercase;
+
+    @include mq($S) {
+      font-size: clamp(
+        1.875rem,
+        0.6964285714285714rem + 5.892857142857142vw,
+        6rem
+      );
+    }
 
     p {
       margin-left: auto;

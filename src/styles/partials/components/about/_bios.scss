@@ -46,7 +46,7 @@
       }
     }
 
-    @include mq($L) {
+    @include mq($XL) {
       gap: $space-700;
 
       > * {
@@ -55,10 +55,10 @@
     }
 
     @include mq($XXL) {
-      gap: $space-900;
+      gap: $space-800;
 
       > * {
-        flex-basis: calc(33.33333% - #{$space-900});
+        flex-basis: calc(33.33333% - #{$space-800});
       }
     }
   }
@@ -83,6 +83,7 @@
     &:nth-of-type(1) {
       grid-column: 1/4;
       grid-row: 3/5;
+      left: -0.75rem;
       position: relative;
       top: -50%;
       z-index: 1;

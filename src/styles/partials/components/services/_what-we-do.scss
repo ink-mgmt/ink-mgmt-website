@@ -3,6 +3,10 @@
   padding-left: $space-500;
   padding-right: $space-500;
 
+  @include mq($L) {
+    padding-bottom: $space-800;
+  }
+
   .accordion {
     border-top: 1px solid $color-grey-8;
 

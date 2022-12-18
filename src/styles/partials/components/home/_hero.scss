@@ -1,12 +1,18 @@
-.home__mobile-bg {
-  height: calc(100vh + 40px);
-  max-width: none;
-  position: fixed;
-  width: 100%;
-  z-index: -1;
+.home {
+  &::after {
+    background-image: url(/blue-paper-bg-vert.jpg);
+    background-position: center top;
+    background-repeat: repeat-y;
+    content: '';
+    height: calc(100vh + 40px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 
-  @include mq($S) {
-    display: none;
+    @include mq($S) {
+      display: none;
+    }
   }
 }
 
