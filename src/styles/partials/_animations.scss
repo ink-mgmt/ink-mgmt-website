@@ -84,8 +84,9 @@
 
 .slideUp {
   animation-name: slideUp;
-  animation-duration: 0.325s;
+  animation-duration: 0.375s;
   animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.27, 1, 0.79, 0.98);
   animation-fill-mode: forwards;
   transform: translateY(100%);
 }
