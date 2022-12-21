@@ -28,5 +28,9 @@
     margin-bottom: $space-900;
     text-align-last: justify;
     text-transform: uppercase;
+
+    @include mq($L) {
+      text-align-last: left;
+    }
   }
 }
