@@ -20,6 +20,10 @@ body {
     background-image: url('/blue-paper-bg.jpg');
     background-size: cover;
   }
+
+  &:has(.home) {
+    background-color: $bg-blue;
+  }
 }
 
 main,
