@@ -15,7 +15,12 @@ const Hero = forwardRef(({ isInView, setHeroIsScrolled }, ref) => {
       <div className="home__hero-content">
         <h1 className="visuallyhidden">Ink Mgmt</h1>
         <div className="home__hero-blob fadeIn">
-          <img src={blobImage} alt="Ink Mgmt blob logo" />
+          <img
+            src={blobImage}
+            alt="Ink Mgmt blob logo"
+            width="455"
+            height="420"
+          />
         </div>
         <Logo />
       </div>
