@@ -31,7 +31,7 @@ const IndexPage = ({ location }) => {
           />
         )}
       </InView>
-      <div className="home__top-content">
+      <div className="home__top-content fadeIn">
         <IntroText />
         <WhatWeDo />
         <GetInTouch />
