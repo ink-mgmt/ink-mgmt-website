@@ -167,10 +167,10 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
             >
               Instagram
             </a>
-            ,{' '}
+            {/* ,{' '}
             <a className="link" href="/" tabIndex={navIsOpen ? 0 : -1}>
               LinkedIn
-            </a>
+            </a> */}
           </address>
           <p className="footer__copyright">&copy;2022 Ink-Mgmt LLC</p>
         </div>

@@ -94,10 +94,10 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
             >
               Instagram
             </a>
-            ,{' '}
+            {/* ,{' '}
             <a className="link" href="/" style={{ color: footerTextColor }}>
               LinkedIn
-            </a>
+            </a> */}
           </address>
 
           <ul className="footer__contacts">
