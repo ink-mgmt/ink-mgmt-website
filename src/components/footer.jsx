@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 
 import LogoBlob from './logoBlob';
 
+const date = new Date();
+const currentYear = date.getFullYear();
+
 const Footer = ({ footerBgColor, footerTextColor }) => (
   <footer
     className="footer"
@@ -39,7 +42,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               Services
             </a>
           </li>
-          <li className="footer__nav-item">
+          {/* <li className="footer__nav-item">
             <a
               href="/press"
               className="footer__nav-link link"
@@ -47,7 +50,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
             >
               Press
             </a>
-          </li>
+          </li> */}
           <li className="footer__nav-item">
             <a
               href="/info"
@@ -143,8 +146,8 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
       </div>
 
       <p className="footer__copyright">
-        <span className="footer__copyright-symbol">&copy;</span> 2022 Ink-Mgmt
-        LLC
+        <span className="footer__copyright-symbol">&copy;</span> {currentYear}{' '}
+        Ink-Mgmt LLC
       </p>
     </div>
 
