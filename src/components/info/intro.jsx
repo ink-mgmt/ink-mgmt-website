@@ -3,11 +3,13 @@ import React from 'react';
 const InfoIntro = () => (
   <section className="info__intro">
     <h1 className="info__intro-heading">
-      Be a part of
+      A source
       <br />
-      changing
+      for black
       <br />
-      the future.
+      perspectives
+      <br />
+      in creativity.
     </h1>
   </section>
 );

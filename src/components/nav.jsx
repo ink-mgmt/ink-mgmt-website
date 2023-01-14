@@ -113,7 +113,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
               Services
             </Link>
           </li>
-          <li className="nav__item">
+          {/* <li className="nav__item">
             <Link
               className="nav__link"
               to="/press"
@@ -122,7 +122,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
             >
               Press
             </Link>
-          </li>
+          </li> */}
           <li className="nav__item">
             <Link
               className="nav__link"
@@ -160,7 +160,11 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
             </a>
             <br />
             —<br />
-            <a className="link" href="/" tabIndex={navIsOpen ? 0 : -1}>
+            <a
+              className="link"
+              href="https://www.instagram.com/inkmgmt/"
+              tabIndex={navIsOpen ? 0 : -1}
+            >
               Instagram
             </a>
             ,{' '}

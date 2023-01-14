@@ -31,9 +31,9 @@
     line-height: 1.125;
     padding-bottom: $space-800;
 
-    @include mq($M) {
+    @include mq($L) {
       flex-basis: 25%;
-      padding-bottom: 0;
+      padding-bottom: $space-300;
     }
 
     &-heading {

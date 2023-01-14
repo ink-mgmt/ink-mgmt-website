@@ -18,7 +18,7 @@
 - √ add site content
   - static and/or via WordPress API
 - √ push to Pyrographic Netlify account for dev URL
-- [WordPress] create a WP instance on client's host
+- √ [WordPress] create a WP instance on client's host
   - SSL required
 - √ [WordPress] add plugins
   - Advanced Custom Fields PRO
@@ -35,31 +35,30 @@
 - √ [WordPress] add custom fields
 - √ [WordPress] add content
 - √ get content from WP API
-- add schema.org metadata
+- ~~add schema.org metadata~~
 - √ custom 404 page or redirect to homepage
-- create sitemap
+- ~~create sitemap~~
   - gatsby-plugin-sitemap
-- cross-browser testing
-- Lighthouse audits
+- ~~cross-browser testing~~
+- √ Lighthouse audits
   - accessibility
   - performance
-- manual accessibility audits
+- √ manual accessibility audits
   - interactive elements navigable via keyboard?
     - hidden menus?
 - overall audit
 - https://sonarwhal.com/scanner
-- google analytics scripts added
-- remove unused boilerplate files and assets (images, icons, fonts, etc.)
+- √ remove unused boilerplate files and assets (images, icons, fonts, etc.)
 - update gatsby-config file for launch
   - favicon
   - create Open Graph/Twitter Card image (1200px × 630px)
   - connect to any social media sites
-- update README
 - [WordPress] set up Updraft Plus backups
 - final payment
 - migrate to client's Netlify account
 - DNS updates to client's domain
 - launch
+- update README
 - create GitHub organization for client and migrate repo
 - client documentation
 - client video training session

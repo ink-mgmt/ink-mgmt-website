@@ -84,7 +84,11 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
             </a>
             <br />
             —<br />
-            <a className="link" href="/" style={{ color: footerTextColor }}>
+            <a
+              className="link"
+              href="https://www.instagram.com/inkmgmt/"
+              style={{ color: footerTextColor }}
+            >
               Instagram
             </a>
             ,{' '}

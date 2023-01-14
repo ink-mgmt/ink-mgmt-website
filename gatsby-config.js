@@ -27,14 +27,6 @@ module.exports = {
             },
           },
         },
-        // includedRoutes: [
-        //   '/*/*/menus',
-        //   '/*/*/contact',
-        //   '/*/*/editors',
-        //   '/*/*/musicVideos',
-        //   '/*/*/theLookout',
-        //   '/*/*/work',
-        // ],
       },
     },
     {

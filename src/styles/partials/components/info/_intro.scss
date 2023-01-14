@@ -16,20 +16,23 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    height: 100vh;
     padding-top: $space-1200;
   }
 
   &-heading {
     font-family: $font-black;
     font-size: 2.125rem;
-    font-size: clamp(2.125rem, 0.125rem + 10vw, 7.625rem);
+    font-size: clamp(
+      2.125rem,
+      1.3035714285714286rem + 4.107142857142857vw,
+      5rem
+    );
     line-height: 0.85;
     margin-bottom: $space-900;
     text-align-last: justify;
     text-transform: uppercase;
 
-    @include mq($L) {
+    @include mq($S) {
       text-align-last: left;
     }
   }
