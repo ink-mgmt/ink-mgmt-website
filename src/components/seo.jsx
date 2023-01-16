@@ -91,6 +91,7 @@ const detailsQuery = graphql`
       siteMetadata {
         title
         description
+        socialImage
       }
     }
   }
