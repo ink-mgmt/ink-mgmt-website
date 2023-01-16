@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `INK-MGMT`,
     description: `Meet the first Black owned creative talent agency founded by Black (award winning) creatives.`,
-    siteUrl: `https://mikeriley.dev`,
-    socialImage: `ABSOLUTE PATH TO IMAGE IN STATIC FOLDER`,
+    siteUrl: `https://www.inkmgmt.com/`,
+    socialImage: `/social-image.jpg`,
   },
   plugins: [
     `gatsby-plugin-remove-trailing-slashes`,
