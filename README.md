@@ -3,8 +3,8 @@
 Built with [Pyrographic Design's boilerplate](https://github.com/mikeriley131/gatsby-starter) for static sites.\
 Built on [Gatsby.js](https://www.gatsbyjs.org/), a static site generator built with React.js.
 
-- production environment - PROD URL GOES HERE
-- staging environment - STAGE URL GOES HERE
+- production environment - https://ink-mgmt.com/
+- staging environment - https://sparkling-snickerdoodle-3b58b9.netlify.app/
 
 ## Prerequisites
 

@@ -54,10 +54,10 @@
   - create Open Graph/Twitter Card image (1200px × 630px)
   - connect to any social media sites
 - [WordPress] set up Updraft Plus backups
-- final payment
-- migrate to client's Netlify account
-- DNS updates to client's domain
-- launch
+- √ final payment
+- √ migrate to client's Netlify account
+- √ DNS updates to client's domain
+- √ launch
 - update README
 - create GitHub organization for client and migrate repo
 - client documentation
