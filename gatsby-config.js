@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `INK-MGMT`,
     description: `Meet the first Black owned creative talent agency founded by Black (award winning) creatives.`,
-    siteUrl: `https://www.inkmgmt.com/`,
+    siteUrl: `https://www.ink-mgmt.com/`,
     socialImage: `/social-image.jpg`,
   },
   plugins: [
@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify`,
     {
       resolve: 'gatsby-source-wordpress',
       options: {

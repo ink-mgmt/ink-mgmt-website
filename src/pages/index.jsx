@@ -12,7 +12,6 @@ import GetInTouch from '../components/home/getInTouch';
 
 const IndexPage = ({ location }) => {
   const [heroIsScrolled, setHeroIsScrolled] = useState(false);
-  console.log('hi there');
 
   return (
     <Layout

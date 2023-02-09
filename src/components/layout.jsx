@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import '../styles/main.scss';
 import 'animate.css/animate.min.css';
@@ -19,6 +19,16 @@ const Layout = ({
   location,
   menuTextIsLight,
 }) => {
+  const data = useStaticQuery(graphql`
+    query DefaultLayoutQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+
   useLayoutEffect(() => {
     const appHeight = () => {
       const doc = document.documentElement;
@@ -30,45 +40,22 @@ const Layout = ({
   }, []);
 
   return (
-    <StaticQuery
-      query={graphql`
-        query SiteTitleQuery {
-          site {
-            siteMetadata {
-              title
-            }
-          }
-        }
-      `}
-      render={(data) => (
-        <div
-          className={`site-wrapper ${location.pathname === '/' ? 'home' : ''}`}
-        >
-          <a className="skip-link" href="#main">
-            skip to main content
-          </a>
-          <Header
-            headerLogoColor={headerLogoColor}
-            headerTextColor={headerTextColor}
-            menuTextIsLight={menuTextIsLight}
-            siteTitle={data.site.siteMetadata.title}
-            heroIsScrolled={heroIsScrolled}
-          />
-          <main
-            className="main"
-            id="main"
-            role="main"
-            style={{ backgroundColor }}
-          >
-            {children}
-          </main>
-          <Footer
-            footerBgColor={footerBgColor}
-            footerTextColor={footerTextColor}
-          />
-        </div>
-      )}
-    />
+    <div className={`site-wrapper ${location.pathname === '/' ? 'home' : ''}`}>
+      <a className="skip-link" href="#main">
+        skip to main content
+      </a>
+      <Header
+        headerLogoColor={headerLogoColor}
+        headerTextColor={headerTextColor}
+        menuTextIsLight={menuTextIsLight}
+        siteTitle={data.site.siteMetadata.title}
+        heroIsScrolled={heroIsScrolled}
+      />
+      <main className="main" id="main" role="main" style={{ backgroundColor }}>
+        {children}
+      </main>
+      <Footer footerBgColor={footerBgColor} footerTextColor={footerTextColor} />
+    </div>
   );
 };
 
