@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        url: 'http://admin.ink-mgmt.com/graphql/',
+        url: 'https://admin.ink-mgmt.com/graphql/',
         schema: {
           requestConcurrency: 10,
           timeout: 90000,
