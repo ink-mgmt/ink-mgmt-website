@@ -58,8 +58,8 @@
 - √ migrate to client's Netlify account
 - √ DNS updates to client's domain
 - √ launch
-- update README
-- create GitHub organization for client and migrate repo
+- √ update README
+- √ create GitHub organization for client and migrate repo
 - client documentation
 - client video training session
 - delete TODO

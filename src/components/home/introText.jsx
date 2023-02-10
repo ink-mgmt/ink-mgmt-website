@@ -9,27 +9,22 @@ const IntroText = () => (
     <div className="container">
       <div className="home__intro-text-wrapper">
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-          <span className="home__intro-text-group">Meet the first black</span>
+          <span className="home__intro-text-group">
+            Meet the first creative talent
+          </span>
         </AnimationOnScroll>{' '}
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
           delay={300}
           animateOnce
         >
-          <span className="home__intro-text-group">owned creative talent</span>
+          <span className="home__intro-text-group">
+            agency founded by black
+          </span>
         </AnimationOnScroll>{' '}
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
           delay={600}
-          animateOnce
-        >
-          <span className="home__intro-text-group">
-            agency founded by Black
-          </span>
-        </AnimationOnScroll>
-        <AnimationOnScroll
-          animateIn="animate__fadeInUp"
-          delay={900}
           animateOnce
         >
           <span className="home__intro-text-group">
@@ -38,7 +33,7 @@ const IntroText = () => (
         </AnimationOnScroll>
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
-          delay={1200}
+          delay={900}
           animateOnce
         >
           <Button

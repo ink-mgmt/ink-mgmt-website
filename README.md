@@ -4,6 +4,7 @@ Built with [Pyrographic Design's boilerplate](https://github.com/mikeriley131/ga
 Built on [Gatsby.js](https://www.gatsbyjs.org/), a static site generator built with React.js.
 
 - production environment - https://ink-mgmt.com/
+- WordPress admin - https://admin.ink-mgmt.com/wp-admin/
 - staging environment - https://sparkling-snickerdoodle-3b58b9.netlify.app/
 
 ## Prerequisites
