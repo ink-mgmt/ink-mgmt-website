@@ -145,14 +145,6 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
             <br />
             <a
               className="link"
-              href="tel:+1-833-465-6468"
-              tabIndex={navIsOpen ? 0 : -1}
-            >
-              +1 833 INK MGMT
-            </a>
-            <br />
-            <a
-              className="link"
               href="mailto:weare@inkmgmt.com"
               tabIndex={navIsOpen ? 0 : -1}
             >

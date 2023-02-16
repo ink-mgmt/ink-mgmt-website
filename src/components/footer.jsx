@@ -72,14 +72,6 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
             <br />
             <a
               className="link"
-              href="tel:+1-833-465-6468"
-              style={{ color: footerTextColor }}
-            >
-              +1 833 INK MGMT
-            </a>
-            <br />
-            <a
-              className="link"
               href="mailto:weare@inkmgmt.com"
               style={{ color: footerTextColor }}
             >

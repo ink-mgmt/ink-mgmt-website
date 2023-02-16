@@ -14,9 +14,14 @@ const InfoContacts = ({ contactItems }) => (
           >
             {contact.email}
           </a>
-          <a className="contacts__item-link link" href={`tel:${contact.phone}`}>
-            {contact.phone}
-          </a>
+          {contact.phone && (
+            <a
+              className="contacts__item-link link"
+              href={`tel:${contact.phone}`}
+            >
+              {contact.phone}
+            </a>
+          )}
           <a className="contacts__big-link" href={`mailto:${contact.email}`}>
             &rarr; {contact.bigLinkText}
           </a>
