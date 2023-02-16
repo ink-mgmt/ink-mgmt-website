@@ -13,6 +13,7 @@ body {
   background: $bg-clr;
   font-family: $font-med;
   height: var(--app-height);
+  overflow-x: hidden;
   width: 100%;
 
   @include mq($S) {
