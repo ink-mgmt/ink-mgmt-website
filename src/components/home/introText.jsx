@@ -1,39 +1,28 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import Button from '../patterns/button';
 
-const IntroText = () => (
+const IntroText = ({ data }) => (
   <section className="home__intro-text">
     <h2 className="home__intro-text-heading">About</h2>
     <div className="container">
       <div className="home__intro-text-wrapper">
-        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-          <span className="home__intro-text-group">
-            Meet the first creative talent
-          </span>
-        </AnimationOnScroll>{' '}
+        {data.map((line, index) => (
+          <AnimationOnScroll
+            animateIn="animate__fadeInUp"
+            delay={index * 300}
+            animateOnce
+            key={line.introLine}
+          >
+            <span className="home__intro-text-group">{line.introLine}</span>
+          </AnimationOnScroll>
+        ))}
+
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
-          delay={300}
-          animateOnce
-        >
-          <span className="home__intro-text-group">
-            agency founded by black
-          </span>
-        </AnimationOnScroll>{' '}
-        <AnimationOnScroll
-          animateIn="animate__fadeInUp"
-          delay={600}
-          animateOnce
-        >
-          <span className="home__intro-text-group">
-            (award winning) creatives.
-          </span>
-        </AnimationOnScroll>
-        <AnimationOnScroll
-          animateIn="animate__fadeInUp"
-          delay={900}
+          delay={1200}
           animateOnce
         >
           <Button
@@ -46,5 +35,13 @@ const IntroText = () => (
     </div>
   </section>
 );
+
+IntroText.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      introLine: PropTypes.string,
+    })
+  ).isRequired,
+};
 
 export default IntroText;

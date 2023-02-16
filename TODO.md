@@ -60,6 +60,6 @@
 - √ launch
 - √ update README
 - √ create GitHub organization for client and migrate repo
-- client documentation
+- √ client documentation
 - client video training session
 - delete TODO
