@@ -24,7 +24,11 @@ const IndexPage = ({ data, location }) => {
       heroIsScrolled={heroIsScrolled}
       location={location}
     >
-      <SEO title="Home" meta={[{ name: 'theme-color', content: '#1601f8' }]} />
+      <SEO
+        title="A Source For Black Perspectives In Creativity
+"
+        meta={[{ name: 'theme-color', content: '#1601f8' }]}
+      />
       <InView rootMargin="0px 0px -100% 0px">
         {({ inView, ref }) => (
           <Hero

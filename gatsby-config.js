@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `INK-MGMT`,
-    description: `Meet the first Black owned creative talent agency founded by Black (award winning) creatives.`,
+    description: `Meet the first creative talent management agency founded by Black (award winning) creatives.`,
     siteUrl: `https://www.inkmgmt.com/`,
     socialImage: `/social-image.jpg`,
   },
