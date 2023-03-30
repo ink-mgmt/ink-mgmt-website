@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -6,9 +7,10 @@ const AboutIntro = ({ introHeading, introCopy }) => (
     <div className="about__intro-content">
       <div className="about__intro-wrapper">
         <h1 className="about__intro-heading">{introHeading}</h1>
-        <p className="about__intro-copy">
-          <span dangerouslySetInnerHTML={{ __html: introCopy }} />
-        </p>
+        <div
+          className="about__intro-copy"
+          dangerouslySetInnerHTML={{ __html: introCopy }}
+        />
       </div>
       <div className="about__intro-sub-content-wrapper">
         <div className="about__intro-teaser-wrapper">
