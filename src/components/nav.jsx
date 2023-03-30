@@ -50,6 +50,9 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
 
   const toggleNav = () => setNavIsOpen(!navIsOpen);
 
+  const date = new Date();
+  const currentYear = date.getFullYear();
+
   return (
     <nav
       className={`nav ${navIsOpen ? 'open' : ''}`}
@@ -164,7 +167,10 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
               LinkedIn
             </a> */}
           </address>
-          <p className="footer__copyright">&copy;2022 Ink-Mgmt LLC</p>
+          <p className="footer__copyright">
+            <span className="footer__copyright-symbol">&copy;</span>{' '}
+            {currentYear} Ink-Mgmt LLC
+          </p>
         </div>
       </div>
     </nav>
