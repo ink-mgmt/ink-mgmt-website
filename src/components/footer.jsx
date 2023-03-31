@@ -42,7 +42,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               Services
             </a>
           </li>
-          {/* <li className="footer__nav-item">
+          <li className="footer__nav-item">
             <a
               href="/press"
               className="footer__nav-link link"
@@ -50,7 +50,7 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
             >
               Press
             </a>
-          </li> */}
+          </li>
           <li className="footer__nav-item">
             <a
               href="/info"

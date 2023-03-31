@@ -116,7 +116,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
               Services
             </Link>
           </li>
-          {/* <li className="nav__item">
+          <li className="nav__item">
             <Link
               className="nav__link"
               to="/press"
@@ -125,7 +125,7 @@ const Nav = ({ navIsOpen, setNavIsOpen, siteTitle }) => {
             >
               Press
             </Link>
-          </li> */}
+          </li>
           <li className="nav__item">
             <Link
               className="nav__link"
