@@ -62,12 +62,14 @@
     }
 
     @include mq($XXL) {
-      margin-right: $space-1500;
+      margin-right: $space-300;
+    }
+
+    @include mq($XXXL) {
+      margin-right: $space-700;
     }
 
     > * {
-      flex-basis: 50%;
-
       @include mq($M) {
         margin-right: $space-900;
       }
@@ -77,7 +79,11 @@
       }
 
       @include mq($XXL) {
-        margin-right: $space-1200;
+        margin-right: 17rem;
+      }
+
+      @include mq($XXXL) {
+        margin-right: 23rem;
       }
     }
   }

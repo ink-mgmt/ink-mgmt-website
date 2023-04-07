@@ -11,6 +11,7 @@ $breakpoint-m: 48em; // 768px
 $breakpoint-l: 64em; // 1024px
 $breakpoint-xl: 75em; // 1200px
 $breakpoint-xxl: 90em; // 1440px
+$breakpoint-xxxl: 120em; // 1920px
 
 $XS: 'min-width:' + $breakpoint-xs;
 $S: 'min-width:' + $breakpoint-s;
@@ -18,6 +19,7 @@ $M: 'min-width:' + $breakpoint-m;
 $L: 'min-width:' + $breakpoint-l;
 $XL: 'min-width:' + $breakpoint-xl;
 $XXL: 'min-width:' + $breakpoint-xxl;
+$XXXL: 'min-width:' + $breakpoint-xxxl;
 
 // FONTS
 // ------------------------------------------------------------------------------

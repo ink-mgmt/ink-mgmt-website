@@ -128,9 +128,9 @@ const Footer = ({ footerBgColor, footerTextColor }) => (
               <a
                 className="footer__contact-link link"
                 style={{ color: footerTextColor }}
-                href="mailto:talent@inkmgmt.com"
+                href="https://forms.monday.com/forms/950a02ec9f05dad54c5f0f3c0d6fbd4a?r=use1"
               >
-                talent@inkmgmt.com
+                Talent Submission Form
               </a>
             </li>
           </ul>

@@ -38,6 +38,8 @@ export const query = graphql`
               heading
               name
               email
+              textLinkText
+              textLinkUrl
               phone
               bigLinkText
             }

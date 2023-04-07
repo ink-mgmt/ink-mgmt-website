@@ -7,13 +7,22 @@ const InfoContacts = ({ contactItems }) => (
       {contactItems.map((contact) => (
         <li className="contacts__item" key={contact.heading}>
           <h2 className="contacts__item-heading">{contact.heading}</h2>
-          <p className="contacts__item-name">{contact.name}</p>
-          <a
-            className="contacts__item-link link"
-            href="mailto:jason@inkmgmt.com"
-          >
-            {contact.email}
-          </a>
+          {contact.name && (
+            <p className="contacts__item-name">{contact.name}</p>
+          )}
+          {contact.email && (
+            <a
+              className="contacts__item-link link"
+              href="mailto:jason@inkmgmt.com"
+            >
+              {contact.email}
+            </a>
+          )}
+          {contact.textLinkText && contact.textLinkUrl && (
+            <a className="contacts__item-link link" href={contact.textLinkUrl}>
+              {contact.textLinkText}
+            </a>
+          )}
           {contact.phone && (
             <a
               className="contacts__item-link link"
