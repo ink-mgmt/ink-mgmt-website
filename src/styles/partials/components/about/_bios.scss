@@ -12,7 +12,7 @@
 
   &-image-grid {
     margin-bottom: $space-700;
-    overflow-y: hidden;
+    overflow: hidden;
 
     @include mq($L) {
       margin-bottom: $space-600;

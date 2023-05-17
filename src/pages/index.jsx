@@ -27,7 +27,7 @@ const IndexPage = ({ data, location }) => {
       <SEO
         title="A Source For Black Perspectives In Creativity
 "
-        meta={[{ name: 'theme-color', content: '#1601f8' }]}
+        meta={[{ name: 'theme-color', content: '#000000' }]}
       />
       <InView rootMargin="0px 0px -100% 0px">
         {({ inView, ref }) => (

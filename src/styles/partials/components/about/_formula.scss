@@ -45,7 +45,7 @@
 
     &--top {
       @include mq($M) {
-        font-size: 16.5vw;
+        font-size: 15.8vw;
         position: absolute;
         top: $space-500;
         white-space: nowrap;
@@ -60,7 +60,7 @@
     &--bottom {
       @include mq($M) {
         bottom: 0;
-        font-size: 15vw;
+        font-size: 14.5vw;
         position: absolute;
       }
     }

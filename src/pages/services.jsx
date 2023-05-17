@@ -23,7 +23,7 @@ const Services = ({ data }) => {
     >
       <SEO
         title="Services"
-        meta={[{ name: 'theme-color', content: '#1601f8' }]}
+        meta={[{ name: 'theme-color', content: '#000000' }]}
       />
       <ServicesIntro />
       <ServicesWhatWeDo accordionItems={accordionItems} />
