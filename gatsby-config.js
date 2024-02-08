@@ -67,11 +67,28 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-accessibilityjs`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        injectStyles: false,
-        errorClassName: false,
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          'G-133LPX9SSX', // Google Analytics / GA
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+        },
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-accessibilityjs`,
+    //   options: {
+    //     injectStyles: false,
+    //     errorClassName: false,
+    //   },
+    // },
   ],
 };
