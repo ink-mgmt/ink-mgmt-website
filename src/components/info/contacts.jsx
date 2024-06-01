@@ -31,7 +31,12 @@ const InfoContacts = ({ contactItems }) => (
               {contact.phone}
             </a>
           )}
-          <a className="contacts__big-link" href={`mailto:${contact.email}`}>
+          <a
+            className="contacts__big-link"
+            href={
+              contact.email ? `mailto:${contact.email}` : contact.textLinkUrl
+            }
+          >
             &rarr; {contact.bigLinkText}
           </a>
         </li>
