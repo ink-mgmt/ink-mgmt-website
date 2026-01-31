@@ -12,8 +12,7 @@ import AboutPrinciples from '../components/about/principles';
 
 const About = ({ data }) => {
   const aboutData = data.allWpPage.edges[0].node.about_page;
-  const { bios, introCopy, introHeading, principles, theFormulaCopy } =
-    aboutData;
+  const { introCopy, introHeading, principles, theFormulaCopy } = aboutData;
 
   return (
     <Layout
@@ -24,8 +23,6 @@ const About = ({ data }) => {
     >
       <SEO title="About" meta={[{ name: 'theme-color', content: '#ffffff' }]} />
       <AboutIntro introHeading={introHeading} introCopy={introCopy} />
-
-      <AboutBios bios={bios} />
 
       <AboutFormula formulaCopy={theFormulaCopy} />
 
