@@ -12,12 +12,6 @@ const AboutIntro = ({ introHeading, introCopy }) => (
           dangerouslySetInnerHTML={{ __html: introCopy }}
         />
       </div>
-      <div className="about__intro-sub-content-wrapper">
-        <div className="about__intro-teaser-wrapper">
-          <p className="about__intro-teaser">get to know us</p>
-          <span className="about__intro-arrow">&darr;</span>
-        </div>
-      </div>
     </div>
   </section>
 );
