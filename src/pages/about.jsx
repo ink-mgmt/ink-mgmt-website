@@ -7,7 +7,6 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import AboutIntro from '../components/about/intro';
-import AboutBios from '../components/about/bios';
 import AboutFormula from '../components/about/formula';
 import AboutPrinciples from '../components/about/principles';
 
